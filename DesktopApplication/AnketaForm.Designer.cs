@@ -60,126 +60,137 @@
             this.dtpBirthDate = new System.Windows.Forms.DateTimePicker();
             this.label8 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.txbAddress = new System.Windows.Forms.TextBox();
+            this.txbAddressViloyat = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.rdbUzbCitizen = new System.Windows.Forms.RadioButton();
+            this.rdbNoCitizen = new System.Windows.Forms.RadioButton();
+            this.rdbForeign = new System.Windows.Forms.RadioButton();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
-            this.radioButton5 = new System.Windows.Forms.RadioButton();
-            this.radioButton6 = new System.Windows.Forms.RadioButton();
-            this.radioButton7 = new System.Windows.Forms.RadioButton();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.rdbEducationAverage = new System.Windows.Forms.RadioButton();
+            this.rdbEducationAverageSpec = new System.Windows.Forms.RadioButton();
+            this.rdbEducationHigh = new System.Windows.Forms.RadioButton();
+            this.rdbEducationNo = new System.Windows.Forms.RadioButton();
+            this.txbSpeciality = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.radioButton8 = new System.Windows.Forms.RadioButton();
-            this.radioButton9 = new System.Windows.Forms.RadioButton();
-            this.radioButton10 = new System.Windows.Forms.RadioButton();
-            this.radioButton11 = new System.Windows.Forms.RadioButton();
-            this.radioButton12 = new System.Windows.Forms.RadioButton();
-            this.radioButton13 = new System.Windows.Forms.RadioButton();
+            this.rdbCurStateOutJIEM = new System.Windows.Forms.RadioButton();
+            this.rdbCurStateLost = new System.Windows.Forms.RadioButton();
+            this.rdbCurStateOut = new System.Windows.Forms.RadioButton();
+            this.rdbCurStateReturn = new System.Windows.Forms.RadioButton();
+            this.rdbCurStateDied = new System.Windows.Forms.RadioButton();
+            this.rdbCurStateWanted = new System.Windows.Forms.RadioButton();
             this.label10 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dtpReturnDate = new System.Windows.Forms.DateTimePicker();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.radioButton16 = new System.Windows.Forms.RadioButton();
-            this.radioButton17 = new System.Windows.Forms.RadioButton();
-            this.radioButton19 = new System.Windows.Forms.RadioButton();
+            this.rdbHealthInvalid = new System.Windows.Forms.RadioButton();
+            this.rdbHealthIllPerm = new System.Windows.Forms.RadioButton();
+            this.rdbHealthGood = new System.Windows.Forms.RadioButton();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.radioButton14 = new System.Windows.Forms.RadioButton();
-            this.radioButton15 = new System.Windows.Forms.RadioButton();
-            this.radioButton18 = new System.Windows.Forms.RadioButton();
-            this.radioButton20 = new System.Windows.Forms.RadioButton();
-            this.radioButton21 = new System.Windows.Forms.RadioButton();
+            this.rdbFamilyStateDevorsed = new System.Windows.Forms.RadioButton();
+            this.rdbFamilyStateNoFamily = new System.Windows.Forms.RadioButton();
+            this.rdbFamilyStateFamily = new System.Windows.Forms.RadioButton();
+            this.rdbFamilyStateLoanlyMother = new System.Windows.Forms.RadioButton();
+            this.rdbFamilyStateSpouseDied = new System.Windows.Forms.RadioButton();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
-            this.radioButton22 = new System.Windows.Forms.RadioButton();
-            this.radioButton23 = new System.Windows.Forms.RadioButton();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.rdbFamilyEnvironmentNonQuite = new System.Windows.Forms.RadioButton();
+            this.rdbFamilyEnvironmentQuite = new System.Windows.Forms.RadioButton();
+            this.txbChildrenCount = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txbChildrenUnder18 = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
-            this.radioButton24 = new System.Windows.Forms.RadioButton();
-            this.radioButton25 = new System.Windows.Forms.RadioButton();
-            this.radioButton26 = new System.Windows.Forms.RadioButton();
+            this.rdbSocialStateGood = new System.Windows.Forms.RadioButton();
+            this.rdbSocialStateAvarage = new System.Windows.Forms.RadioButton();
+            this.rdbSocialStatePoor = new System.Windows.Forms.RadioButton();
             this.label13 = new System.Windows.Forms.Label();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.dtpLeaveDate = new System.Windows.Forms.DateTimePicker();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
-            this.radioButton27 = new System.Windows.Forms.RadioButton();
-            this.radioButton28 = new System.Windows.Forms.RadioButton();
-            this.radioButton29 = new System.Windows.Forms.RadioButton();
-            this.radioButton30 = new System.Windows.Forms.RadioButton();
-            this.radioButton31 = new System.Windows.Forms.RadioButton();
+            this.rdbLeaveCountryTurkey = new System.Windows.Forms.RadioButton();
+            this.rdbLeaveCountryOthers = new System.Windows.Forms.RadioButton();
+            this.rdbLeaveCountryKorea = new System.Windows.Forms.RadioButton();
+            this.rdbLeaveCountryKazakstan = new System.Windows.Forms.RadioButton();
+            this.rdbLeaveCountryRussia = new System.Windows.Forms.RadioButton();
             this.label14 = new System.Windows.Forms.Label();
             this.txbTumanNomi = new System.Windows.Forms.TextBox();
             this.txbMahallaNomi = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.groupBox10 = new System.Windows.Forms.GroupBox();
-            this.radioButton33 = new System.Windows.Forms.RadioButton();
-            this.radioButton34 = new System.Windows.Forms.RadioButton();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.rdbWorkPermitNotExists = new System.Windows.Forms.RadioButton();
+            this.rdbWorkPermitExists = new System.Windows.Forms.RadioButton();
+            this.txbIncomeValue = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
             this.groupBox11 = new System.Windows.Forms.GroupBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
-            this.checkBox5 = new System.Windows.Forms.CheckBox();
-            this.checkBox6 = new System.Windows.Forms.CheckBox();
-            this.checkBox7 = new System.Windows.Forms.CheckBox();
+            this.chbOutTogatherSpouse = new System.Windows.Forms.CheckBox();
+            this.chbOutTogatherChild = new System.Windows.Forms.CheckBox();
+            this.chbOutTogatherFather = new System.Windows.Forms.CheckBox();
+            this.chbOutTogatherMother = new System.Windows.Forms.CheckBox();
+            this.chbOutTogatherBrother = new System.Windows.Forms.CheckBox();
+            this.chbOutTogatherSister = new System.Windows.Forms.CheckBox();
+            this.chbOutTogatherOthers = new System.Windows.Forms.CheckBox();
             this.groupBox12 = new System.Windows.Forms.GroupBox();
-            this.radioButton32 = new System.Windows.Forms.RadioButton();
-            this.radioButton35 = new System.Windows.Forms.RadioButton();
-            this.radioButton36 = new System.Windows.Forms.RadioButton();
-            this.radioButton37 = new System.Windows.Forms.RadioButton();
-            this.radioButton38 = new System.Windows.Forms.RadioButton();
-            this.radioButton39 = new System.Windows.Forms.RadioButton();
-            this.radioButton40 = new System.Windows.Forms.RadioButton();
-            this.radioButton41 = new System.Windows.Forms.RadioButton();
+            this.rdbLeaveReasonEducation = new System.Windows.Forms.RadioButton();
+            this.rdbLeaveReasonTreatment = new System.Windows.Forms.RadioButton();
+            this.rdbLeaveReasonWork = new System.Windows.Forms.RadioButton();
+            this.rdbLeaveReasonTempLive = new System.Windows.Forms.RadioButton();
+            this.rdbLeaveReasonTravel = new System.Windows.Forms.RadioButton();
+            this.rdbLeaveReasonMerriage = new System.Windows.Forms.RadioButton();
+            this.rdbLeaveReasonPermanentLive = new System.Windows.Forms.RadioButton();
+            this.rdbLeaveReasonOthers = new System.Windows.Forms.RadioButton();
             this.groupBox13 = new System.Windows.Forms.GroupBox();
-            this.radioButton42 = new System.Windows.Forms.RadioButton();
-            this.radioButton43 = new System.Windows.Forms.RadioButton();
-            this.radioButton44 = new System.Windows.Forms.RadioButton();
-            this.radioButton45 = new System.Windows.Forms.RadioButton();
-            this.radioButton46 = new System.Windows.Forms.RadioButton();
-            this.radioButton47 = new System.Windows.Forms.RadioButton();
-            this.radioButton48 = new System.Windows.Forms.RadioButton();
-            this.radioButton49 = new System.Windows.Forms.RadioButton();
-            this.radioButton50 = new System.Windows.Forms.RadioButton();
+            this.rdbWorkOutsiteTypeEnterprieneur = new System.Windows.Forms.RadioButton();
+            this.rdbWorkOutsiteTypeGoverment = new System.Windows.Forms.RadioButton();
+            this.rdbWorkOutsiteTypeCleaning = new System.Windows.Forms.RadioButton();
+            this.rdbWorkOutsiteTypeBeautySalon = new System.Windows.Forms.RadioButton();
+            this.rdbWorkOutsiteTypeCare = new System.Windows.Forms.RadioButton();
+            this.rdbWorkOutsiteTypeTruck = new System.Windows.Forms.RadioButton();
+            this.rdbWorkOutsiteTypeSeller = new System.Windows.Forms.RadioButton();
+            this.rdbWorkOutsiteTypeBuilder = new System.Windows.Forms.RadioButton();
+            this.rdbWorkOutsiteTypeOthers = new System.Windows.Forms.RadioButton();
             this.groupBox14 = new System.Windows.Forms.GroupBox();
-            this.radioButton54 = new System.Windows.Forms.RadioButton();
-            this.radioButton55 = new System.Windows.Forms.RadioButton();
+            this.rdbHaveAWillToReturnBackNo = new System.Windows.Forms.RadioButton();
+            this.rdbHaveAWillToReturnBackYes = new System.Windows.Forms.RadioButton();
             this.groupBox15 = new System.Windows.Forms.GroupBox();
-            this.checkBox8 = new System.Windows.Forms.CheckBox();
-            this.checkBox9 = new System.Windows.Forms.CheckBox();
-            this.checkBox10 = new System.Windows.Forms.CheckBox();
-            this.checkBox11 = new System.Windows.Forms.CheckBox();
-            this.checkBox12 = new System.Windows.Forms.CheckBox();
-            this.checkBox13 = new System.Windows.Forms.CheckBox();
-            this.checkBox14 = new System.Windows.Forms.CheckBox();
+            this.chbFamilyProblemsOthers = new System.Windows.Forms.CheckBox();
+            this.chbFamilyProblemsRepairment = new System.Windows.Forms.CheckBox();
+            this.chbFamilyProblemsPlaceToLive = new System.Windows.Forms.CheckBox();
+            this.chbFamilyProblemsTreatment = new System.Windows.Forms.CheckBox();
+            this.chbFamilyProblemsFamily = new System.Windows.Forms.CheckBox();
+            this.chbFamilyProblemsEducation = new System.Windows.Forms.CheckBox();
+            this.chbFamilyProblemsWorkless = new System.Windows.Forms.CheckBox();
             this.groupBox16 = new System.Windows.Forms.GroupBox();
-            this.checkBox15 = new System.Windows.Forms.CheckBox();
-            this.checkBox16 = new System.Windows.Forms.CheckBox();
-            this.checkBox17 = new System.Windows.Forms.CheckBox();
-            this.checkBox18 = new System.Windows.Forms.CheckBox();
-            this.checkBox19 = new System.Windows.Forms.CheckBox();
-            this.checkBox20 = new System.Windows.Forms.CheckBox();
-            this.checkBox21 = new System.Windows.Forms.CheckBox();
+            this.chbOutPersonProblemsOthers = new System.Windows.Forms.CheckBox();
+            this.chbOutPersonProblemsWorkPermitless = new System.Windows.Forms.CheckBox();
+            this.chbOutPersonProblemsLivePermitless = new System.Windows.Forms.CheckBox();
+            this.chbOutPersonProblemsNoPayment = new System.Windows.Forms.CheckBox();
+            this.chbOutPersonProblemsPersonSold = new System.Windows.Forms.CheckBox();
+            this.chbOutPersonProblemsWorkless = new System.Windows.Forms.CheckBox();
+            this.chbOutPersonProblemsLostPassport = new System.Windows.Forms.CheckBox();
             this.groupBox17 = new System.Windows.Forms.GroupBox();
-            this.radioButton51 = new System.Windows.Forms.RadioButton();
-            this.radioButton52 = new System.Windows.Forms.RadioButton();
-            this.radioButton53 = new System.Windows.Forms.RadioButton();
-            this.radioButton56 = new System.Windows.Forms.RadioButton();
-            this.radioButton57 = new System.Windows.Forms.RadioButton();
-            this.radioButton58 = new System.Windows.Forms.RadioButton();
-            this.radioButton59 = new System.Windows.Forms.RadioButton();
-            this.radioButton61 = new System.Windows.Forms.RadioButton();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.rdbHowHelpMedicalOther = new System.Windows.Forms.RadioButton();
+            this.rdbHowHelpMedicalTreatment = new System.Windows.Forms.RadioButton();
+            this.rdbHowHelpMedicalFamily = new System.Windows.Forms.RadioButton();
+            this.rdbHowHelpEducation = new System.Windows.Forms.RadioButton();
+            this.rdbHowHelpMedicalWeddings = new System.Windows.Forms.RadioButton();
+            this.rdbHowHelpMedicalRepairment = new System.Windows.Forms.RadioButton();
+            this.rdbHowHelpMedicalHouse = new System.Windows.Forms.RadioButton();
+            this.rdbHowHelpWork = new System.Windows.Forms.RadioButton();
+            this.txbForeignPersonPhone = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
+            this.txbAddressTuman = new System.Windows.Forms.TextBox();
+            this.label18 = new System.Windows.Forms.Label();
+            this.txbAddressKucha = new System.Windows.Forms.TextBox();
+            this.label19 = new System.Windows.Forms.Label();
+            this.txbAddressUy = new System.Windows.Forms.TextBox();
+            this.label20 = new System.Windows.Forms.Label();
+            this.txbAddressMFY = new System.Windows.Forms.TextBox();
+            this.label21 = new System.Windows.Forms.Label();
+            this.txbAddressXonadon = new System.Windows.Forms.TextBox();
+            this.label22 = new System.Windows.Forms.Label();
+            this.groupBox18 = new System.Windows.Forms.GroupBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -238,10 +249,12 @@
             this.btnSave.TabIndex = 0;
             this.btnSave.Text = "Saqlash";
             this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // btnClose
             // 
             this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnClose.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnClose.Location = new System.Drawing.Point(898, 16);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(109, 44);
@@ -309,14 +322,24 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.txbAddressXonadon);
+            this.tabPage2.Controls.Add(this.label22);
+            this.tabPage2.Controls.Add(this.txbAddressMFY);
+            this.tabPage2.Controls.Add(this.label21);
+            this.tabPage2.Controls.Add(this.txbAddressUy);
+            this.tabPage2.Controls.Add(this.label20);
+            this.tabPage2.Controls.Add(this.txbAddressKucha);
+            this.tabPage2.Controls.Add(this.label19);
+            this.tabPage2.Controls.Add(this.txbAddressTuman);
+            this.tabPage2.Controls.Add(this.label18);
             this.tabPage2.Controls.Add(this.label10);
-            this.tabPage2.Controls.Add(this.dateTimePicker1);
+            this.tabPage2.Controls.Add(this.dtpReturnDate);
             this.tabPage2.Controls.Add(this.groupBox4);
-            this.tabPage2.Controls.Add(this.textBox1);
+            this.tabPage2.Controls.Add(this.txbSpeciality);
             this.tabPage2.Controls.Add(this.label3);
             this.tabPage2.Controls.Add(this.groupBox3);
             this.tabPage2.Controls.Add(this.groupBox2);
-            this.tabPage2.Controls.Add(this.txbAddress);
+            this.tabPage2.Controls.Add(this.txbAddressViloyat);
             this.tabPage2.Controls.Add(this.label9);
             this.tabPage2.Controls.Add(this.label8);
             this.tabPage2.Controls.Add(this.dtpBirthDate);
@@ -329,6 +352,7 @@
             this.tabPage2.Controls.Add(this.rdbAyol);
             this.tabPage2.Controls.Add(this.rdbErkak);
             this.tabPage2.Controls.Add(this.groupBox1);
+            this.tabPage2.Controls.Add(this.groupBox18);
             this.tabPage2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabPage2.Location = new System.Drawing.Point(4, 25);
             this.tabPage2.Name = "tabPage2";
@@ -455,7 +479,7 @@
             this.rdbErkak.AutoSize = true;
             this.rdbErkak.Checked = true;
             this.rdbErkak.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdbErkak.Location = new System.Drawing.Point(109, 28);
+            this.rdbErkak.Location = new System.Drawing.Point(109, 25);
             this.rdbErkak.Name = "rdbErkak";
             this.rdbErkak.Size = new System.Drawing.Size(78, 24);
             this.rdbErkak.TabIndex = 1;
@@ -467,7 +491,7 @@
             // 
             this.rdbAyol.AutoSize = true;
             this.rdbAyol.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdbAyol.Location = new System.Drawing.Point(228, 28);
+            this.rdbAyol.Location = new System.Drawing.Point(228, 25);
             this.rdbAyol.Name = "rdbAyol";
             this.rdbAyol.Size = new System.Drawing.Size(60, 24);
             this.rdbAyol.TabIndex = 2;
@@ -477,7 +501,7 @@
             // txbFio
             // 
             this.txbFio.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbFio.Location = new System.Drawing.Point(208, 65);
+            this.txbFio.Location = new System.Drawing.Point(208, 62);
             this.txbFio.Name = "txbFio";
             this.txbFio.Size = new System.Drawing.Size(561, 27);
             this.txbFio.TabIndex = 4;
@@ -486,7 +510,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(35, 68);
+            this.label4.Location = new System.Drawing.Point(35, 65);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(66, 20);
             this.label4.TabIndex = 3;
@@ -495,7 +519,7 @@
             // txbPassNum
             // 
             this.txbPassNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbPassNum.Location = new System.Drawing.Point(208, 145);
+            this.txbPassNum.Location = new System.Drawing.Point(208, 142);
             this.txbPassNum.Name = "txbPassNum";
             this.txbPassNum.Size = new System.Drawing.Size(561, 27);
             this.txbPassNum.TabIndex = 11;
@@ -504,7 +528,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(35, 148);
+            this.label5.Location = new System.Drawing.Point(35, 145);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(148, 20);
             this.label5.TabIndex = 10;
@@ -513,7 +537,7 @@
             // txbPassSeria
             // 
             this.txbPassSeria.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbPassSeria.Location = new System.Drawing.Point(208, 103);
+            this.txbPassSeria.Location = new System.Drawing.Point(208, 100);
             this.txbPassSeria.Name = "txbPassSeria";
             this.txbPassSeria.Size = new System.Drawing.Size(561, 27);
             this.txbPassSeria.TabIndex = 9;
@@ -522,7 +546,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(35, 106);
+            this.label6.Location = new System.Drawing.Point(35, 103);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(154, 20);
             this.label6.TabIndex = 8;
@@ -533,7 +557,7 @@
             this.dtpBirthDate.Checked = false;
             this.dtpBirthDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpBirthDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpBirthDate.Location = new System.Drawing.Point(208, 188);
+            this.dtpBirthDate.Location = new System.Drawing.Point(208, 182);
             this.dtpBirthDate.Name = "dtpBirthDate";
             this.dtpBirthDate.Size = new System.Drawing.Size(179, 27);
             this.dtpBirthDate.TabIndex = 12;
@@ -542,7 +566,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(36, 193);
+            this.label8.Location = new System.Drawing.Point(36, 187);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(115, 20);
             this.label8.TabIndex = 13;
@@ -551,150 +575,150 @@
             // groupBox1
             // 
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(39, 9);
+            this.groupBox1.Location = new System.Drawing.Point(39, 6);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(730, 50);
             this.groupBox1.TabIndex = 14;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Жинси";
             // 
-            // txbAddress
+            // txbAddressViloyat
             // 
-            this.txbAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbAddress.Location = new System.Drawing.Point(249, 233);
-            this.txbAddress.Name = "txbAddress";
-            this.txbAddress.Size = new System.Drawing.Size(520, 27);
-            this.txbAddress.TabIndex = 16;
+            this.txbAddressViloyat.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbAddressViloyat.Location = new System.Drawing.Point(208, 238);
+            this.txbAddressViloyat.Name = "txbAddressViloyat";
+            this.txbAddressViloyat.Size = new System.Drawing.Size(248, 27);
+            this.txbAddressViloyat.TabIndex = 16;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(35, 233);
+            this.label9.Location = new System.Drawing.Point(51, 238);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(208, 20);
+            this.label9.Size = new System.Drawing.Size(71, 20);
             this.label9.TabIndex = 15;
-            this.label9.Text = "Ўзбдаги яшаш манзили";
+            this.label9.Text = "Вилоят";
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.radioButton3);
-            this.groupBox2.Controls.Add(this.radioButton2);
-            this.groupBox2.Controls.Add(this.radioButton1);
+            this.groupBox2.Controls.Add(this.rdbForeign);
+            this.groupBox2.Controls.Add(this.rdbNoCitizen);
+            this.groupBox2.Controls.Add(this.rdbUzbCitizen);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(40, 270);
+            this.groupBox2.Location = new System.Drawing.Point(40, 354);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(729, 100);
             this.groupBox2.TabIndex = 17;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Фуқаролик ҳолати";
             // 
-            // radioButton1
+            // rdbUzbCitizen
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Checked = true;
-            this.radioButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton1.Location = new System.Drawing.Point(33, 30);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(336, 24);
-            this.radioButton1.TabIndex = 2;
-            this.radioButton1.Text = "Ўзбекистон Республикаси фуқароси";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.rdbUzbCitizen.AutoSize = true;
+            this.rdbUzbCitizen.Checked = true;
+            this.rdbUzbCitizen.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbUzbCitizen.Location = new System.Drawing.Point(33, 30);
+            this.rdbUzbCitizen.Name = "rdbUzbCitizen";
+            this.rdbUzbCitizen.Size = new System.Drawing.Size(336, 24);
+            this.rdbUzbCitizen.TabIndex = 2;
+            this.rdbUzbCitizen.Text = "Ўзбекистон Республикаси фуқароси";
+            this.rdbUzbCitizen.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // rdbNoCitizen
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton2.Location = new System.Drawing.Point(33, 60);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(260, 24);
-            this.radioButton2.TabIndex = 3;
-            this.radioButton2.Text = "фуқаролиги бўлмаган шахс";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.rdbNoCitizen.AutoSize = true;
+            this.rdbNoCitizen.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbNoCitizen.Location = new System.Drawing.Point(33, 60);
+            this.rdbNoCitizen.Name = "rdbNoCitizen";
+            this.rdbNoCitizen.Size = new System.Drawing.Size(260, 24);
+            this.rdbNoCitizen.TabIndex = 3;
+            this.rdbNoCitizen.Text = "фуқаролиги бўлмаган шахс";
+            this.rdbNoCitizen.UseVisualStyleBackColor = true;
             // 
-            // radioButton3
+            // rdbForeign
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton3.Location = new System.Drawing.Point(398, 30);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(172, 24);
-            this.radioButton3.TabIndex = 4;
-            this.radioButton3.Text = "чет эл фуқароси";
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.rdbForeign.AutoSize = true;
+            this.rdbForeign.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbForeign.Location = new System.Drawing.Point(398, 30);
+            this.rdbForeign.Name = "rdbForeign";
+            this.rdbForeign.Size = new System.Drawing.Size(172, 24);
+            this.rdbForeign.TabIndex = 4;
+            this.rdbForeign.Text = "чет эл фуқароси";
+            this.rdbForeign.UseVisualStyleBackColor = true;
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.radioButton7);
-            this.groupBox3.Controls.Add(this.radioButton4);
-            this.groupBox3.Controls.Add(this.radioButton5);
-            this.groupBox3.Controls.Add(this.radioButton6);
+            this.groupBox3.Controls.Add(this.rdbEducationNo);
+            this.groupBox3.Controls.Add(this.rdbEducationAverage);
+            this.groupBox3.Controls.Add(this.rdbEducationAverageSpec);
+            this.groupBox3.Controls.Add(this.rdbEducationHigh);
             this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.Location = new System.Drawing.Point(40, 378);
+            this.groupBox3.Location = new System.Drawing.Point(40, 462);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(729, 70);
             this.groupBox3.TabIndex = 18;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Маълумоти";
             // 
-            // radioButton4
+            // rdbEducationAverage
             // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton4.Location = new System.Drawing.Point(301, 30);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(68, 24);
-            this.radioButton4.TabIndex = 4;
-            this.radioButton4.Text = "ўрта";
-            this.radioButton4.UseVisualStyleBackColor = true;
+            this.rdbEducationAverage.AutoSize = true;
+            this.rdbEducationAverage.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbEducationAverage.Location = new System.Drawing.Point(301, 30);
+            this.rdbEducationAverage.Name = "rdbEducationAverage";
+            this.rdbEducationAverage.Size = new System.Drawing.Size(68, 24);
+            this.rdbEducationAverage.TabIndex = 4;
+            this.rdbEducationAverage.Text = "ўрта";
+            this.rdbEducationAverage.UseVisualStyleBackColor = true;
             // 
-            // radioButton5
+            // rdbEducationAverageSpec
             // 
-            this.radioButton5.AutoSize = true;
-            this.radioButton5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton5.Location = new System.Drawing.Point(119, 30);
-            this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(129, 24);
-            this.radioButton5.TabIndex = 3;
-            this.radioButton5.Text = "ўрта махсус";
-            this.radioButton5.UseVisualStyleBackColor = true;
+            this.rdbEducationAverageSpec.AutoSize = true;
+            this.rdbEducationAverageSpec.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbEducationAverageSpec.Location = new System.Drawing.Point(119, 30);
+            this.rdbEducationAverageSpec.Name = "rdbEducationAverageSpec";
+            this.rdbEducationAverageSpec.Size = new System.Drawing.Size(129, 24);
+            this.rdbEducationAverageSpec.TabIndex = 3;
+            this.rdbEducationAverageSpec.Text = "ўрта махсус";
+            this.rdbEducationAverageSpec.UseVisualStyleBackColor = true;
             // 
-            // radioButton6
+            // rdbEducationHigh
             // 
-            this.radioButton6.AutoSize = true;
-            this.radioButton6.Checked = true;
-            this.radioButton6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton6.Location = new System.Drawing.Point(33, 30);
-            this.radioButton6.Name = "radioButton6";
-            this.radioButton6.Size = new System.Drawing.Size(70, 24);
-            this.radioButton6.TabIndex = 2;
-            this.radioButton6.Text = "олий";
-            this.radioButton6.UseVisualStyleBackColor = true;
+            this.rdbEducationHigh.AutoSize = true;
+            this.rdbEducationHigh.Checked = true;
+            this.rdbEducationHigh.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbEducationHigh.Location = new System.Drawing.Point(33, 30);
+            this.rdbEducationHigh.Name = "rdbEducationHigh";
+            this.rdbEducationHigh.Size = new System.Drawing.Size(70, 24);
+            this.rdbEducationHigh.TabIndex = 2;
+            this.rdbEducationHigh.Text = "олий";
+            this.rdbEducationHigh.UseVisualStyleBackColor = true;
             // 
-            // radioButton7
+            // rdbEducationNo
             // 
-            this.radioButton7.AutoSize = true;
-            this.radioButton7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton7.Location = new System.Drawing.Point(440, 30);
-            this.radioButton7.Name = "radioButton7";
-            this.radioButton7.Size = new System.Drawing.Size(141, 24);
-            this.radioButton7.TabIndex = 5;
-            this.radioButton7.Text = "маълумотсиз";
-            this.radioButton7.UseVisualStyleBackColor = true;
+            this.rdbEducationNo.AutoSize = true;
+            this.rdbEducationNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbEducationNo.Location = new System.Drawing.Point(440, 30);
+            this.rdbEducationNo.Name = "rdbEducationNo";
+            this.rdbEducationNo.Size = new System.Drawing.Size(141, 24);
+            this.rdbEducationNo.TabIndex = 5;
+            this.rdbEducationNo.Text = "маълумотсиз";
+            this.rdbEducationNo.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // txbSpeciality
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(255, 463);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(514, 27);
-            this.textBox1.TabIndex = 20;
+            this.txbSpeciality.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbSpeciality.Location = new System.Drawing.Point(255, 547);
+            this.txbSpeciality.Name = "txbSpeciality";
+            this.txbSpeciality.Size = new System.Drawing.Size(514, 27);
+            this.txbSpeciality.TabIndex = 20;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(35, 466);
+            this.label3.Location = new System.Drawing.Point(35, 550);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(214, 20);
             this.label3.TabIndex = 19;
@@ -702,120 +726,121 @@
             // 
             // groupBox4
             // 
-            this.groupBox4.Controls.Add(this.radioButton13);
-            this.groupBox4.Controls.Add(this.radioButton12);
-            this.groupBox4.Controls.Add(this.radioButton11);
-            this.groupBox4.Controls.Add(this.radioButton8);
-            this.groupBox4.Controls.Add(this.radioButton9);
-            this.groupBox4.Controls.Add(this.radioButton10);
+            this.groupBox4.Controls.Add(this.rdbCurStateWanted);
+            this.groupBox4.Controls.Add(this.rdbCurStateDied);
+            this.groupBox4.Controls.Add(this.rdbCurStateReturn);
+            this.groupBox4.Controls.Add(this.rdbCurStateOutJIEM);
+            this.groupBox4.Controls.Add(this.rdbCurStateLost);
+            this.groupBox4.Controls.Add(this.rdbCurStateOut);
             this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox4.Location = new System.Drawing.Point(39, 496);
+            this.groupBox4.Location = new System.Drawing.Point(39, 580);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(729, 100);
             this.groupBox4.TabIndex = 18;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Ҳозирги ҳолати";
             // 
-            // radioButton8
+            // rdbCurStateOutJIEM
             // 
-            this.radioButton8.AutoSize = true;
-            this.radioButton8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton8.Location = new System.Drawing.Point(169, 30);
-            this.radioButton8.Name = "radioButton8";
-            this.radioButton8.Size = new System.Drawing.Size(302, 24);
-            this.radioButton8.TabIndex = 4;
-            this.radioButton8.Text = "чет элда ЖИЭМда сақланмоқда";
-            this.radioButton8.UseVisualStyleBackColor = true;
+            this.rdbCurStateOutJIEM.AutoSize = true;
+            this.rdbCurStateOutJIEM.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbCurStateOutJIEM.Location = new System.Drawing.Point(169, 30);
+            this.rdbCurStateOutJIEM.Name = "rdbCurStateOutJIEM";
+            this.rdbCurStateOutJIEM.Size = new System.Drawing.Size(302, 24);
+            this.rdbCurStateOutJIEM.TabIndex = 4;
+            this.rdbCurStateOutJIEM.Text = "чет элда ЖИЭМда сақланмоқда";
+            this.rdbCurStateOutJIEM.UseVisualStyleBackColor = true;
             // 
-            // radioButton9
+            // rdbCurStateLost
             // 
-            this.radioButton9.AutoSize = true;
-            this.radioButton9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton9.Location = new System.Drawing.Point(491, 30);
-            this.radioButton9.Name = "radioButton9";
-            this.radioButton9.Size = new System.Drawing.Size(181, 24);
-            this.radioButton9.TabIndex = 3;
-            this.radioButton9.Text = "бедарак йўқолган";
-            this.radioButton9.UseVisualStyleBackColor = true;
+            this.rdbCurStateLost.AutoSize = true;
+            this.rdbCurStateLost.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbCurStateLost.Location = new System.Drawing.Point(491, 30);
+            this.rdbCurStateLost.Name = "rdbCurStateLost";
+            this.rdbCurStateLost.Size = new System.Drawing.Size(181, 24);
+            this.rdbCurStateLost.TabIndex = 3;
+            this.rdbCurStateLost.Text = "бедарак йўқолган";
+            this.rdbCurStateLost.UseVisualStyleBackColor = true;
             // 
-            // radioButton10
+            // rdbCurStateOut
             // 
-            this.radioButton10.AutoSize = true;
-            this.radioButton10.Checked = true;
-            this.radioButton10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton10.Location = new System.Drawing.Point(33, 30);
-            this.radioButton10.Name = "radioButton10";
-            this.radioButton10.Size = new System.Drawing.Size(107, 24);
-            this.radioButton10.TabIndex = 2;
-            this.radioButton10.Text = "чет элда";
-            this.radioButton10.UseVisualStyleBackColor = true;
+            this.rdbCurStateOut.AutoSize = true;
+            this.rdbCurStateOut.Checked = true;
+            this.rdbCurStateOut.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbCurStateOut.Location = new System.Drawing.Point(33, 30);
+            this.rdbCurStateOut.Name = "rdbCurStateOut";
+            this.rdbCurStateOut.Size = new System.Drawing.Size(107, 24);
+            this.rdbCurStateOut.TabIndex = 2;
+            this.rdbCurStateOut.Text = "чет элда";
+            this.rdbCurStateOut.UseVisualStyleBackColor = true;
             // 
-            // radioButton11
+            // rdbCurStateReturn
             // 
-            this.radioButton11.AutoSize = true;
-            this.radioButton11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton11.Location = new System.Drawing.Point(34, 60);
-            this.radioButton11.Name = "radioButton11";
-            this.radioButton11.Size = new System.Drawing.Size(218, 24);
-            this.radioButton11.TabIndex = 5;
-            this.radioButton11.Text = "Ўзбекистонга қайтган";
-            this.radioButton11.UseVisualStyleBackColor = true;
+            this.rdbCurStateReturn.AutoSize = true;
+            this.rdbCurStateReturn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbCurStateReturn.Location = new System.Drawing.Point(34, 60);
+            this.rdbCurStateReturn.Name = "rdbCurStateReturn";
+            this.rdbCurStateReturn.Size = new System.Drawing.Size(218, 24);
+            this.rdbCurStateReturn.TabIndex = 5;
+            this.rdbCurStateReturn.Text = "Ўзбекистонга қайтган";
+            this.rdbCurStateReturn.UseVisualStyleBackColor = true;
+            this.rdbCurStateReturn.CheckedChanged += new System.EventHandler(this.rdbCurStateReturn_CheckedChanged);
             // 
-            // radioButton12
+            // rdbCurStateDied
             // 
-            this.radioButton12.AutoSize = true;
-            this.radioButton12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton12.Location = new System.Drawing.Point(276, 60);
-            this.radioButton12.Name = "radioButton12";
-            this.radioButton12.Size = new System.Drawing.Size(139, 24);
-            this.radioButton12.TabIndex = 6;
-            this.radioButton12.Text = "вафот этган";
-            this.radioButton12.UseVisualStyleBackColor = true;
+            this.rdbCurStateDied.AutoSize = true;
+            this.rdbCurStateDied.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbCurStateDied.Location = new System.Drawing.Point(276, 60);
+            this.rdbCurStateDied.Name = "rdbCurStateDied";
+            this.rdbCurStateDied.Size = new System.Drawing.Size(139, 24);
+            this.rdbCurStateDied.TabIndex = 6;
+            this.rdbCurStateDied.Text = "вафот этган";
+            this.rdbCurStateDied.UseVisualStyleBackColor = true;
             // 
-            // radioButton13
+            // rdbCurStateWanted
             // 
-            this.radioButton13.AutoSize = true;
-            this.radioButton13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton13.Location = new System.Drawing.Point(491, 60);
-            this.radioButton13.Name = "radioButton13";
-            this.radioButton13.Size = new System.Drawing.Size(121, 24);
-            this.radioButton13.TabIndex = 7;
-            this.radioButton13.Text = "қидирувда";
-            this.radioButton13.UseVisualStyleBackColor = true;
+            this.rdbCurStateWanted.AutoSize = true;
+            this.rdbCurStateWanted.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbCurStateWanted.Location = new System.Drawing.Point(491, 60);
+            this.rdbCurStateWanted.Name = "rdbCurStateWanted";
+            this.rdbCurStateWanted.Size = new System.Drawing.Size(121, 24);
+            this.rdbCurStateWanted.TabIndex = 7;
+            this.rdbCurStateWanted.Text = "қидирувда";
+            this.rdbCurStateWanted.UseVisualStyleBackColor = true;
             // 
             // label10
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(36, 622);
+            this.label10.Location = new System.Drawing.Point(36, 706);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(433, 20);
             this.label10.TabIndex = 22;
             this.label10.Text = "Агар Ўзбекистонга қайтган бўлса, қайтган санаси";
             // 
-            // dateTimePicker1
+            // dtpReturnDate
             // 
-            this.dateTimePicker1.Checked = false;
-            this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(514, 622);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.ShowCheckBox = true;
-            this.dateTimePicker1.Size = new System.Drawing.Size(179, 27);
-            this.dateTimePicker1.TabIndex = 21;
+            this.dtpReturnDate.Checked = false;
+            this.dtpReturnDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpReturnDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpReturnDate.Location = new System.Drawing.Point(514, 706);
+            this.dtpReturnDate.Name = "dtpReturnDate";
+            this.dtpReturnDate.ShowCheckBox = true;
+            this.dtpReturnDate.Size = new System.Drawing.Size(179, 27);
+            this.dtpReturnDate.TabIndex = 21;
             // 
             // tabPage3
             // 
-            this.tabPage3.Controls.Add(this.textBox4);
+            this.tabPage3.Controls.Add(this.txbIncomeValue);
             this.tabPage3.Controls.Add(this.label16);
             this.tabPage3.Controls.Add(this.groupBox10);
             this.tabPage3.Controls.Add(this.groupBox9);
             this.tabPage3.Controls.Add(this.label13);
-            this.tabPage3.Controls.Add(this.dateTimePicker2);
+            this.tabPage3.Controls.Add(this.dtpLeaveDate);
             this.tabPage3.Controls.Add(this.groupBox8);
-            this.tabPage3.Controls.Add(this.textBox3);
+            this.tabPage3.Controls.Add(this.txbChildrenUnder18);
             this.tabPage3.Controls.Add(this.label12);
-            this.tabPage3.Controls.Add(this.textBox2);
+            this.tabPage3.Controls.Add(this.txbChildrenCount);
             this.tabPage3.Controls.Add(this.label11);
             this.tabPage3.Controls.Add(this.groupBox7);
             this.tabPage3.Controls.Add(this.groupBox6);
@@ -842,7 +867,7 @@
             // 
             // tabPage5
             // 
-            this.tabPage5.Controls.Add(this.textBox5);
+            this.tabPage5.Controls.Add(this.txbForeignPersonPhone);
             this.tabPage5.Controls.Add(this.label17);
             this.tabPage5.Controls.Add(this.groupBox17);
             this.tabPage5.Controls.Add(this.groupBox16);
@@ -856,9 +881,9 @@
             // 
             // groupBox5
             // 
-            this.groupBox5.Controls.Add(this.radioButton16);
-            this.groupBox5.Controls.Add(this.radioButton17);
-            this.groupBox5.Controls.Add(this.radioButton19);
+            this.groupBox5.Controls.Add(this.rdbHealthInvalid);
+            this.groupBox5.Controls.Add(this.rdbHealthIllPerm);
+            this.groupBox5.Controls.Add(this.rdbHealthGood);
             this.groupBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox5.Location = new System.Drawing.Point(24, 15);
             this.groupBox5.Name = "groupBox5";
@@ -867,47 +892,47 @@
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Соғлиги";
             // 
-            // radioButton16
+            // rdbHealthInvalid
             // 
-            this.radioButton16.AutoSize = true;
-            this.radioButton16.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton16.Location = new System.Drawing.Point(34, 60);
-            this.radioButton16.Name = "radioButton16";
-            this.radioButton16.Size = new System.Drawing.Size(321, 24);
-            this.radioButton16.TabIndex = 5;
-            this.radioButton16.Text = "I, II ва III гуруҳ ногиронлиги мавжуд";
-            this.radioButton16.UseVisualStyleBackColor = true;
+            this.rdbHealthInvalid.AutoSize = true;
+            this.rdbHealthInvalid.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbHealthInvalid.Location = new System.Drawing.Point(34, 60);
+            this.rdbHealthInvalid.Name = "rdbHealthInvalid";
+            this.rdbHealthInvalid.Size = new System.Drawing.Size(321, 24);
+            this.rdbHealthInvalid.TabIndex = 5;
+            this.rdbHealthInvalid.Text = "I, II ва III гуруҳ ногиронлиги мавжуд";
+            this.rdbHealthInvalid.UseVisualStyleBackColor = true;
             // 
-            // radioButton17
+            // rdbHealthIllPerm
             // 
-            this.radioButton17.AutoSize = true;
-            this.radioButton17.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton17.Location = new System.Drawing.Point(169, 30);
-            this.radioButton17.Name = "radioButton17";
-            this.radioButton17.Size = new System.Drawing.Size(298, 24);
-            this.radioButton17.TabIndex = 4;
-            this.radioButton17.Text = "сурункали касалликка чалинган";
-            this.radioButton17.UseVisualStyleBackColor = true;
+            this.rdbHealthIllPerm.AutoSize = true;
+            this.rdbHealthIllPerm.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbHealthIllPerm.Location = new System.Drawing.Point(169, 30);
+            this.rdbHealthIllPerm.Name = "rdbHealthIllPerm";
+            this.rdbHealthIllPerm.Size = new System.Drawing.Size(298, 24);
+            this.rdbHealthIllPerm.TabIndex = 4;
+            this.rdbHealthIllPerm.Text = "сурункали касалликка чалинган";
+            this.rdbHealthIllPerm.UseVisualStyleBackColor = true;
             // 
-            // radioButton19
+            // rdbHealthGood
             // 
-            this.radioButton19.AutoSize = true;
-            this.radioButton19.Checked = true;
-            this.radioButton19.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton19.Location = new System.Drawing.Point(33, 30);
-            this.radioButton19.Name = "radioButton19";
-            this.radioButton19.Size = new System.Drawing.Size(89, 24);
-            this.radioButton19.TabIndex = 2;
-            this.radioButton19.Text = "соғлом";
-            this.radioButton19.UseVisualStyleBackColor = true;
+            this.rdbHealthGood.AutoSize = true;
+            this.rdbHealthGood.Checked = true;
+            this.rdbHealthGood.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbHealthGood.Location = new System.Drawing.Point(33, 30);
+            this.rdbHealthGood.Name = "rdbHealthGood";
+            this.rdbHealthGood.Size = new System.Drawing.Size(89, 24);
+            this.rdbHealthGood.TabIndex = 2;
+            this.rdbHealthGood.Text = "соғлом";
+            this.rdbHealthGood.UseVisualStyleBackColor = true;
             // 
             // groupBox6
             // 
-            this.groupBox6.Controls.Add(this.radioButton21);
-            this.groupBox6.Controls.Add(this.radioButton20);
-            this.groupBox6.Controls.Add(this.radioButton14);
-            this.groupBox6.Controls.Add(this.radioButton15);
-            this.groupBox6.Controls.Add(this.radioButton18);
+            this.groupBox6.Controls.Add(this.rdbFamilyStateSpouseDied);
+            this.groupBox6.Controls.Add(this.rdbFamilyStateLoanlyMother);
+            this.groupBox6.Controls.Add(this.rdbFamilyStateDevorsed);
+            this.groupBox6.Controls.Add(this.rdbFamilyStateNoFamily);
+            this.groupBox6.Controls.Add(this.rdbFamilyStateFamily);
             this.groupBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox6.Location = new System.Drawing.Point(24, 121);
             this.groupBox6.Name = "groupBox6";
@@ -916,66 +941,66 @@
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Оилавий ҳолати";
             // 
-            // radioButton14
+            // rdbFamilyStateDevorsed
             // 
-            this.radioButton14.AutoSize = true;
-            this.radioButton14.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton14.Location = new System.Drawing.Point(34, 60);
-            this.radioButton14.Name = "radioButton14";
-            this.radioButton14.Size = new System.Drawing.Size(114, 24);
-            this.radioButton14.TabIndex = 5;
-            this.radioButton14.Text = "ажрашган";
-            this.radioButton14.UseVisualStyleBackColor = true;
+            this.rdbFamilyStateDevorsed.AutoSize = true;
+            this.rdbFamilyStateDevorsed.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbFamilyStateDevorsed.Location = new System.Drawing.Point(34, 60);
+            this.rdbFamilyStateDevorsed.Name = "rdbFamilyStateDevorsed";
+            this.rdbFamilyStateDevorsed.Size = new System.Drawing.Size(114, 24);
+            this.rdbFamilyStateDevorsed.TabIndex = 5;
+            this.rdbFamilyStateDevorsed.Text = "ажрашган";
+            this.rdbFamilyStateDevorsed.UseVisualStyleBackColor = true;
             // 
-            // radioButton15
+            // rdbFamilyStateNoFamily
             // 
-            this.radioButton15.AutoSize = true;
-            this.radioButton15.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton15.Location = new System.Drawing.Point(169, 30);
-            this.radioButton15.Name = "radioButton15";
-            this.radioButton15.Size = new System.Drawing.Size(333, 24);
-            this.radioButton15.TabIndex = 4;
-            this.radioButton15.Text = "оила қурмаган (турмушга чиқмаган)";
-            this.radioButton15.UseVisualStyleBackColor = true;
+            this.rdbFamilyStateNoFamily.AutoSize = true;
+            this.rdbFamilyStateNoFamily.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbFamilyStateNoFamily.Location = new System.Drawing.Point(169, 30);
+            this.rdbFamilyStateNoFamily.Name = "rdbFamilyStateNoFamily";
+            this.rdbFamilyStateNoFamily.Size = new System.Drawing.Size(333, 24);
+            this.rdbFamilyStateNoFamily.TabIndex = 4;
+            this.rdbFamilyStateNoFamily.Text = "оила қурмаган (турмушга чиқмаган)";
+            this.rdbFamilyStateNoFamily.UseVisualStyleBackColor = true;
             // 
-            // radioButton18
+            // rdbFamilyStateFamily
             // 
-            this.radioButton18.AutoSize = true;
-            this.radioButton18.Checked = true;
-            this.radioButton18.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton18.Location = new System.Drawing.Point(33, 30);
-            this.radioButton18.Name = "radioButton18";
-            this.radioButton18.Size = new System.Drawing.Size(90, 24);
-            this.radioButton18.TabIndex = 2;
-            this.radioButton18.Text = "оилали";
-            this.radioButton18.UseVisualStyleBackColor = true;
+            this.rdbFamilyStateFamily.AutoSize = true;
+            this.rdbFamilyStateFamily.Checked = true;
+            this.rdbFamilyStateFamily.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbFamilyStateFamily.Location = new System.Drawing.Point(33, 30);
+            this.rdbFamilyStateFamily.Name = "rdbFamilyStateFamily";
+            this.rdbFamilyStateFamily.Size = new System.Drawing.Size(90, 24);
+            this.rdbFamilyStateFamily.TabIndex = 2;
+            this.rdbFamilyStateFamily.Text = "оилали";
+            this.rdbFamilyStateFamily.UseVisualStyleBackColor = true;
             // 
-            // radioButton20
+            // rdbFamilyStateLoanlyMother
             // 
-            this.radioButton20.AutoSize = true;
-            this.radioButton20.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton20.Location = new System.Drawing.Point(169, 60);
-            this.radioButton20.Name = "radioButton20";
-            this.radioButton20.Size = new System.Drawing.Size(112, 24);
-            this.radioButton20.TabIndex = 6;
-            this.radioButton20.Text = "ёлғиз она";
-            this.radioButton20.UseVisualStyleBackColor = true;
+            this.rdbFamilyStateLoanlyMother.AutoSize = true;
+            this.rdbFamilyStateLoanlyMother.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbFamilyStateLoanlyMother.Location = new System.Drawing.Point(169, 60);
+            this.rdbFamilyStateLoanlyMother.Name = "rdbFamilyStateLoanlyMother";
+            this.rdbFamilyStateLoanlyMother.Size = new System.Drawing.Size(112, 24);
+            this.rdbFamilyStateLoanlyMother.TabIndex = 6;
+            this.rdbFamilyStateLoanlyMother.Text = "ёлғиз она";
+            this.rdbFamilyStateLoanlyMother.UseVisualStyleBackColor = true;
             // 
-            // radioButton21
+            // rdbFamilyStateSpouseDied
             // 
-            this.radioButton21.AutoSize = true;
-            this.radioButton21.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton21.Location = new System.Drawing.Point(301, 60);
-            this.radioButton21.Name = "radioButton21";
-            this.radioButton21.Size = new System.Drawing.Size(267, 24);
-            this.radioButton21.TabIndex = 7;
-            this.radioButton21.Text = "турмуш ўртоғи вафот этган";
-            this.radioButton21.UseVisualStyleBackColor = true;
+            this.rdbFamilyStateSpouseDied.AutoSize = true;
+            this.rdbFamilyStateSpouseDied.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbFamilyStateSpouseDied.Location = new System.Drawing.Point(301, 60);
+            this.rdbFamilyStateSpouseDied.Name = "rdbFamilyStateSpouseDied";
+            this.rdbFamilyStateSpouseDied.Size = new System.Drawing.Size(267, 24);
+            this.rdbFamilyStateSpouseDied.TabIndex = 7;
+            this.rdbFamilyStateSpouseDied.Text = "турмуш ўртоғи вафот этган";
+            this.rdbFamilyStateSpouseDied.UseVisualStyleBackColor = true;
             // 
             // groupBox7
             // 
-            this.groupBox7.Controls.Add(this.radioButton22);
-            this.groupBox7.Controls.Add(this.radioButton23);
+            this.groupBox7.Controls.Add(this.rdbFamilyEnvironmentNonQuite);
+            this.groupBox7.Controls.Add(this.rdbFamilyEnvironmentQuite);
             this.groupBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox7.Location = new System.Drawing.Point(24, 237);
             this.groupBox7.Name = "groupBox7";
@@ -984,36 +1009,36 @@
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "Оилавий муҳити ";
             // 
-            // radioButton22
+            // rdbFamilyEnvironmentNonQuite
             // 
-            this.radioButton22.AutoSize = true;
-            this.radioButton22.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton22.Location = new System.Drawing.Point(170, 30);
-            this.radioButton22.Name = "radioButton22";
-            this.radioButton22.Size = new System.Drawing.Size(90, 24);
-            this.radioButton22.TabIndex = 6;
-            this.radioButton22.Text = "нотинч";
-            this.radioButton22.UseVisualStyleBackColor = true;
+            this.rdbFamilyEnvironmentNonQuite.AutoSize = true;
+            this.rdbFamilyEnvironmentNonQuite.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbFamilyEnvironmentNonQuite.Location = new System.Drawing.Point(170, 30);
+            this.rdbFamilyEnvironmentNonQuite.Name = "rdbFamilyEnvironmentNonQuite";
+            this.rdbFamilyEnvironmentNonQuite.Size = new System.Drawing.Size(90, 24);
+            this.rdbFamilyEnvironmentNonQuite.TabIndex = 6;
+            this.rdbFamilyEnvironmentNonQuite.Text = "нотинч";
+            this.rdbFamilyEnvironmentNonQuite.UseVisualStyleBackColor = true;
             // 
-            // radioButton23
+            // rdbFamilyEnvironmentQuite
             // 
-            this.radioButton23.AutoSize = true;
-            this.radioButton23.Checked = true;
-            this.radioButton23.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton23.Location = new System.Drawing.Point(34, 30);
-            this.radioButton23.Name = "radioButton23";
-            this.radioButton23.Size = new System.Drawing.Size(70, 24);
-            this.radioButton23.TabIndex = 5;
-            this.radioButton23.Text = "тинч";
-            this.radioButton23.UseVisualStyleBackColor = true;
+            this.rdbFamilyEnvironmentQuite.AutoSize = true;
+            this.rdbFamilyEnvironmentQuite.Checked = true;
+            this.rdbFamilyEnvironmentQuite.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbFamilyEnvironmentQuite.Location = new System.Drawing.Point(34, 30);
+            this.rdbFamilyEnvironmentQuite.Name = "rdbFamilyEnvironmentQuite";
+            this.rdbFamilyEnvironmentQuite.Size = new System.Drawing.Size(70, 24);
+            this.rdbFamilyEnvironmentQuite.TabIndex = 5;
+            this.rdbFamilyEnvironmentQuite.Text = "тинч";
+            this.rdbFamilyEnvironmentQuite.UseVisualStyleBackColor = true;
             // 
-            // textBox2
+            // txbChildrenCount
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(193, 315);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(153, 27);
-            this.textBox2.TabIndex = 23;
+            this.txbChildrenCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbChildrenCount.Location = new System.Drawing.Point(193, 315);
+            this.txbChildrenCount.Name = "txbChildrenCount";
+            this.txbChildrenCount.Size = new System.Drawing.Size(153, 27);
+            this.txbChildrenCount.TabIndex = 23;
             // 
             // label11
             // 
@@ -1025,13 +1050,13 @@
             this.label11.TabIndex = 22;
             this.label11.Text = "Фарзандлар сони ";
             // 
-            // textBox3
+            // txbChildrenUnder18
             // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(545, 318);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(208, 27);
-            this.textBox3.TabIndex = 25;
+            this.txbChildrenUnder18.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbChildrenUnder18.Location = new System.Drawing.Point(545, 318);
+            this.txbChildrenUnder18.Name = "txbChildrenUnder18";
+            this.txbChildrenUnder18.Size = new System.Drawing.Size(208, 27);
+            this.txbChildrenUnder18.TabIndex = 25;
             // 
             // label12
             // 
@@ -1045,9 +1070,9 @@
             // 
             // groupBox8
             // 
-            this.groupBox8.Controls.Add(this.radioButton24);
-            this.groupBox8.Controls.Add(this.radioButton25);
-            this.groupBox8.Controls.Add(this.radioButton26);
+            this.groupBox8.Controls.Add(this.rdbSocialStateGood);
+            this.groupBox8.Controls.Add(this.rdbSocialStateAvarage);
+            this.groupBox8.Controls.Add(this.rdbSocialStatePoor);
             this.groupBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox8.Location = new System.Drawing.Point(25, 366);
             this.groupBox8.Name = "groupBox8";
@@ -1056,39 +1081,39 @@
             this.groupBox8.TabStop = false;
             this.groupBox8.Text = "Ижтимоий ҳолати";
             // 
-            // radioButton24
+            // rdbSocialStateGood
             // 
-            this.radioButton24.AutoSize = true;
-            this.radioButton24.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton24.Location = new System.Drawing.Point(382, 30);
-            this.radioButton24.Name = "radioButton24";
-            this.radioButton24.Size = new System.Drawing.Size(72, 24);
-            this.radioButton24.TabIndex = 5;
-            this.radioButton24.Text = "яхши";
-            this.radioButton24.UseVisualStyleBackColor = true;
+            this.rdbSocialStateGood.AutoSize = true;
+            this.rdbSocialStateGood.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbSocialStateGood.Location = new System.Drawing.Point(382, 30);
+            this.rdbSocialStateGood.Name = "rdbSocialStateGood";
+            this.rdbSocialStateGood.Size = new System.Drawing.Size(72, 24);
+            this.rdbSocialStateGood.TabIndex = 5;
+            this.rdbSocialStateGood.Text = "яхши";
+            this.rdbSocialStateGood.UseVisualStyleBackColor = true;
             // 
-            // radioButton25
+            // rdbSocialStateAvarage
             // 
-            this.radioButton25.AutoSize = true;
-            this.radioButton25.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton25.Location = new System.Drawing.Point(246, 30);
-            this.radioButton25.Name = "radioButton25";
-            this.radioButton25.Size = new System.Drawing.Size(102, 24);
-            this.radioButton25.TabIndex = 4;
-            this.radioButton25.Text = "ўрта ҳол";
-            this.radioButton25.UseVisualStyleBackColor = true;
+            this.rdbSocialStateAvarage.AutoSize = true;
+            this.rdbSocialStateAvarage.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbSocialStateAvarage.Location = new System.Drawing.Point(246, 30);
+            this.rdbSocialStateAvarage.Name = "rdbSocialStateAvarage";
+            this.rdbSocialStateAvarage.Size = new System.Drawing.Size(102, 24);
+            this.rdbSocialStateAvarage.TabIndex = 4;
+            this.rdbSocialStateAvarage.Text = "ўрта ҳол";
+            this.rdbSocialStateAvarage.UseVisualStyleBackColor = true;
             // 
-            // radioButton26
+            // rdbSocialStatePoor
             // 
-            this.radioButton26.AutoSize = true;
-            this.radioButton26.Checked = true;
-            this.radioButton26.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton26.Location = new System.Drawing.Point(33, 30);
-            this.radioButton26.Name = "radioButton26";
-            this.radioButton26.Size = new System.Drawing.Size(187, 24);
-            this.radioButton26.TabIndex = 2;
-            this.radioButton26.Text = "кам таъминланган";
-            this.radioButton26.UseVisualStyleBackColor = true;
+            this.rdbSocialStatePoor.AutoSize = true;
+            this.rdbSocialStatePoor.Checked = true;
+            this.rdbSocialStatePoor.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbSocialStatePoor.Location = new System.Drawing.Point(33, 30);
+            this.rdbSocialStatePoor.Name = "rdbSocialStatePoor";
+            this.rdbSocialStatePoor.Size = new System.Drawing.Size(187, 24);
+            this.rdbSocialStatePoor.TabIndex = 2;
+            this.rdbSocialStatePoor.Text = "кам таъминланган";
+            this.rdbSocialStatePoor.UseVisualStyleBackColor = true;
             // 
             // label13
             // 
@@ -1100,24 +1125,24 @@
             this.label13.TabIndex = 27;
             this.label13.Text = "Хорижга кетган санаси";
             // 
-            // dateTimePicker2
+            // dtpLeaveDate
             // 
-            this.dateTimePicker2.Checked = false;
-            this.dateTimePicker2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker2.Location = new System.Drawing.Point(255, 457);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.ShowCheckBox = true;
-            this.dateTimePicker2.Size = new System.Drawing.Size(179, 27);
-            this.dateTimePicker2.TabIndex = 26;
+            this.dtpLeaveDate.Checked = false;
+            this.dtpLeaveDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpLeaveDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpLeaveDate.Location = new System.Drawing.Point(255, 457);
+            this.dtpLeaveDate.Name = "dtpLeaveDate";
+            this.dtpLeaveDate.ShowCheckBox = true;
+            this.dtpLeaveDate.Size = new System.Drawing.Size(179, 27);
+            this.dtpLeaveDate.TabIndex = 26;
             // 
             // groupBox9
             // 
-            this.groupBox9.Controls.Add(this.radioButton27);
-            this.groupBox9.Controls.Add(this.radioButton28);
-            this.groupBox9.Controls.Add(this.radioButton29);
-            this.groupBox9.Controls.Add(this.radioButton30);
-            this.groupBox9.Controls.Add(this.radioButton31);
+            this.groupBox9.Controls.Add(this.rdbLeaveCountryTurkey);
+            this.groupBox9.Controls.Add(this.rdbLeaveCountryOthers);
+            this.groupBox9.Controls.Add(this.rdbLeaveCountryKorea);
+            this.groupBox9.Controls.Add(this.rdbLeaveCountryKazakstan);
+            this.groupBox9.Controls.Add(this.rdbLeaveCountryRussia);
             this.groupBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox9.Location = new System.Drawing.Point(25, 490);
             this.groupBox9.Name = "groupBox9";
@@ -1126,61 +1151,61 @@
             this.groupBox9.TabStop = false;
             this.groupBox9.Text = "Кетган давлати";
             // 
-            // radioButton27
+            // rdbLeaveCountryTurkey
             // 
-            this.radioButton27.AutoSize = true;
-            this.radioButton27.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton27.Location = new System.Drawing.Point(280, 30);
-            this.radioButton27.Name = "radioButton27";
-            this.radioButton27.Size = new System.Drawing.Size(87, 24);
-            this.radioButton27.TabIndex = 7;
-            this.radioButton27.Text = "Туркия";
-            this.radioButton27.UseVisualStyleBackColor = true;
+            this.rdbLeaveCountryTurkey.AutoSize = true;
+            this.rdbLeaveCountryTurkey.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbLeaveCountryTurkey.Location = new System.Drawing.Point(280, 30);
+            this.rdbLeaveCountryTurkey.Name = "rdbLeaveCountryTurkey";
+            this.rdbLeaveCountryTurkey.Size = new System.Drawing.Size(87, 24);
+            this.rdbLeaveCountryTurkey.TabIndex = 7;
+            this.rdbLeaveCountryTurkey.Text = "Туркия";
+            this.rdbLeaveCountryTurkey.UseVisualStyleBackColor = true;
             // 
-            // radioButton28
+            // rdbLeaveCountryOthers
             // 
-            this.radioButton28.AutoSize = true;
-            this.radioButton28.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton28.Location = new System.Drawing.Point(608, 30);
-            this.radioButton28.Name = "radioButton28";
-            this.radioButton28.Size = new System.Drawing.Size(115, 24);
-            this.radioButton28.TabIndex = 6;
-            this.radioButton28.Text = "Бошкалар";
-            this.radioButton28.UseVisualStyleBackColor = true;
+            this.rdbLeaveCountryOthers.AutoSize = true;
+            this.rdbLeaveCountryOthers.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbLeaveCountryOthers.Location = new System.Drawing.Point(608, 30);
+            this.rdbLeaveCountryOthers.Name = "rdbLeaveCountryOthers";
+            this.rdbLeaveCountryOthers.Size = new System.Drawing.Size(115, 24);
+            this.rdbLeaveCountryOthers.TabIndex = 6;
+            this.rdbLeaveCountryOthers.Text = "Бошкалар";
+            this.rdbLeaveCountryOthers.UseVisualStyleBackColor = true;
             // 
-            // radioButton29
+            // rdbLeaveCountryKorea
             // 
-            this.radioButton29.AutoSize = true;
-            this.radioButton29.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton29.Location = new System.Drawing.Point(385, 30);
-            this.radioButton29.Name = "radioButton29";
-            this.radioButton29.Size = new System.Drawing.Size(202, 24);
-            this.radioButton29.TabIndex = 5;
-            this.radioButton29.Text = "Корея Республикаси";
-            this.radioButton29.UseVisualStyleBackColor = true;
+            this.rdbLeaveCountryKorea.AutoSize = true;
+            this.rdbLeaveCountryKorea.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbLeaveCountryKorea.Location = new System.Drawing.Point(385, 30);
+            this.rdbLeaveCountryKorea.Name = "rdbLeaveCountryKorea";
+            this.rdbLeaveCountryKorea.Size = new System.Drawing.Size(202, 24);
+            this.rdbLeaveCountryKorea.TabIndex = 5;
+            this.rdbLeaveCountryKorea.Text = "Корея Республикаси";
+            this.rdbLeaveCountryKorea.UseVisualStyleBackColor = true;
             // 
-            // radioButton30
+            // rdbLeaveCountryKazakstan
             // 
-            this.radioButton30.AutoSize = true;
-            this.radioButton30.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton30.Location = new System.Drawing.Point(135, 30);
-            this.radioButton30.Name = "radioButton30";
-            this.radioButton30.Size = new System.Drawing.Size(128, 24);
-            this.radioButton30.TabIndex = 4;
-            this.radioButton30.Text = "Қозоғистон";
-            this.radioButton30.UseVisualStyleBackColor = true;
+            this.rdbLeaveCountryKazakstan.AutoSize = true;
+            this.rdbLeaveCountryKazakstan.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbLeaveCountryKazakstan.Location = new System.Drawing.Point(135, 30);
+            this.rdbLeaveCountryKazakstan.Name = "rdbLeaveCountryKazakstan";
+            this.rdbLeaveCountryKazakstan.Size = new System.Drawing.Size(128, 24);
+            this.rdbLeaveCountryKazakstan.TabIndex = 4;
+            this.rdbLeaveCountryKazakstan.Text = "Қозоғистон";
+            this.rdbLeaveCountryKazakstan.UseVisualStyleBackColor = true;
             // 
-            // radioButton31
+            // rdbLeaveCountryRussia
             // 
-            this.radioButton31.AutoSize = true;
-            this.radioButton31.Checked = true;
-            this.radioButton31.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton31.Location = new System.Drawing.Point(33, 30);
-            this.radioButton31.Name = "radioButton31";
-            this.radioButton31.Size = new System.Drawing.Size(89, 24);
-            this.radioButton31.TabIndex = 2;
-            this.radioButton31.Text = "Россия";
-            this.radioButton31.UseVisualStyleBackColor = true;
+            this.rdbLeaveCountryRussia.AutoSize = true;
+            this.rdbLeaveCountryRussia.Checked = true;
+            this.rdbLeaveCountryRussia.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbLeaveCountryRussia.Location = new System.Drawing.Point(33, 30);
+            this.rdbLeaveCountryRussia.Name = "rdbLeaveCountryRussia";
+            this.rdbLeaveCountryRussia.Size = new System.Drawing.Size(89, 24);
+            this.rdbLeaveCountryRussia.TabIndex = 2;
+            this.rdbLeaveCountryRussia.Text = "Россия";
+            this.rdbLeaveCountryRussia.UseVisualStyleBackColor = true;
             // 
             // label14
             // 
@@ -1220,8 +1245,8 @@
             // 
             // groupBox10
             // 
-            this.groupBox10.Controls.Add(this.radioButton33);
-            this.groupBox10.Controls.Add(this.radioButton34);
+            this.groupBox10.Controls.Add(this.rdbWorkPermitNotExists);
+            this.groupBox10.Controls.Add(this.rdbWorkPermitExists);
             this.groupBox10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox10.Location = new System.Drawing.Point(25, 578);
             this.groupBox10.Name = "groupBox10";
@@ -1230,36 +1255,36 @@
             this.groupBox10.TabStop = false;
             this.groupBox10.Text = "Ишлаш рухсатномаси (патент) борми?";
             // 
-            // radioButton33
+            // rdbWorkPermitNotExists
             // 
-            this.radioButton33.AutoSize = true;
-            this.radioButton33.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton33.Location = new System.Drawing.Point(162, 30);
-            this.radioButton33.Name = "radioButton33";
-            this.radioButton33.Size = new System.Drawing.Size(58, 24);
-            this.radioButton33.TabIndex = 4;
-            this.radioButton33.Text = "Йук";
-            this.radioButton33.UseVisualStyleBackColor = true;
+            this.rdbWorkPermitNotExists.AutoSize = true;
+            this.rdbWorkPermitNotExists.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbWorkPermitNotExists.Location = new System.Drawing.Point(162, 30);
+            this.rdbWorkPermitNotExists.Name = "rdbWorkPermitNotExists";
+            this.rdbWorkPermitNotExists.Size = new System.Drawing.Size(58, 24);
+            this.rdbWorkPermitNotExists.TabIndex = 4;
+            this.rdbWorkPermitNotExists.Text = "Йук";
+            this.rdbWorkPermitNotExists.UseVisualStyleBackColor = true;
             // 
-            // radioButton34
+            // rdbWorkPermitExists
             // 
-            this.radioButton34.AutoSize = true;
-            this.radioButton34.Checked = true;
-            this.radioButton34.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton34.Location = new System.Drawing.Point(33, 30);
-            this.radioButton34.Name = "radioButton34";
-            this.radioButton34.Size = new System.Drawing.Size(52, 24);
-            this.radioButton34.TabIndex = 2;
-            this.radioButton34.Text = "Ха";
-            this.radioButton34.UseVisualStyleBackColor = true;
+            this.rdbWorkPermitExists.AutoSize = true;
+            this.rdbWorkPermitExists.Checked = true;
+            this.rdbWorkPermitExists.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbWorkPermitExists.Location = new System.Drawing.Point(33, 30);
+            this.rdbWorkPermitExists.Name = "rdbWorkPermitExists";
+            this.rdbWorkPermitExists.Size = new System.Drawing.Size(52, 24);
+            this.rdbWorkPermitExists.TabIndex = 2;
+            this.rdbWorkPermitExists.Text = "Ха";
+            this.rdbWorkPermitExists.UseVisualStyleBackColor = true;
             // 
-            // textBox4
+            // txbIncomeValue
             // 
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(325, 670);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(430, 26);
-            this.textBox4.TabIndex = 30;
+            this.txbIncomeValue.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbIncomeValue.Location = new System.Drawing.Point(325, 670);
+            this.txbIncomeValue.Name = "txbIncomeValue";
+            this.txbIncomeValue.Size = new System.Drawing.Size(430, 26);
+            this.txbIncomeValue.TabIndex = 30;
             // 
             // label16
             // 
@@ -1273,13 +1298,13 @@
             // 
             // groupBox11
             // 
-            this.groupBox11.Controls.Add(this.checkBox7);
-            this.groupBox11.Controls.Add(this.checkBox6);
-            this.groupBox11.Controls.Add(this.checkBox5);
-            this.groupBox11.Controls.Add(this.checkBox4);
-            this.groupBox11.Controls.Add(this.checkBox3);
-            this.groupBox11.Controls.Add(this.checkBox2);
-            this.groupBox11.Controls.Add(this.checkBox1);
+            this.groupBox11.Controls.Add(this.chbOutTogatherOthers);
+            this.groupBox11.Controls.Add(this.chbOutTogatherSister);
+            this.groupBox11.Controls.Add(this.chbOutTogatherBrother);
+            this.groupBox11.Controls.Add(this.chbOutTogatherMother);
+            this.groupBox11.Controls.Add(this.chbOutTogatherFather);
+            this.groupBox11.Controls.Add(this.chbOutTogatherChild);
+            this.groupBox11.Controls.Add(this.chbOutTogatherSpouse);
             this.groupBox11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox11.Location = new System.Drawing.Point(24, 17);
             this.groupBox11.Name = "groupBox11";
@@ -1288,86 +1313,86 @@
             this.groupBox11.TabStop = false;
             this.groupBox11.Text = "Хорижда биргаликда яшаётган оила аъзолари";
             // 
-            // checkBox1
+            // chbOutTogatherSpouse
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(16, 35);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(154, 24);
-            this.checkBox1.TabIndex = 0;
-            this.checkBox1.Text = "турмуш ўртоғи";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.chbOutTogatherSpouse.AutoSize = true;
+            this.chbOutTogatherSpouse.Location = new System.Drawing.Point(16, 35);
+            this.chbOutTogatherSpouse.Name = "chbOutTogatherSpouse";
+            this.chbOutTogatherSpouse.Size = new System.Drawing.Size(154, 24);
+            this.chbOutTogatherSpouse.TabIndex = 0;
+            this.chbOutTogatherSpouse.Text = "турмуш ўртоғи";
+            this.chbOutTogatherSpouse.UseVisualStyleBackColor = true;
             // 
-            // checkBox2
+            // chbOutTogatherChild
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(16, 65);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(118, 24);
-            this.checkBox2.TabIndex = 1;
-            this.checkBox2.Text = "фарзанди";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.chbOutTogatherChild.AutoSize = true;
+            this.chbOutTogatherChild.Location = new System.Drawing.Point(16, 65);
+            this.chbOutTogatherChild.Name = "chbOutTogatherChild";
+            this.chbOutTogatherChild.Size = new System.Drawing.Size(118, 24);
+            this.chbOutTogatherChild.TabIndex = 1;
+            this.chbOutTogatherChild.Text = "фарзанди";
+            this.chbOutTogatherChild.UseVisualStyleBackColor = true;
             // 
-            // checkBox3
+            // chbOutTogatherFather
             // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(176, 35);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(80, 24);
-            this.checkBox3.TabIndex = 2;
-            this.checkBox3.Text = "отаси";
-            this.checkBox3.UseVisualStyleBackColor = true;
+            this.chbOutTogatherFather.AutoSize = true;
+            this.chbOutTogatherFather.Location = new System.Drawing.Point(176, 35);
+            this.chbOutTogatherFather.Name = "chbOutTogatherFather";
+            this.chbOutTogatherFather.Size = new System.Drawing.Size(80, 24);
+            this.chbOutTogatherFather.TabIndex = 2;
+            this.chbOutTogatherFather.Text = "отаси";
+            this.chbOutTogatherFather.UseVisualStyleBackColor = true;
             // 
-            // checkBox4
+            // chbOutTogatherMother
             // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Location = new System.Drawing.Point(176, 65);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(80, 24);
-            this.checkBox4.TabIndex = 3;
-            this.checkBox4.Text = "онаси";
-            this.checkBox4.UseVisualStyleBackColor = true;
+            this.chbOutTogatherMother.AutoSize = true;
+            this.chbOutTogatherMother.Location = new System.Drawing.Point(176, 65);
+            this.chbOutTogatherMother.Name = "chbOutTogatherMother";
+            this.chbOutTogatherMother.Size = new System.Drawing.Size(80, 24);
+            this.chbOutTogatherMother.TabIndex = 3;
+            this.chbOutTogatherMother.Text = "онаси";
+            this.chbOutTogatherMother.UseVisualStyleBackColor = true;
             // 
-            // checkBox5
+            // chbOutTogatherBrother
             // 
-            this.checkBox5.AutoSize = true;
-            this.checkBox5.Location = new System.Drawing.Point(308, 38);
-            this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(112, 24);
-            this.checkBox5.TabIndex = 4;
-            this.checkBox5.Text = "ака-укаси";
-            this.checkBox5.UseVisualStyleBackColor = true;
+            this.chbOutTogatherBrother.AutoSize = true;
+            this.chbOutTogatherBrother.Location = new System.Drawing.Point(308, 38);
+            this.chbOutTogatherBrother.Name = "chbOutTogatherBrother";
+            this.chbOutTogatherBrother.Size = new System.Drawing.Size(112, 24);
+            this.chbOutTogatherBrother.TabIndex = 4;
+            this.chbOutTogatherBrother.Text = "ака-укаси";
+            this.chbOutTogatherBrother.UseVisualStyleBackColor = true;
             // 
-            // checkBox6
+            // chbOutTogatherSister
             // 
-            this.checkBox6.AutoSize = true;
-            this.checkBox6.Location = new System.Drawing.Point(308, 65);
-            this.checkBox6.Name = "checkBox6";
-            this.checkBox6.Size = new System.Drawing.Size(164, 24);
-            this.checkBox6.TabIndex = 5;
-            this.checkBox6.Text = "опа-сингиллари";
-            this.checkBox6.UseVisualStyleBackColor = true;
+            this.chbOutTogatherSister.AutoSize = true;
+            this.chbOutTogatherSister.Location = new System.Drawing.Point(308, 65);
+            this.chbOutTogatherSister.Name = "chbOutTogatherSister";
+            this.chbOutTogatherSister.Size = new System.Drawing.Size(164, 24);
+            this.chbOutTogatherSister.TabIndex = 5;
+            this.chbOutTogatherSister.Text = "опа-сингиллари";
+            this.chbOutTogatherSister.UseVisualStyleBackColor = true;
             // 
-            // checkBox7
+            // chbOutTogatherOthers
             // 
-            this.checkBox7.AutoSize = true;
-            this.checkBox7.Location = new System.Drawing.Point(497, 35);
-            this.checkBox7.Name = "checkBox7";
-            this.checkBox7.Size = new System.Drawing.Size(114, 24);
-            this.checkBox7.TabIndex = 6;
-            this.checkBox7.Text = "бошқалар";
-            this.checkBox7.UseVisualStyleBackColor = true;
+            this.chbOutTogatherOthers.AutoSize = true;
+            this.chbOutTogatherOthers.Location = new System.Drawing.Point(497, 35);
+            this.chbOutTogatherOthers.Name = "chbOutTogatherOthers";
+            this.chbOutTogatherOthers.Size = new System.Drawing.Size(114, 24);
+            this.chbOutTogatherOthers.TabIndex = 6;
+            this.chbOutTogatherOthers.Text = "бошқалар";
+            this.chbOutTogatherOthers.UseVisualStyleBackColor = true;
             // 
             // groupBox12
             // 
-            this.groupBox12.Controls.Add(this.radioButton41);
-            this.groupBox12.Controls.Add(this.radioButton40);
-            this.groupBox12.Controls.Add(this.radioButton39);
-            this.groupBox12.Controls.Add(this.radioButton38);
-            this.groupBox12.Controls.Add(this.radioButton37);
-            this.groupBox12.Controls.Add(this.radioButton32);
-            this.groupBox12.Controls.Add(this.radioButton35);
-            this.groupBox12.Controls.Add(this.radioButton36);
+            this.groupBox12.Controls.Add(this.rdbLeaveReasonOthers);
+            this.groupBox12.Controls.Add(this.rdbLeaveReasonPermanentLive);
+            this.groupBox12.Controls.Add(this.rdbLeaveReasonMerriage);
+            this.groupBox12.Controls.Add(this.rdbLeaveReasonTravel);
+            this.groupBox12.Controls.Add(this.rdbLeaveReasonTempLive);
+            this.groupBox12.Controls.Add(this.rdbLeaveReasonEducation);
+            this.groupBox12.Controls.Add(this.rdbLeaveReasonTreatment);
+            this.groupBox12.Controls.Add(this.rdbLeaveReasonWork);
             this.groupBox12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox12.Location = new System.Drawing.Point(24, 133);
             this.groupBox12.Name = "groupBox12";
@@ -1376,108 +1401,108 @@
             this.groupBox12.TabStop = false;
             this.groupBox12.Text = "Хорижга кетиш мақсади";
             // 
-            // radioButton32
+            // rdbLeaveReasonEducation
             // 
-            this.radioButton32.AutoSize = true;
-            this.radioButton32.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton32.Location = new System.Drawing.Point(291, 30);
-            this.radioButton32.Name = "radioButton32";
-            this.radioButton32.Size = new System.Drawing.Size(71, 24);
-            this.radioButton32.TabIndex = 5;
-            this.radioButton32.Text = "ўқиш";
-            this.radioButton32.UseVisualStyleBackColor = true;
+            this.rdbLeaveReasonEducation.AutoSize = true;
+            this.rdbLeaveReasonEducation.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbLeaveReasonEducation.Location = new System.Drawing.Point(291, 30);
+            this.rdbLeaveReasonEducation.Name = "rdbLeaveReasonEducation";
+            this.rdbLeaveReasonEducation.Size = new System.Drawing.Size(71, 24);
+            this.rdbLeaveReasonEducation.TabIndex = 5;
+            this.rdbLeaveReasonEducation.Text = "ўқиш";
+            this.rdbLeaveReasonEducation.UseVisualStyleBackColor = true;
             // 
-            // radioButton35
+            // rdbLeaveReasonTreatment
             // 
-            this.radioButton35.AutoSize = true;
-            this.radioButton35.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton35.Location = new System.Drawing.Point(151, 30);
-            this.radioButton35.Name = "radioButton35";
-            this.radioButton35.Size = new System.Drawing.Size(126, 24);
-            this.radioButton35.TabIndex = 4;
-            this.radioButton35.Text = "даволаниш";
-            this.radioButton35.UseVisualStyleBackColor = true;
+            this.rdbLeaveReasonTreatment.AutoSize = true;
+            this.rdbLeaveReasonTreatment.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbLeaveReasonTreatment.Location = new System.Drawing.Point(151, 30);
+            this.rdbLeaveReasonTreatment.Name = "rdbLeaveReasonTreatment";
+            this.rdbLeaveReasonTreatment.Size = new System.Drawing.Size(126, 24);
+            this.rdbLeaveReasonTreatment.TabIndex = 4;
+            this.rdbLeaveReasonTreatment.Text = "даволаниш";
+            this.rdbLeaveReasonTreatment.UseVisualStyleBackColor = true;
             // 
-            // radioButton36
+            // rdbLeaveReasonWork
             // 
-            this.radioButton36.AutoSize = true;
-            this.radioButton36.Checked = true;
-            this.radioButton36.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton36.Location = new System.Drawing.Point(33, 30);
-            this.radioButton36.Name = "radioButton36";
-            this.radioButton36.Size = new System.Drawing.Size(88, 24);
-            this.radioButton36.TabIndex = 2;
-            this.radioButton36.Text = "ишлаш";
-            this.radioButton36.UseVisualStyleBackColor = true;
+            this.rdbLeaveReasonWork.AutoSize = true;
+            this.rdbLeaveReasonWork.Checked = true;
+            this.rdbLeaveReasonWork.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbLeaveReasonWork.Location = new System.Drawing.Point(33, 30);
+            this.rdbLeaveReasonWork.Name = "rdbLeaveReasonWork";
+            this.rdbLeaveReasonWork.Size = new System.Drawing.Size(88, 24);
+            this.rdbLeaveReasonWork.TabIndex = 2;
+            this.rdbLeaveReasonWork.Text = "ишлаш";
+            this.rdbLeaveReasonWork.UseVisualStyleBackColor = true;
             // 
-            // radioButton37
+            // rdbLeaveReasonTempLive
             // 
-            this.radioButton37.AutoSize = true;
-            this.radioButton37.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton37.Location = new System.Drawing.Point(377, 30);
-            this.radioButton37.Name = "radioButton37";
-            this.radioButton37.Size = new System.Drawing.Size(167, 24);
-            this.radioButton37.TabIndex = 6;
-            this.radioButton37.Text = "вақтинча яшаш ";
-            this.radioButton37.UseVisualStyleBackColor = true;
+            this.rdbLeaveReasonTempLive.AutoSize = true;
+            this.rdbLeaveReasonTempLive.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbLeaveReasonTempLive.Location = new System.Drawing.Point(377, 30);
+            this.rdbLeaveReasonTempLive.Name = "rdbLeaveReasonTempLive";
+            this.rdbLeaveReasonTempLive.Size = new System.Drawing.Size(167, 24);
+            this.rdbLeaveReasonTempLive.TabIndex = 6;
+            this.rdbLeaveReasonTempLive.Text = "вақтинча яшаш ";
+            this.rdbLeaveReasonTempLive.UseVisualStyleBackColor = true;
             // 
-            // radioButton38
+            // rdbLeaveReasonTravel
             // 
-            this.radioButton38.AutoSize = true;
-            this.radioButton38.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton38.Location = new System.Drawing.Point(33, 60);
-            this.radioButton38.Name = "radioButton38";
-            this.radioButton38.Size = new System.Drawing.Size(88, 24);
-            this.radioButton38.TabIndex = 7;
-            this.radioButton38.Text = "саёҳат";
-            this.radioButton38.UseVisualStyleBackColor = true;
+            this.rdbLeaveReasonTravel.AutoSize = true;
+            this.rdbLeaveReasonTravel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbLeaveReasonTravel.Location = new System.Drawing.Point(33, 60);
+            this.rdbLeaveReasonTravel.Name = "rdbLeaveReasonTravel";
+            this.rdbLeaveReasonTravel.Size = new System.Drawing.Size(88, 24);
+            this.rdbLeaveReasonTravel.TabIndex = 7;
+            this.rdbLeaveReasonTravel.Text = "саёҳат";
+            this.rdbLeaveReasonTravel.UseVisualStyleBackColor = true;
             // 
-            // radioButton39
+            // rdbLeaveReasonMerriage
             // 
-            this.radioButton39.AutoSize = true;
-            this.radioButton39.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton39.Location = new System.Drawing.Point(151, 60);
-            this.radioButton39.Name = "radioButton39";
-            this.radioButton39.Size = new System.Drawing.Size(333, 24);
-            this.radioButton39.TabIndex = 8;
-            this.radioButton39.Text = "чет эл фуқаросига турмушга чиқиш";
-            this.radioButton39.UseVisualStyleBackColor = true;
+            this.rdbLeaveReasonMerriage.AutoSize = true;
+            this.rdbLeaveReasonMerriage.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbLeaveReasonMerriage.Location = new System.Drawing.Point(151, 60);
+            this.rdbLeaveReasonMerriage.Name = "rdbLeaveReasonMerriage";
+            this.rdbLeaveReasonMerriage.Size = new System.Drawing.Size(333, 24);
+            this.rdbLeaveReasonMerriage.TabIndex = 8;
+            this.rdbLeaveReasonMerriage.Text = "чет эл фуқаросига турмушга чиқиш";
+            this.rdbLeaveReasonMerriage.UseVisualStyleBackColor = true;
             // 
-            // radioButton40
+            // rdbLeaveReasonPermanentLive
             // 
-            this.radioButton40.AutoSize = true;
-            this.radioButton40.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton40.Location = new System.Drawing.Point(33, 86);
-            this.radioButton40.Name = "radioButton40";
-            this.radioButton40.Size = new System.Drawing.Size(147, 24);
-            this.radioButton40.TabIndex = 9;
-            this.radioButton40.Tag = "";
-            this.radioButton40.Text = "доимий яшаш";
-            this.radioButton40.UseVisualStyleBackColor = true;
+            this.rdbLeaveReasonPermanentLive.AutoSize = true;
+            this.rdbLeaveReasonPermanentLive.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbLeaveReasonPermanentLive.Location = new System.Drawing.Point(33, 86);
+            this.rdbLeaveReasonPermanentLive.Name = "rdbLeaveReasonPermanentLive";
+            this.rdbLeaveReasonPermanentLive.Size = new System.Drawing.Size(147, 24);
+            this.rdbLeaveReasonPermanentLive.TabIndex = 9;
+            this.rdbLeaveReasonPermanentLive.Tag = "";
+            this.rdbLeaveReasonPermanentLive.Text = "доимий яшаш";
+            this.rdbLeaveReasonPermanentLive.UseVisualStyleBackColor = true;
             // 
-            // radioButton41
+            // rdbLeaveReasonOthers
             // 
-            this.radioButton41.AutoSize = true;
-            this.radioButton41.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton41.Location = new System.Drawing.Point(215, 86);
-            this.radioButton41.Name = "radioButton41";
-            this.radioButton41.Size = new System.Drawing.Size(150, 24);
-            this.radioButton41.TabIndex = 10;
-            this.radioButton41.Tag = "";
-            this.radioButton41.Text = "бошқа мақсад";
-            this.radioButton41.UseVisualStyleBackColor = true;
+            this.rdbLeaveReasonOthers.AutoSize = true;
+            this.rdbLeaveReasonOthers.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbLeaveReasonOthers.Location = new System.Drawing.Point(215, 86);
+            this.rdbLeaveReasonOthers.Name = "rdbLeaveReasonOthers";
+            this.rdbLeaveReasonOthers.Size = new System.Drawing.Size(150, 24);
+            this.rdbLeaveReasonOthers.TabIndex = 10;
+            this.rdbLeaveReasonOthers.Tag = "";
+            this.rdbLeaveReasonOthers.Text = "бошқа мақсад";
+            this.rdbLeaveReasonOthers.UseVisualStyleBackColor = true;
             // 
             // groupBox13
             // 
-            this.groupBox13.Controls.Add(this.radioButton50);
-            this.groupBox13.Controls.Add(this.radioButton42);
-            this.groupBox13.Controls.Add(this.radioButton43);
-            this.groupBox13.Controls.Add(this.radioButton44);
-            this.groupBox13.Controls.Add(this.radioButton45);
-            this.groupBox13.Controls.Add(this.radioButton46);
-            this.groupBox13.Controls.Add(this.radioButton47);
-            this.groupBox13.Controls.Add(this.radioButton48);
-            this.groupBox13.Controls.Add(this.radioButton49);
+            this.groupBox13.Controls.Add(this.rdbWorkOutsiteTypeOthers);
+            this.groupBox13.Controls.Add(this.rdbWorkOutsiteTypeEnterprieneur);
+            this.groupBox13.Controls.Add(this.rdbWorkOutsiteTypeGoverment);
+            this.groupBox13.Controls.Add(this.rdbWorkOutsiteTypeCleaning);
+            this.groupBox13.Controls.Add(this.rdbWorkOutsiteTypeBeautySalon);
+            this.groupBox13.Controls.Add(this.rdbWorkOutsiteTypeCare);
+            this.groupBox13.Controls.Add(this.rdbWorkOutsiteTypeTruck);
+            this.groupBox13.Controls.Add(this.rdbWorkOutsiteTypeSeller);
+            this.groupBox13.Controls.Add(this.rdbWorkOutsiteTypeBuilder);
             this.groupBox13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox13.Location = new System.Drawing.Point(24, 263);
             this.groupBox13.Name = "groupBox13";
@@ -1486,113 +1511,113 @@
             this.groupBox13.TabStop = false;
             this.groupBox13.Text = "Фуқаро чет элда қайси турдаги меҳнат билан шуғулланади?";
             // 
-            // radioButton42
+            // rdbWorkOutsiteTypeEnterprieneur
             // 
-            this.radioButton42.AutoSize = true;
-            this.radioButton42.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton42.Location = new System.Drawing.Point(33, 114);
-            this.radioButton42.Name = "radioButton42";
-            this.radioButton42.Size = new System.Drawing.Size(150, 24);
-            this.radioButton42.TabIndex = 10;
-            this.radioButton42.Tag = "";
-            this.radioButton42.Text = "Тадбиркорлик";
-            this.radioButton42.UseVisualStyleBackColor = true;
+            this.rdbWorkOutsiteTypeEnterprieneur.AutoSize = true;
+            this.rdbWorkOutsiteTypeEnterprieneur.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbWorkOutsiteTypeEnterprieneur.Location = new System.Drawing.Point(33, 114);
+            this.rdbWorkOutsiteTypeEnterprieneur.Name = "rdbWorkOutsiteTypeEnterprieneur";
+            this.rdbWorkOutsiteTypeEnterprieneur.Size = new System.Drawing.Size(150, 24);
+            this.rdbWorkOutsiteTypeEnterprieneur.TabIndex = 10;
+            this.rdbWorkOutsiteTypeEnterprieneur.Tag = "";
+            this.rdbWorkOutsiteTypeEnterprieneur.Text = "Тадбиркорлик";
+            this.rdbWorkOutsiteTypeEnterprieneur.UseVisualStyleBackColor = true;
             // 
-            // radioButton43
+            // rdbWorkOutsiteTypeGoverment
             // 
-            this.radioButton43.AutoSize = true;
-            this.radioButton43.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton43.Location = new System.Drawing.Point(33, 86);
-            this.radioButton43.Name = "radioButton43";
-            this.radioButton43.Size = new System.Drawing.Size(571, 24);
-            this.radioButton43.TabIndex = 9;
-            this.radioButton43.Tag = "";
-            this.radioButton43.Text = "Давлат ташкилотлари, банк ва бошқа ташкилотларда ишловчи";
-            this.radioButton43.UseVisualStyleBackColor = true;
+            this.rdbWorkOutsiteTypeGoverment.AutoSize = true;
+            this.rdbWorkOutsiteTypeGoverment.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbWorkOutsiteTypeGoverment.Location = new System.Drawing.Point(33, 86);
+            this.rdbWorkOutsiteTypeGoverment.Name = "rdbWorkOutsiteTypeGoverment";
+            this.rdbWorkOutsiteTypeGoverment.Size = new System.Drawing.Size(571, 24);
+            this.rdbWorkOutsiteTypeGoverment.TabIndex = 9;
+            this.rdbWorkOutsiteTypeGoverment.Tag = "";
+            this.rdbWorkOutsiteTypeGoverment.Text = "Давлат ташкилотлари, банк ва бошқа ташкилотларда ишловчи";
+            this.rdbWorkOutsiteTypeGoverment.UseVisualStyleBackColor = true;
             // 
-            // radioButton44
+            // rdbWorkOutsiteTypeCleaning
             // 
-            this.radioButton44.AutoSize = true;
-            this.radioButton44.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton44.Location = new System.Drawing.Point(536, 30);
-            this.radioButton44.Name = "radioButton44";
-            this.radioButton44.Size = new System.Drawing.Size(183, 24);
-            this.radioButton44.TabIndex = 8;
-            this.radioButton44.Text = "Ободонлаштириш";
-            this.radioButton44.UseVisualStyleBackColor = true;
+            this.rdbWorkOutsiteTypeCleaning.AutoSize = true;
+            this.rdbWorkOutsiteTypeCleaning.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbWorkOutsiteTypeCleaning.Location = new System.Drawing.Point(536, 30);
+            this.rdbWorkOutsiteTypeCleaning.Name = "rdbWorkOutsiteTypeCleaning";
+            this.rdbWorkOutsiteTypeCleaning.Size = new System.Drawing.Size(183, 24);
+            this.rdbWorkOutsiteTypeCleaning.TabIndex = 8;
+            this.rdbWorkOutsiteTypeCleaning.Text = "Ободонлаштириш";
+            this.rdbWorkOutsiteTypeCleaning.UseVisualStyleBackColor = true;
             // 
-            // radioButton45
+            // rdbWorkOutsiteTypeBeautySalon
             // 
-            this.radioButton45.AutoSize = true;
-            this.radioButton45.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton45.Location = new System.Drawing.Point(33, 60);
-            this.radioButton45.Name = "radioButton45";
-            this.radioButton45.Size = new System.Drawing.Size(693, 24);
-            this.radioButton45.TabIndex = 7;
-            this.radioButton45.Text = "Маиший хизмат кўрсатиш (сартарош, гўзаллик салони, этикдўз, курьер ва ҳ.к.)";
-            this.radioButton45.UseVisualStyleBackColor = true;
+            this.rdbWorkOutsiteTypeBeautySalon.AutoSize = true;
+            this.rdbWorkOutsiteTypeBeautySalon.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbWorkOutsiteTypeBeautySalon.Location = new System.Drawing.Point(33, 60);
+            this.rdbWorkOutsiteTypeBeautySalon.Name = "rdbWorkOutsiteTypeBeautySalon";
+            this.rdbWorkOutsiteTypeBeautySalon.Size = new System.Drawing.Size(693, 24);
+            this.rdbWorkOutsiteTypeBeautySalon.TabIndex = 7;
+            this.rdbWorkOutsiteTypeBeautySalon.Text = "Маиший хизмат кўрсатиш (сартарош, гўзаллик салони, этикдўз, курьер ва ҳ.к.)";
+            this.rdbWorkOutsiteTypeBeautySalon.UseVisualStyleBackColor = true;
             // 
-            // radioButton46
+            // rdbWorkOutsiteTypeCare
             // 
-            this.radioButton46.AutoSize = true;
-            this.radioButton46.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton46.Location = new System.Drawing.Point(443, 30);
-            this.radioButton46.Name = "radioButton46";
-            this.radioButton46.Size = new System.Drawing.Size(81, 24);
-            this.radioButton46.TabIndex = 6;
-            this.radioButton46.Text = "Энага";
-            this.radioButton46.UseVisualStyleBackColor = true;
+            this.rdbWorkOutsiteTypeCare.AutoSize = true;
+            this.rdbWorkOutsiteTypeCare.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbWorkOutsiteTypeCare.Location = new System.Drawing.Point(443, 30);
+            this.rdbWorkOutsiteTypeCare.Name = "rdbWorkOutsiteTypeCare";
+            this.rdbWorkOutsiteTypeCare.Size = new System.Drawing.Size(81, 24);
+            this.rdbWorkOutsiteTypeCare.TabIndex = 6;
+            this.rdbWorkOutsiteTypeCare.Text = "Энага";
+            this.rdbWorkOutsiteTypeCare.UseVisualStyleBackColor = true;
             // 
-            // radioButton47
+            // rdbWorkOutsiteTypeTruck
             // 
-            this.radioButton47.AutoSize = true;
-            this.radioButton47.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton47.Location = new System.Drawing.Point(291, 30);
-            this.radioButton47.Name = "radioButton47";
-            this.radioButton47.Size = new System.Drawing.Size(131, 24);
-            this.radioButton47.TabIndex = 5;
-            this.radioButton47.Text = "Юк ташувчи";
-            this.radioButton47.UseVisualStyleBackColor = true;
+            this.rdbWorkOutsiteTypeTruck.AutoSize = true;
+            this.rdbWorkOutsiteTypeTruck.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbWorkOutsiteTypeTruck.Location = new System.Drawing.Point(291, 30);
+            this.rdbWorkOutsiteTypeTruck.Name = "rdbWorkOutsiteTypeTruck";
+            this.rdbWorkOutsiteTypeTruck.Size = new System.Drawing.Size(131, 24);
+            this.rdbWorkOutsiteTypeTruck.TabIndex = 5;
+            this.rdbWorkOutsiteTypeTruck.Text = "Юк ташувчи";
+            this.rdbWorkOutsiteTypeTruck.UseVisualStyleBackColor = true;
             // 
-            // radioButton48
+            // rdbWorkOutsiteTypeSeller
             // 
-            this.radioButton48.AutoSize = true;
-            this.radioButton48.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton48.Location = new System.Drawing.Point(151, 30);
-            this.radioButton48.Name = "radioButton48";
-            this.radioButton48.Size = new System.Drawing.Size(100, 24);
-            this.radioButton48.TabIndex = 4;
-            this.radioButton48.Text = "Сотувчи";
-            this.radioButton48.UseVisualStyleBackColor = true;
+            this.rdbWorkOutsiteTypeSeller.AutoSize = true;
+            this.rdbWorkOutsiteTypeSeller.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbWorkOutsiteTypeSeller.Location = new System.Drawing.Point(151, 30);
+            this.rdbWorkOutsiteTypeSeller.Name = "rdbWorkOutsiteTypeSeller";
+            this.rdbWorkOutsiteTypeSeller.Size = new System.Drawing.Size(100, 24);
+            this.rdbWorkOutsiteTypeSeller.TabIndex = 4;
+            this.rdbWorkOutsiteTypeSeller.Text = "Сотувчи";
+            this.rdbWorkOutsiteTypeSeller.UseVisualStyleBackColor = true;
             // 
-            // radioButton49
+            // rdbWorkOutsiteTypeBuilder
             // 
-            this.radioButton49.AutoSize = true;
-            this.radioButton49.Checked = true;
-            this.radioButton49.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton49.Location = new System.Drawing.Point(33, 30);
-            this.radioButton49.Name = "radioButton49";
-            this.radioButton49.Size = new System.Drawing.Size(104, 24);
-            this.radioButton49.TabIndex = 2;
-            this.radioButton49.Text = "Қурилиш";
-            this.radioButton49.UseVisualStyleBackColor = true;
+            this.rdbWorkOutsiteTypeBuilder.AutoSize = true;
+            this.rdbWorkOutsiteTypeBuilder.Checked = true;
+            this.rdbWorkOutsiteTypeBuilder.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbWorkOutsiteTypeBuilder.Location = new System.Drawing.Point(33, 30);
+            this.rdbWorkOutsiteTypeBuilder.Name = "rdbWorkOutsiteTypeBuilder";
+            this.rdbWorkOutsiteTypeBuilder.Size = new System.Drawing.Size(104, 24);
+            this.rdbWorkOutsiteTypeBuilder.TabIndex = 2;
+            this.rdbWorkOutsiteTypeBuilder.Text = "Қурилиш";
+            this.rdbWorkOutsiteTypeBuilder.UseVisualStyleBackColor = true;
             // 
-            // radioButton50
+            // rdbWorkOutsiteTypeOthers
             // 
-            this.radioButton50.AutoSize = true;
-            this.radioButton50.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton50.Location = new System.Drawing.Point(237, 114);
-            this.radioButton50.Name = "radioButton50";
-            this.radioButton50.Size = new System.Drawing.Size(128, 24);
-            this.radioButton50.TabIndex = 11;
-            this.radioButton50.Tag = "";
-            this.radioButton50.Text = "Бошқа соҳа";
-            this.radioButton50.UseVisualStyleBackColor = true;
+            this.rdbWorkOutsiteTypeOthers.AutoSize = true;
+            this.rdbWorkOutsiteTypeOthers.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbWorkOutsiteTypeOthers.Location = new System.Drawing.Point(237, 114);
+            this.rdbWorkOutsiteTypeOthers.Name = "rdbWorkOutsiteTypeOthers";
+            this.rdbWorkOutsiteTypeOthers.Size = new System.Drawing.Size(128, 24);
+            this.rdbWorkOutsiteTypeOthers.TabIndex = 11;
+            this.rdbWorkOutsiteTypeOthers.Tag = "";
+            this.rdbWorkOutsiteTypeOthers.Text = "Бошқа соҳа";
+            this.rdbWorkOutsiteTypeOthers.UseVisualStyleBackColor = true;
             // 
             // groupBox14
             // 
-            this.groupBox14.Controls.Add(this.radioButton54);
-            this.groupBox14.Controls.Add(this.radioButton55);
+            this.groupBox14.Controls.Add(this.rdbHaveAWillToReturnBackNo);
+            this.groupBox14.Controls.Add(this.rdbHaveAWillToReturnBackYes);
             this.groupBox14.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox14.Location = new System.Drawing.Point(24, 421);
             this.groupBox14.Name = "groupBox14";
@@ -1601,38 +1626,38 @@
             this.groupBox14.TabStop = false;
             this.groupBox14.Text = "Чет элдан қайтиб келиб, Ўзбекистонда доимий қолиш истаги мавжудми";
             // 
-            // radioButton54
+            // rdbHaveAWillToReturnBackNo
             // 
-            this.radioButton54.AutoSize = true;
-            this.radioButton54.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton54.Location = new System.Drawing.Point(112, 30);
-            this.radioButton54.Name = "radioButton54";
-            this.radioButton54.Size = new System.Drawing.Size(58, 24);
-            this.radioButton54.TabIndex = 4;
-            this.radioButton54.Text = "Йук";
-            this.radioButton54.UseVisualStyleBackColor = true;
+            this.rdbHaveAWillToReturnBackNo.AutoSize = true;
+            this.rdbHaveAWillToReturnBackNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbHaveAWillToReturnBackNo.Location = new System.Drawing.Point(112, 30);
+            this.rdbHaveAWillToReturnBackNo.Name = "rdbHaveAWillToReturnBackNo";
+            this.rdbHaveAWillToReturnBackNo.Size = new System.Drawing.Size(58, 24);
+            this.rdbHaveAWillToReturnBackNo.TabIndex = 4;
+            this.rdbHaveAWillToReturnBackNo.Text = "Йук";
+            this.rdbHaveAWillToReturnBackNo.UseVisualStyleBackColor = true;
             // 
-            // radioButton55
+            // rdbHaveAWillToReturnBackYes
             // 
-            this.radioButton55.AutoSize = true;
-            this.radioButton55.Checked = true;
-            this.radioButton55.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton55.Location = new System.Drawing.Point(33, 30);
-            this.radioButton55.Name = "radioButton55";
-            this.radioButton55.Size = new System.Drawing.Size(52, 24);
-            this.radioButton55.TabIndex = 2;
-            this.radioButton55.Text = "Ха";
-            this.radioButton55.UseVisualStyleBackColor = true;
+            this.rdbHaveAWillToReturnBackYes.AutoSize = true;
+            this.rdbHaveAWillToReturnBackYes.Checked = true;
+            this.rdbHaveAWillToReturnBackYes.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbHaveAWillToReturnBackYes.Location = new System.Drawing.Point(33, 30);
+            this.rdbHaveAWillToReturnBackYes.Name = "rdbHaveAWillToReturnBackYes";
+            this.rdbHaveAWillToReturnBackYes.Size = new System.Drawing.Size(52, 24);
+            this.rdbHaveAWillToReturnBackYes.TabIndex = 2;
+            this.rdbHaveAWillToReturnBackYes.Text = "Ха";
+            this.rdbHaveAWillToReturnBackYes.UseVisualStyleBackColor = true;
             // 
             // groupBox15
             // 
-            this.groupBox15.Controls.Add(this.checkBox8);
-            this.groupBox15.Controls.Add(this.checkBox9);
-            this.groupBox15.Controls.Add(this.checkBox10);
-            this.groupBox15.Controls.Add(this.checkBox11);
-            this.groupBox15.Controls.Add(this.checkBox12);
-            this.groupBox15.Controls.Add(this.checkBox13);
-            this.groupBox15.Controls.Add(this.checkBox14);
+            this.groupBox15.Controls.Add(this.chbFamilyProblemsOthers);
+            this.groupBox15.Controls.Add(this.chbFamilyProblemsRepairment);
+            this.groupBox15.Controls.Add(this.chbFamilyProblemsPlaceToLive);
+            this.groupBox15.Controls.Add(this.chbFamilyProblemsTreatment);
+            this.groupBox15.Controls.Add(this.chbFamilyProblemsFamily);
+            this.groupBox15.Controls.Add(this.chbFamilyProblemsEducation);
+            this.groupBox15.Controls.Add(this.chbFamilyProblemsWorkless);
             this.groupBox15.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox15.Location = new System.Drawing.Point(24, 17);
             this.groupBox15.Name = "groupBox15";
@@ -1641,85 +1666,85 @@
             this.groupBox15.TabStop = false;
             this.groupBox15.Text = "Хорижга кетган фуқаронинг оиласидаги муаммолар";
             // 
-            // checkBox8
+            // chbFamilyProblemsOthers
             // 
-            this.checkBox8.AutoSize = true;
-            this.checkBox8.Location = new System.Drawing.Point(18, 278);
-            this.checkBox8.Name = "checkBox8";
-            this.checkBox8.Size = new System.Drawing.Size(183, 24);
-            this.checkBox8.TabIndex = 6;
-            this.checkBox8.Text = "бошқа муаммолар";
-            this.checkBox8.UseVisualStyleBackColor = true;
+            this.chbFamilyProblemsOthers.AutoSize = true;
+            this.chbFamilyProblemsOthers.Location = new System.Drawing.Point(18, 278);
+            this.chbFamilyProblemsOthers.Name = "chbFamilyProblemsOthers";
+            this.chbFamilyProblemsOthers.Size = new System.Drawing.Size(183, 24);
+            this.chbFamilyProblemsOthers.TabIndex = 6;
+            this.chbFamilyProblemsOthers.Text = "бошқа муаммолар";
+            this.chbFamilyProblemsOthers.UseVisualStyleBackColor = true;
             // 
-            // checkBox9
+            // chbFamilyProblemsRepairment
             // 
-            this.checkBox9.AutoSize = true;
-            this.checkBox9.Location = new System.Drawing.Point(18, 248);
-            this.checkBox9.Name = "checkBox9";
-            this.checkBox9.Size = new System.Drawing.Size(219, 24);
-            this.checkBox9.TabIndex = 5;
-            this.checkBox9.Text = "уй-жойини таъмирлаш";
-            this.checkBox9.UseVisualStyleBackColor = true;
+            this.chbFamilyProblemsRepairment.AutoSize = true;
+            this.chbFamilyProblemsRepairment.Location = new System.Drawing.Point(18, 248);
+            this.chbFamilyProblemsRepairment.Name = "chbFamilyProblemsRepairment";
+            this.chbFamilyProblemsRepairment.Size = new System.Drawing.Size(219, 24);
+            this.chbFamilyProblemsRepairment.TabIndex = 5;
+            this.chbFamilyProblemsRepairment.Text = "уй-жойини таъмирлаш";
+            this.chbFamilyProblemsRepairment.UseVisualStyleBackColor = true;
             // 
-            // checkBox10
+            // chbFamilyProblemsPlaceToLive
             // 
-            this.checkBox10.AutoSize = true;
-            this.checkBox10.Location = new System.Drawing.Point(18, 218);
-            this.checkBox10.Name = "checkBox10";
-            this.checkBox10.Size = new System.Drawing.Size(244, 24);
-            this.checkBox10.TabIndex = 4;
-            this.checkBox10.Text = "уй-жой билан таъминлаш";
-            this.checkBox10.UseVisualStyleBackColor = true;
+            this.chbFamilyProblemsPlaceToLive.AutoSize = true;
+            this.chbFamilyProblemsPlaceToLive.Location = new System.Drawing.Point(18, 218);
+            this.chbFamilyProblemsPlaceToLive.Name = "chbFamilyProblemsPlaceToLive";
+            this.chbFamilyProblemsPlaceToLive.Size = new System.Drawing.Size(244, 24);
+            this.chbFamilyProblemsPlaceToLive.TabIndex = 4;
+            this.chbFamilyProblemsPlaceToLive.Text = "уй-жой билан таъминлаш";
+            this.chbFamilyProblemsPlaceToLive.UseVisualStyleBackColor = true;
             // 
-            // checkBox11
+            // chbFamilyProblemsTreatment
             // 
-            this.checkBox11.AutoSize = true;
-            this.checkBox11.Location = new System.Drawing.Point(18, 158);
-            this.checkBox11.Name = "checkBox11";
-            this.checkBox11.Size = new System.Drawing.Size(409, 24);
-            this.checkBox11.TabIndex = 3;
-            this.checkBox11.Text = "ўзи ёки оила аъзоси тиббий ёрдамга муҳтож";
-            this.checkBox11.UseVisualStyleBackColor = true;
+            this.chbFamilyProblemsTreatment.AutoSize = true;
+            this.chbFamilyProblemsTreatment.Location = new System.Drawing.Point(18, 158);
+            this.chbFamilyProblemsTreatment.Name = "chbFamilyProblemsTreatment";
+            this.chbFamilyProblemsTreatment.Size = new System.Drawing.Size(409, 24);
+            this.chbFamilyProblemsTreatment.TabIndex = 3;
+            this.chbFamilyProblemsTreatment.Text = "ўзи ёки оила аъзоси тиббий ёрдамга муҳтож";
+            this.chbFamilyProblemsTreatment.UseVisualStyleBackColor = true;
             // 
-            // checkBox12
+            // chbFamilyProblemsFamily
             // 
-            this.checkBox12.AutoSize = true;
-            this.checkBox12.Location = new System.Drawing.Point(18, 188);
-            this.checkBox12.Name = "checkBox12";
-            this.checkBox12.Size = new System.Drawing.Size(195, 24);
-            this.checkBox12.TabIndex = 2;
-            this.checkBox12.Text = "оилавий нотинчлик";
-            this.checkBox12.UseVisualStyleBackColor = true;
+            this.chbFamilyProblemsFamily.AutoSize = true;
+            this.chbFamilyProblemsFamily.Location = new System.Drawing.Point(18, 188);
+            this.chbFamilyProblemsFamily.Name = "chbFamilyProblemsFamily";
+            this.chbFamilyProblemsFamily.Size = new System.Drawing.Size(195, 24);
+            this.chbFamilyProblemsFamily.TabIndex = 2;
+            this.chbFamilyProblemsFamily.Text = "оилавий нотинчлик";
+            this.chbFamilyProblemsFamily.UseVisualStyleBackColor = true;
             // 
-            // checkBox13
+            // chbFamilyProblemsEducation
             // 
-            this.checkBox13.Location = new System.Drawing.Point(18, 80);
-            this.checkBox13.Name = "checkBox13";
-            this.checkBox13.Size = new System.Drawing.Size(407, 69);
-            this.checkBox13.TabIndex = 1;
-            this.checkBox13.Text = "оила аъзосини таълим олиши, жумладан, ўқиш учун шартнома тўловларини тўлаш билан " +
+            this.chbFamilyProblemsEducation.Location = new System.Drawing.Point(18, 80);
+            this.chbFamilyProblemsEducation.Name = "chbFamilyProblemsEducation";
+            this.chbFamilyProblemsEducation.Size = new System.Drawing.Size(407, 69);
+            this.chbFamilyProblemsEducation.TabIndex = 1;
+            this.chbFamilyProblemsEducation.Text = "оила аъзосини таълим олиши, жумладан, ўқиш учун шартнома тўловларини тўлаш билан " +
     "боғлиқ";
-            this.checkBox13.UseVisualStyleBackColor = true;
+            this.chbFamilyProblemsEducation.UseVisualStyleBackColor = true;
             // 
-            // checkBox14
+            // chbFamilyProblemsWorkless
             // 
-            this.checkBox14.AutoSize = true;
-            this.checkBox14.Location = new System.Drawing.Point(18, 50);
-            this.checkBox14.Name = "checkBox14";
-            this.checkBox14.Size = new System.Drawing.Size(398, 24);
-            this.checkBox14.TabIndex = 0;
-            this.checkBox14.Text = "ишсиз оила аъзосини иш билан таъминлаш";
-            this.checkBox14.UseVisualStyleBackColor = true;
+            this.chbFamilyProblemsWorkless.AutoSize = true;
+            this.chbFamilyProblemsWorkless.Location = new System.Drawing.Point(18, 50);
+            this.chbFamilyProblemsWorkless.Name = "chbFamilyProblemsWorkless";
+            this.chbFamilyProblemsWorkless.Size = new System.Drawing.Size(398, 24);
+            this.chbFamilyProblemsWorkless.TabIndex = 0;
+            this.chbFamilyProblemsWorkless.Text = "ишсиз оила аъзосини иш билан таъминлаш";
+            this.chbFamilyProblemsWorkless.UseVisualStyleBackColor = true;
             // 
             // groupBox16
             // 
-            this.groupBox16.Controls.Add(this.checkBox15);
-            this.groupBox16.Controls.Add(this.checkBox16);
-            this.groupBox16.Controls.Add(this.checkBox17);
-            this.groupBox16.Controls.Add(this.checkBox18);
-            this.groupBox16.Controls.Add(this.checkBox19);
-            this.groupBox16.Controls.Add(this.checkBox20);
-            this.groupBox16.Controls.Add(this.checkBox21);
+            this.groupBox16.Controls.Add(this.chbOutPersonProblemsOthers);
+            this.groupBox16.Controls.Add(this.chbOutPersonProblemsWorkPermitless);
+            this.groupBox16.Controls.Add(this.chbOutPersonProblemsLivePermitless);
+            this.groupBox16.Controls.Add(this.chbOutPersonProblemsNoPayment);
+            this.groupBox16.Controls.Add(this.chbOutPersonProblemsPersonSold);
+            this.groupBox16.Controls.Add(this.chbOutPersonProblemsWorkless);
+            this.groupBox16.Controls.Add(this.chbOutPersonProblemsLostPassport);
             this.groupBox16.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox16.Location = new System.Drawing.Point(497, 17);
             this.groupBox16.Name = "groupBox16";
@@ -1728,84 +1753,84 @@
             this.groupBox16.TabStop = false;
             this.groupBox16.Text = "Хорижга кетган фуқаронинг муаммолари";
             // 
-            // checkBox15
+            // chbOutPersonProblemsOthers
             // 
-            this.checkBox15.AutoSize = true;
-            this.checkBox15.Location = new System.Drawing.Point(16, 278);
-            this.checkBox15.Name = "checkBox15";
-            this.checkBox15.Size = new System.Drawing.Size(183, 24);
-            this.checkBox15.TabIndex = 6;
-            this.checkBox15.Text = "бошқа муаммолар";
-            this.checkBox15.UseVisualStyleBackColor = true;
+            this.chbOutPersonProblemsOthers.AutoSize = true;
+            this.chbOutPersonProblemsOthers.Location = new System.Drawing.Point(16, 278);
+            this.chbOutPersonProblemsOthers.Name = "chbOutPersonProblemsOthers";
+            this.chbOutPersonProblemsOthers.Size = new System.Drawing.Size(183, 24);
+            this.chbOutPersonProblemsOthers.TabIndex = 6;
+            this.chbOutPersonProblemsOthers.Text = "бошқа муаммолар";
+            this.chbOutPersonProblemsOthers.UseVisualStyleBackColor = true;
             // 
-            // checkBox16
+            // chbOutPersonProblemsWorkPermitless
             // 
-            this.checkBox16.Location = new System.Drawing.Point(16, 217);
-            this.checkBox16.Name = "checkBox16";
-            this.checkBox16.Size = new System.Drawing.Size(416, 55);
-            this.checkBox16.TabIndex = 5;
-            this.checkBox16.Text = "ишлаш учун рухсат этиш тартибидаги ҳужжатлари мавжуд эмас";
-            this.checkBox16.UseVisualStyleBackColor = true;
+            this.chbOutPersonProblemsWorkPermitless.Location = new System.Drawing.Point(16, 217);
+            this.chbOutPersonProblemsWorkPermitless.Name = "chbOutPersonProblemsWorkPermitless";
+            this.chbOutPersonProblemsWorkPermitless.Size = new System.Drawing.Size(416, 55);
+            this.chbOutPersonProblemsWorkPermitless.TabIndex = 5;
+            this.chbOutPersonProblemsWorkPermitless.Text = "ишлаш учун рухсат этиш тартибидаги ҳужжатлари мавжуд эмас";
+            this.chbOutPersonProblemsWorkPermitless.UseVisualStyleBackColor = true;
             // 
-            // checkBox17
+            // chbOutPersonProblemsLivePermitless
             // 
-            this.checkBox17.Location = new System.Drawing.Point(16, 155);
-            this.checkBox17.Name = "checkBox17";
-            this.checkBox17.Size = new System.Drawing.Size(416, 56);
-            this.checkBox17.TabIndex = 4;
-            this.checkBox17.Text = "яшаш учун рухсат этиш тартибидаги ҳужжатлари мавжуд эмас";
-            this.checkBox17.UseVisualStyleBackColor = true;
+            this.chbOutPersonProblemsLivePermitless.Location = new System.Drawing.Point(16, 155);
+            this.chbOutPersonProblemsLivePermitless.Name = "chbOutPersonProblemsLivePermitless";
+            this.chbOutPersonProblemsLivePermitless.Size = new System.Drawing.Size(416, 56);
+            this.chbOutPersonProblemsLivePermitless.TabIndex = 4;
+            this.chbOutPersonProblemsLivePermitless.Text = "яшаш учун рухсат этиш тартибидаги ҳужжатлари мавжуд эмас";
+            this.chbOutPersonProblemsLivePermitless.UseVisualStyleBackColor = true;
             // 
-            // checkBox18
+            // chbOutPersonProblemsNoPayment
             // 
-            this.checkBox18.AutoSize = true;
-            this.checkBox18.Location = new System.Drawing.Point(16, 95);
-            this.checkBox18.Name = "checkBox18";
-            this.checkBox18.Size = new System.Drawing.Size(353, 24);
-            this.checkBox18.TabIndex = 3;
-            this.checkBox18.Text = "ишлаган ойлик иш ҳаққини ололмаган";
-            this.checkBox18.UseVisualStyleBackColor = true;
+            this.chbOutPersonProblemsNoPayment.AutoSize = true;
+            this.chbOutPersonProblemsNoPayment.Location = new System.Drawing.Point(16, 95);
+            this.chbOutPersonProblemsNoPayment.Name = "chbOutPersonProblemsNoPayment";
+            this.chbOutPersonProblemsNoPayment.Size = new System.Drawing.Size(353, 24);
+            this.chbOutPersonProblemsNoPayment.TabIndex = 3;
+            this.chbOutPersonProblemsNoPayment.Text = "ишлаган ойлик иш ҳаққини ололмаган";
+            this.chbOutPersonProblemsNoPayment.UseVisualStyleBackColor = true;
             // 
-            // checkBox19
+            // chbOutPersonProblemsPersonSold
             // 
-            this.checkBox19.AutoSize = true;
-            this.checkBox19.Location = new System.Drawing.Point(16, 125);
-            this.checkBox19.Name = "checkBox19";
-            this.checkBox19.Size = new System.Drawing.Size(289, 24);
-            this.checkBox19.TabIndex = 2;
-            this.checkBox19.Text = "одам савдосидан жабр кўрган";
-            this.checkBox19.UseVisualStyleBackColor = true;
+            this.chbOutPersonProblemsPersonSold.AutoSize = true;
+            this.chbOutPersonProblemsPersonSold.Location = new System.Drawing.Point(16, 125);
+            this.chbOutPersonProblemsPersonSold.Name = "chbOutPersonProblemsPersonSold";
+            this.chbOutPersonProblemsPersonSold.Size = new System.Drawing.Size(289, 24);
+            this.chbOutPersonProblemsPersonSold.TabIndex = 2;
+            this.chbOutPersonProblemsPersonSold.Text = "одам савдосидан жабр кўрган";
+            this.chbOutPersonProblemsPersonSold.UseVisualStyleBackColor = true;
             // 
-            // checkBox20
+            // chbOutPersonProblemsWorkless
             // 
-            this.checkBox20.AutoSize = true;
-            this.checkBox20.Location = new System.Drawing.Point(16, 65);
-            this.checkBox20.Name = "checkBox20";
-            this.checkBox20.Size = new System.Drawing.Size(145, 24);
-            this.checkBox20.TabIndex = 1;
-            this.checkBox20.Text = "ишсиз қолган";
-            this.checkBox20.UseVisualStyleBackColor = true;
+            this.chbOutPersonProblemsWorkless.AutoSize = true;
+            this.chbOutPersonProblemsWorkless.Location = new System.Drawing.Point(16, 65);
+            this.chbOutPersonProblemsWorkless.Name = "chbOutPersonProblemsWorkless";
+            this.chbOutPersonProblemsWorkless.Size = new System.Drawing.Size(145, 24);
+            this.chbOutPersonProblemsWorkless.TabIndex = 1;
+            this.chbOutPersonProblemsWorkless.Text = "ишсиз қолган";
+            this.chbOutPersonProblemsWorkless.UseVisualStyleBackColor = true;
             // 
-            // checkBox21
+            // chbOutPersonProblemsLostPassport
             // 
-            this.checkBox21.AutoSize = true;
-            this.checkBox21.Location = new System.Drawing.Point(16, 35);
-            this.checkBox21.Name = "checkBox21";
-            this.checkBox21.Size = new System.Drawing.Size(210, 24);
-            this.checkBox21.TabIndex = 0;
-            this.checkBox21.Text = "паспортини йўқотган";
-            this.checkBox21.UseVisualStyleBackColor = true;
+            this.chbOutPersonProblemsLostPassport.AutoSize = true;
+            this.chbOutPersonProblemsLostPassport.Location = new System.Drawing.Point(16, 35);
+            this.chbOutPersonProblemsLostPassport.Name = "chbOutPersonProblemsLostPassport";
+            this.chbOutPersonProblemsLostPassport.Size = new System.Drawing.Size(210, 24);
+            this.chbOutPersonProblemsLostPassport.TabIndex = 0;
+            this.chbOutPersonProblemsLostPassport.Text = "паспортини йўқотган";
+            this.chbOutPersonProblemsLostPassport.UseVisualStyleBackColor = true;
             // 
             // groupBox17
             // 
-            this.groupBox17.Controls.Add(this.radioButton51);
-            this.groupBox17.Controls.Add(this.radioButton52);
-            this.groupBox17.Controls.Add(this.radioButton53);
-            this.groupBox17.Controls.Add(this.radioButton56);
-            this.groupBox17.Controls.Add(this.radioButton57);
-            this.groupBox17.Controls.Add(this.radioButton58);
-            this.groupBox17.Controls.Add(this.radioButton59);
-            this.groupBox17.Controls.Add(this.radioButton61);
+            this.groupBox17.Controls.Add(this.rdbHowHelpMedicalOther);
+            this.groupBox17.Controls.Add(this.rdbHowHelpMedicalTreatment);
+            this.groupBox17.Controls.Add(this.rdbHowHelpMedicalFamily);
+            this.groupBox17.Controls.Add(this.rdbHowHelpEducation);
+            this.groupBox17.Controls.Add(this.rdbHowHelpMedicalWeddings);
+            this.groupBox17.Controls.Add(this.rdbHowHelpMedicalRepairment);
+            this.groupBox17.Controls.Add(this.rdbHowHelpMedicalHouse);
+            this.groupBox17.Controls.Add(this.rdbHowHelpWork);
             this.groupBox17.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox17.Location = new System.Drawing.Point(24, 346);
             this.groupBox17.Name = "groupBox17";
@@ -1814,105 +1839,105 @@
             this.groupBox17.TabStop = false;
             this.groupBox17.Text = "Хорижга кетган фуқарога нима ёрдам берилса оиласига қайтиб келади?";
             // 
-            // radioButton51
+            // rdbHowHelpMedicalOther
             // 
-            this.radioButton51.AutoSize = true;
-            this.radioButton51.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton51.Location = new System.Drawing.Point(571, 30);
-            this.radioButton51.Name = "radioButton51";
-            this.radioButton51.Size = new System.Drawing.Size(215, 24);
-            this.radioButton51.TabIndex = 11;
-            this.radioButton51.Tag = "";
-            this.radioButton51.Text = "бошқа ёрдам турлари";
-            this.radioButton51.UseVisualStyleBackColor = true;
+            this.rdbHowHelpMedicalOther.AutoSize = true;
+            this.rdbHowHelpMedicalOther.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbHowHelpMedicalOther.Location = new System.Drawing.Point(571, 30);
+            this.rdbHowHelpMedicalOther.Name = "rdbHowHelpMedicalOther";
+            this.rdbHowHelpMedicalOther.Size = new System.Drawing.Size(215, 24);
+            this.rdbHowHelpMedicalOther.TabIndex = 11;
+            this.rdbHowHelpMedicalOther.Tag = "";
+            this.rdbHowHelpMedicalOther.Text = "бошқа ёрдам турлари";
+            this.rdbHowHelpMedicalOther.UseVisualStyleBackColor = true;
             // 
-            // radioButton52
+            // rdbHowHelpMedicalTreatment
             // 
-            this.radioButton52.AutoSize = true;
-            this.radioButton52.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton52.Location = new System.Drawing.Point(33, 90);
-            this.radioButton52.Name = "radioButton52";
-            this.radioButton52.Size = new System.Drawing.Size(445, 24);
-            this.radioButton52.TabIndex = 10;
-            this.radioButton52.Tag = "";
-            this.radioButton52.Text = "ўзига ёки оила аъзосига тиббий ёрдам кўрсатиш";
-            this.radioButton52.UseVisualStyleBackColor = true;
+            this.rdbHowHelpMedicalTreatment.AutoSize = true;
+            this.rdbHowHelpMedicalTreatment.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbHowHelpMedicalTreatment.Location = new System.Drawing.Point(33, 90);
+            this.rdbHowHelpMedicalTreatment.Name = "rdbHowHelpMedicalTreatment";
+            this.rdbHowHelpMedicalTreatment.Size = new System.Drawing.Size(445, 24);
+            this.rdbHowHelpMedicalTreatment.TabIndex = 10;
+            this.rdbHowHelpMedicalTreatment.Tag = "";
+            this.rdbHowHelpMedicalTreatment.Text = "ўзига ёки оила аъзосига тиббий ёрдам кўрсатиш";
+            this.rdbHowHelpMedicalTreatment.UseVisualStyleBackColor = true;
             // 
-            // radioButton53
+            // rdbHowHelpMedicalFamily
             // 
-            this.radioButton53.AutoSize = true;
-            this.radioButton53.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton53.Location = new System.Drawing.Point(33, 180);
-            this.radioButton53.Name = "radioButton53";
-            this.radioButton53.Size = new System.Drawing.Size(354, 24);
-            this.radioButton53.TabIndex = 9;
-            this.radioButton53.Tag = "";
-            this.radioButton53.Text = "оилавий нотинчликни бартараф этиш";
-            this.radioButton53.UseVisualStyleBackColor = true;
+            this.rdbHowHelpMedicalFamily.AutoSize = true;
+            this.rdbHowHelpMedicalFamily.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbHowHelpMedicalFamily.Location = new System.Drawing.Point(33, 180);
+            this.rdbHowHelpMedicalFamily.Name = "rdbHowHelpMedicalFamily";
+            this.rdbHowHelpMedicalFamily.Size = new System.Drawing.Size(354, 24);
+            this.rdbHowHelpMedicalFamily.TabIndex = 9;
+            this.rdbHowHelpMedicalFamily.Tag = "";
+            this.rdbHowHelpMedicalFamily.Text = "оилавий нотинчликни бартараф этиш";
+            this.rdbHowHelpMedicalFamily.UseVisualStyleBackColor = true;
             // 
-            // radioButton56
+            // rdbHowHelpEducation
             // 
-            this.radioButton56.AutoSize = true;
-            this.radioButton56.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton56.Location = new System.Drawing.Point(33, 60);
-            this.radioButton56.Name = "radioButton56";
-            this.radioButton56.Size = new System.Drawing.Size(281, 24);
-            this.radioButton56.TabIndex = 8;
-            this.radioButton56.Text = "оила аъзосини таълим олиши";
-            this.radioButton56.UseVisualStyleBackColor = true;
+            this.rdbHowHelpEducation.AutoSize = true;
+            this.rdbHowHelpEducation.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbHowHelpEducation.Location = new System.Drawing.Point(33, 60);
+            this.rdbHowHelpEducation.Name = "rdbHowHelpEducation";
+            this.rdbHowHelpEducation.Size = new System.Drawing.Size(281, 24);
+            this.rdbHowHelpEducation.TabIndex = 8;
+            this.rdbHowHelpEducation.Text = "оила аъзосини таълим олиши";
+            this.rdbHowHelpEducation.UseVisualStyleBackColor = true;
             // 
-            // radioButton57
+            // rdbHowHelpMedicalWeddings
             // 
-            this.radioButton57.AutoSize = true;
-            this.radioButton57.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton57.Location = new System.Drawing.Point(33, 210);
-            this.radioButton57.Name = "radioButton57";
-            this.radioButton57.Size = new System.Drawing.Size(435, 24);
-            this.radioButton57.TabIndex = 7;
-            this.radioButton57.Text = "тўй ва марака ўтказишда моддий ёрдам бериш";
-            this.radioButton57.UseVisualStyleBackColor = true;
+            this.rdbHowHelpMedicalWeddings.AutoSize = true;
+            this.rdbHowHelpMedicalWeddings.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbHowHelpMedicalWeddings.Location = new System.Drawing.Point(33, 210);
+            this.rdbHowHelpMedicalWeddings.Name = "rdbHowHelpMedicalWeddings";
+            this.rdbHowHelpMedicalWeddings.Size = new System.Drawing.Size(435, 24);
+            this.rdbHowHelpMedicalWeddings.TabIndex = 7;
+            this.rdbHowHelpMedicalWeddings.Text = "тўй ва марака ўтказишда моддий ёрдам бериш";
+            this.rdbHowHelpMedicalWeddings.UseVisualStyleBackColor = true;
             // 
-            // radioButton58
+            // rdbHowHelpMedicalRepairment
             // 
-            this.radioButton58.AutoSize = true;
-            this.radioButton58.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton58.Location = new System.Drawing.Point(33, 150);
-            this.radioButton58.Name = "radioButton58";
-            this.radioButton58.Size = new System.Drawing.Size(218, 24);
-            this.radioButton58.TabIndex = 6;
-            this.radioButton58.Text = "уй-жойини таъмирлаш";
-            this.radioButton58.UseVisualStyleBackColor = true;
+            this.rdbHowHelpMedicalRepairment.AutoSize = true;
+            this.rdbHowHelpMedicalRepairment.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbHowHelpMedicalRepairment.Location = new System.Drawing.Point(33, 150);
+            this.rdbHowHelpMedicalRepairment.Name = "rdbHowHelpMedicalRepairment";
+            this.rdbHowHelpMedicalRepairment.Size = new System.Drawing.Size(218, 24);
+            this.rdbHowHelpMedicalRepairment.TabIndex = 6;
+            this.rdbHowHelpMedicalRepairment.Text = "уй-жойини таъмирлаш";
+            this.rdbHowHelpMedicalRepairment.UseVisualStyleBackColor = true;
             // 
-            // radioButton59
+            // rdbHowHelpMedicalHouse
             // 
-            this.radioButton59.AutoSize = true;
-            this.radioButton59.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton59.Location = new System.Drawing.Point(33, 120);
-            this.radioButton59.Name = "radioButton59";
-            this.radioButton59.Size = new System.Drawing.Size(243, 24);
-            this.radioButton59.TabIndex = 5;
-            this.radioButton59.Text = "уй-жой билан таъминлаш";
-            this.radioButton59.UseVisualStyleBackColor = true;
+            this.rdbHowHelpMedicalHouse.AutoSize = true;
+            this.rdbHowHelpMedicalHouse.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbHowHelpMedicalHouse.Location = new System.Drawing.Point(33, 120);
+            this.rdbHowHelpMedicalHouse.Name = "rdbHowHelpMedicalHouse";
+            this.rdbHowHelpMedicalHouse.Size = new System.Drawing.Size(243, 24);
+            this.rdbHowHelpMedicalHouse.TabIndex = 5;
+            this.rdbHowHelpMedicalHouse.Text = "уй-жой билан таъминлаш";
+            this.rdbHowHelpMedicalHouse.UseVisualStyleBackColor = true;
             // 
-            // radioButton61
+            // rdbHowHelpWork
             // 
-            this.radioButton61.AutoSize = true;
-            this.radioButton61.Checked = true;
-            this.radioButton61.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton61.Location = new System.Drawing.Point(33, 30);
-            this.radioButton61.Name = "radioButton61";
-            this.radioButton61.Size = new System.Drawing.Size(212, 24);
-            this.radioButton61.TabIndex = 2;
-            this.radioButton61.Text = "Иш билан таъминлаш";
-            this.radioButton61.UseVisualStyleBackColor = true;
+            this.rdbHowHelpWork.AutoSize = true;
+            this.rdbHowHelpWork.Checked = true;
+            this.rdbHowHelpWork.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbHowHelpWork.Location = new System.Drawing.Point(33, 30);
+            this.rdbHowHelpWork.Name = "rdbHowHelpWork";
+            this.rdbHowHelpWork.Size = new System.Drawing.Size(212, 24);
+            this.rdbHowHelpWork.TabIndex = 2;
+            this.rdbHowHelpWork.Text = "Иш билан таъминлаш";
+            this.rdbHowHelpWork.UseVisualStyleBackColor = true;
             // 
-            // textBox5
+            // txbForeignPersonPhone
             // 
-            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(440, 628);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(380, 26);
-            this.textBox5.TabIndex = 25;
+            this.txbForeignPersonPhone.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbForeignPersonPhone.Location = new System.Drawing.Point(440, 628);
+            this.txbForeignPersonPhone.Name = "txbForeignPersonPhone";
+            this.txbForeignPersonPhone.Size = new System.Drawing.Size(380, 26);
+            this.txbForeignPersonPhone.TabIndex = 25;
             // 
             // label17
             // 
@@ -1923,6 +1948,105 @@
             this.label17.Size = new System.Drawing.Size(396, 20);
             this.label17.TabIndex = 24;
             this.label17.Text = "Хорижга кетган фуқаронинг телефон рақами";
+            // 
+            // txbAddressTuman
+            // 
+            this.txbAddressTuman.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbAddressTuman.Location = new System.Drawing.Point(208, 273);
+            this.txbAddressTuman.Name = "txbAddressTuman";
+            this.txbAddressTuman.Size = new System.Drawing.Size(248, 27);
+            this.txbAddressTuman.TabIndex = 24;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Location = new System.Drawing.Point(51, 273);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(123, 20);
+            this.label18.TabIndex = 23;
+            this.label18.Text = "Туман(Шахар)";
+            // 
+            // txbAddressKucha
+            // 
+            this.txbAddressKucha.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbAddressKucha.Location = new System.Drawing.Point(566, 241);
+            this.txbAddressKucha.Name = "txbAddressKucha";
+            this.txbAddressKucha.Size = new System.Drawing.Size(311, 27);
+            this.txbAddressKucha.TabIndex = 26;
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Location = new System.Drawing.Point(472, 241);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(48, 20);
+            this.label19.TabIndex = 25;
+            this.label19.Text = "Кўча";
+            // 
+            // txbAddressUy
+            // 
+            this.txbAddressUy.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbAddressUy.Location = new System.Drawing.Point(566, 280);
+            this.txbAddressUy.Name = "txbAddressUy";
+            this.txbAddressUy.Size = new System.Drawing.Size(311, 27);
+            this.txbAddressUy.TabIndex = 28;
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Location = new System.Drawing.Point(472, 280);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(30, 20);
+            this.label20.TabIndex = 27;
+            this.label20.Text = "Уй";
+            // 
+            // txbAddressMFY
+            // 
+            this.txbAddressMFY.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbAddressMFY.Location = new System.Drawing.Point(208, 308);
+            this.txbAddressMFY.Name = "txbAddressMFY";
+            this.txbAddressMFY.Size = new System.Drawing.Size(248, 27);
+            this.txbAddressMFY.TabIndex = 30;
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.Location = new System.Drawing.Point(51, 308);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(50, 20);
+            this.label21.TabIndex = 29;
+            this.label21.Text = "МФЙ";
+            // 
+            // txbAddressXonadon
+            // 
+            this.txbAddressXonadon.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbAddressXonadon.Location = new System.Drawing.Point(566, 315);
+            this.txbAddressXonadon.Name = "txbAddressXonadon";
+            this.txbAddressXonadon.Size = new System.Drawing.Size(311, 27);
+            this.txbAddressXonadon.TabIndex = 32;
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.Location = new System.Drawing.Point(472, 315);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(83, 20);
+            this.label22.TabIndex = 31;
+            this.label22.Text = "Хонадон";
+            // 
+            // groupBox18
+            // 
+            this.groupBox18.Location = new System.Drawing.Point(40, 213);
+            this.groupBox18.Name = "groupBox18";
+            this.groupBox18.Size = new System.Drawing.Size(864, 135);
+            this.groupBox18.TabIndex = 33;
+            this.groupBox18.TabStop = false;
+            this.groupBox18.Text = "Ўзбекистондаги яшаш манзили";
             // 
             // AnketaForm
             // 
@@ -2020,125 +2144,136 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.DateTimePicker dtpBirthDate;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox txbAddress;
+        private System.Windows.Forms.TextBox txbAddressViloyat;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton rdbForeign;
+        private System.Windows.Forms.RadioButton rdbNoCitizen;
+        private System.Windows.Forms.RadioButton rdbUzbCitizen;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.RadioButton radioButton4;
-        private System.Windows.Forms.RadioButton radioButton5;
-        private System.Windows.Forms.RadioButton radioButton6;
-        private System.Windows.Forms.RadioButton radioButton7;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.RadioButton rdbEducationAverage;
+        private System.Windows.Forms.RadioButton rdbEducationAverageSpec;
+        private System.Windows.Forms.RadioButton rdbEducationHigh;
+        private System.Windows.Forms.RadioButton rdbEducationNo;
+        private System.Windows.Forms.TextBox txbSpeciality;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.RadioButton radioButton8;
-        private System.Windows.Forms.RadioButton radioButton9;
-        private System.Windows.Forms.RadioButton radioButton10;
-        private System.Windows.Forms.RadioButton radioButton11;
-        private System.Windows.Forms.RadioButton radioButton12;
-        private System.Windows.Forms.RadioButton radioButton13;
+        private System.Windows.Forms.RadioButton rdbCurStateOutJIEM;
+        private System.Windows.Forms.RadioButton rdbCurStateLost;
+        private System.Windows.Forms.RadioButton rdbCurStateOut;
+        private System.Windows.Forms.RadioButton rdbCurStateReturn;
+        private System.Windows.Forms.RadioButton rdbCurStateDied;
+        private System.Windows.Forms.RadioButton rdbCurStateWanted;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dtpReturnDate;
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.TabPage tabPage4;
         private System.Windows.Forms.TabPage tabPage5;
         private System.Windows.Forms.GroupBox groupBox5;
-        private System.Windows.Forms.RadioButton radioButton16;
-        private System.Windows.Forms.RadioButton radioButton17;
-        private System.Windows.Forms.RadioButton radioButton19;
+        private System.Windows.Forms.RadioButton rdbHealthInvalid;
+        private System.Windows.Forms.RadioButton rdbHealthIllPerm;
+        private System.Windows.Forms.RadioButton rdbHealthGood;
         private System.Windows.Forms.GroupBox groupBox6;
-        private System.Windows.Forms.RadioButton radioButton14;
-        private System.Windows.Forms.RadioButton radioButton15;
-        private System.Windows.Forms.RadioButton radioButton18;
-        private System.Windows.Forms.RadioButton radioButton20;
-        private System.Windows.Forms.RadioButton radioButton21;
+        private System.Windows.Forms.RadioButton rdbFamilyStateDevorsed;
+        private System.Windows.Forms.RadioButton rdbFamilyStateNoFamily;
+        private System.Windows.Forms.RadioButton rdbFamilyStateFamily;
+        private System.Windows.Forms.RadioButton rdbFamilyStateLoanlyMother;
+        private System.Windows.Forms.RadioButton rdbFamilyStateSpouseDied;
         private System.Windows.Forms.GroupBox groupBox7;
-        private System.Windows.Forms.RadioButton radioButton22;
-        private System.Windows.Forms.RadioButton radioButton23;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.RadioButton rdbFamilyEnvironmentNonQuite;
+        private System.Windows.Forms.RadioButton rdbFamilyEnvironmentQuite;
+        private System.Windows.Forms.TextBox txbChildrenCount;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txbChildrenUnder18;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.GroupBox groupBox8;
-        private System.Windows.Forms.RadioButton radioButton24;
-        private System.Windows.Forms.RadioButton radioButton25;
-        private System.Windows.Forms.RadioButton radioButton26;
+        private System.Windows.Forms.RadioButton rdbSocialStateGood;
+        private System.Windows.Forms.RadioButton rdbSocialStateAvarage;
+        private System.Windows.Forms.RadioButton rdbSocialStatePoor;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.DateTimePicker dtpLeaveDate;
         private System.Windows.Forms.GroupBox groupBox9;
-        private System.Windows.Forms.RadioButton radioButton27;
-        private System.Windows.Forms.RadioButton radioButton28;
-        private System.Windows.Forms.RadioButton radioButton29;
-        private System.Windows.Forms.RadioButton radioButton30;
-        private System.Windows.Forms.RadioButton radioButton31;
+        private System.Windows.Forms.RadioButton rdbLeaveCountryTurkey;
+        private System.Windows.Forms.RadioButton rdbLeaveCountryOthers;
+        private System.Windows.Forms.RadioButton rdbLeaveCountryKorea;
+        private System.Windows.Forms.RadioButton rdbLeaveCountryKazakstan;
+        private System.Windows.Forms.RadioButton rdbLeaveCountryRussia;
         private System.Windows.Forms.TextBox txbMahallaNomi;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.TextBox txbTumanNomi;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.GroupBox groupBox10;
-        private System.Windows.Forms.RadioButton radioButton33;
-        private System.Windows.Forms.RadioButton radioButton34;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.RadioButton rdbWorkPermitNotExists;
+        private System.Windows.Forms.RadioButton rdbWorkPermitExists;
+        private System.Windows.Forms.TextBox txbIncomeValue;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.GroupBox groupBox11;
-        private System.Windows.Forms.CheckBox checkBox7;
-        private System.Windows.Forms.CheckBox checkBox6;
-        private System.Windows.Forms.CheckBox checkBox5;
-        private System.Windows.Forms.CheckBox checkBox4;
-        private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox chbOutTogatherOthers;
+        private System.Windows.Forms.CheckBox chbOutTogatherSister;
+        private System.Windows.Forms.CheckBox chbOutTogatherBrother;
+        private System.Windows.Forms.CheckBox chbOutTogatherMother;
+        private System.Windows.Forms.CheckBox chbOutTogatherFather;
+        private System.Windows.Forms.CheckBox chbOutTogatherChild;
+        private System.Windows.Forms.CheckBox chbOutTogatherSpouse;
         private System.Windows.Forms.GroupBox groupBox12;
-        private System.Windows.Forms.RadioButton radioButton32;
-        private System.Windows.Forms.RadioButton radioButton35;
-        private System.Windows.Forms.RadioButton radioButton36;
-        private System.Windows.Forms.RadioButton radioButton37;
-        private System.Windows.Forms.RadioButton radioButton38;
-        private System.Windows.Forms.RadioButton radioButton39;
-        private System.Windows.Forms.RadioButton radioButton40;
-        private System.Windows.Forms.RadioButton radioButton41;
+        private System.Windows.Forms.RadioButton rdbLeaveReasonEducation;
+        private System.Windows.Forms.RadioButton rdbLeaveReasonTreatment;
+        private System.Windows.Forms.RadioButton rdbLeaveReasonWork;
+        private System.Windows.Forms.RadioButton rdbLeaveReasonTempLive;
+        private System.Windows.Forms.RadioButton rdbLeaveReasonTravel;
+        private System.Windows.Forms.RadioButton rdbLeaveReasonMerriage;
+        private System.Windows.Forms.RadioButton rdbLeaveReasonPermanentLive;
+        private System.Windows.Forms.RadioButton rdbLeaveReasonOthers;
         private System.Windows.Forms.GroupBox groupBox13;
-        private System.Windows.Forms.RadioButton radioButton42;
-        private System.Windows.Forms.RadioButton radioButton43;
-        private System.Windows.Forms.RadioButton radioButton44;
-        private System.Windows.Forms.RadioButton radioButton45;
-        private System.Windows.Forms.RadioButton radioButton46;
-        private System.Windows.Forms.RadioButton radioButton47;
-        private System.Windows.Forms.RadioButton radioButton48;
-        private System.Windows.Forms.RadioButton radioButton49;
-        private System.Windows.Forms.RadioButton radioButton50;
+        private System.Windows.Forms.RadioButton rdbWorkOutsiteTypeEnterprieneur;
+        private System.Windows.Forms.RadioButton rdbWorkOutsiteTypeGoverment;
+        private System.Windows.Forms.RadioButton rdbWorkOutsiteTypeCleaning;
+        private System.Windows.Forms.RadioButton rdbWorkOutsiteTypeBeautySalon;
+        private System.Windows.Forms.RadioButton rdbWorkOutsiteTypeCare;
+        private System.Windows.Forms.RadioButton rdbWorkOutsiteTypeTruck;
+        private System.Windows.Forms.RadioButton rdbWorkOutsiteTypeSeller;
+        private System.Windows.Forms.RadioButton rdbWorkOutsiteTypeBuilder;
+        private System.Windows.Forms.RadioButton rdbWorkOutsiteTypeOthers;
         private System.Windows.Forms.GroupBox groupBox14;
-        private System.Windows.Forms.RadioButton radioButton54;
-        private System.Windows.Forms.RadioButton radioButton55;
+        private System.Windows.Forms.RadioButton rdbHaveAWillToReturnBackNo;
+        private System.Windows.Forms.RadioButton rdbHaveAWillToReturnBackYes;
         private System.Windows.Forms.GroupBox groupBox15;
-        private System.Windows.Forms.CheckBox checkBox8;
-        private System.Windows.Forms.CheckBox checkBox9;
-        private System.Windows.Forms.CheckBox checkBox10;
-        private System.Windows.Forms.CheckBox checkBox11;
-        private System.Windows.Forms.CheckBox checkBox12;
-        private System.Windows.Forms.CheckBox checkBox13;
-        private System.Windows.Forms.CheckBox checkBox14;
+        private System.Windows.Forms.CheckBox chbFamilyProblemsOthers;
+        private System.Windows.Forms.CheckBox chbFamilyProblemsRepairment;
+        private System.Windows.Forms.CheckBox chbFamilyProblemsPlaceToLive;
+        private System.Windows.Forms.CheckBox chbFamilyProblemsTreatment;
+        private System.Windows.Forms.CheckBox chbFamilyProblemsFamily;
+        private System.Windows.Forms.CheckBox chbFamilyProblemsEducation;
+        private System.Windows.Forms.CheckBox chbFamilyProblemsWorkless;
         private System.Windows.Forms.GroupBox groupBox16;
-        private System.Windows.Forms.CheckBox checkBox15;
-        private System.Windows.Forms.CheckBox checkBox16;
-        private System.Windows.Forms.CheckBox checkBox17;
-        private System.Windows.Forms.CheckBox checkBox18;
-        private System.Windows.Forms.CheckBox checkBox19;
-        private System.Windows.Forms.CheckBox checkBox20;
-        private System.Windows.Forms.CheckBox checkBox21;
+        private System.Windows.Forms.CheckBox chbOutPersonProblemsOthers;
+        private System.Windows.Forms.CheckBox chbOutPersonProblemsWorkPermitless;
+        private System.Windows.Forms.CheckBox chbOutPersonProblemsLivePermitless;
+        private System.Windows.Forms.CheckBox chbOutPersonProblemsNoPayment;
+        private System.Windows.Forms.CheckBox chbOutPersonProblemsPersonSold;
+        private System.Windows.Forms.CheckBox chbOutPersonProblemsWorkless;
+        private System.Windows.Forms.CheckBox chbOutPersonProblemsLostPassport;
         private System.Windows.Forms.GroupBox groupBox17;
-        private System.Windows.Forms.RadioButton radioButton51;
-        private System.Windows.Forms.RadioButton radioButton52;
-        private System.Windows.Forms.RadioButton radioButton53;
-        private System.Windows.Forms.RadioButton radioButton56;
-        private System.Windows.Forms.RadioButton radioButton57;
-        private System.Windows.Forms.RadioButton radioButton58;
-        private System.Windows.Forms.RadioButton radioButton59;
-        private System.Windows.Forms.RadioButton radioButton61;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.RadioButton rdbHowHelpMedicalOther;
+        private System.Windows.Forms.RadioButton rdbHowHelpMedicalTreatment;
+        private System.Windows.Forms.RadioButton rdbHowHelpMedicalFamily;
+        private System.Windows.Forms.RadioButton rdbHowHelpEducation;
+        private System.Windows.Forms.RadioButton rdbHowHelpMedicalWeddings;
+        private System.Windows.Forms.RadioButton rdbHowHelpMedicalRepairment;
+        private System.Windows.Forms.RadioButton rdbHowHelpMedicalHouse;
+        private System.Windows.Forms.RadioButton rdbHowHelpWork;
+        private System.Windows.Forms.TextBox txbForeignPersonPhone;
         private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.TextBox txbAddressXonadon;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.TextBox txbAddressMFY;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.TextBox txbAddressUy;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.TextBox txbAddressKucha;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.TextBox txbAddressTuman;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.GroupBox groupBox18;
     }
 }

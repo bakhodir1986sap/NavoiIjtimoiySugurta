@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NavoiKasabaUyushmasi.Model;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -25,7 +26,14 @@ namespace DesktopApplication
         private void btnAdd_Click(object sender, EventArgs e)
         {
             AnketaForm anketaForm = new AnketaForm();
-            anketaForm.ShowDialog();
+            anketaForm.ShowDialog(this);
+
+            if (anketaForm.DialogResult == DialogResult.OK)
+            {
+                SelectedModel = anketaForm.CurrentModel;
+
+                //MigrantImport
+            }
         }
 
         private void btnModify_Click(object sender, EventArgs e)
@@ -47,5 +55,8 @@ namespace DesktopApplication
         {
 
         }
+
+        public MigrantImportModel SelectedModel { get; set; }
+        public List<MigrantImportModel> MigrantImportModels { get; set; } = new List<MigrantImportModel>();
     }
 }
