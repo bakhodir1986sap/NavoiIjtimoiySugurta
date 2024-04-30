@@ -32,16 +32,19 @@
             this.txbSearch = new System.Windows.Forms.TextBox();
             this.btn_Search = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvMigrants = new System.Windows.Forms.DataGridView();
             this.panel3 = new System.Windows.Forms.Panel();
             this.btnClose = new System.Windows.Forms.Button();
             this.btnExcel = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnModify = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
+            this.clnmFio = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clmnPassportSeria = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clmnPassportNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvMigrants)).BeginInit();
             this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -77,26 +80,32 @@
             // panel2
             // 
             this.panel2.AutoScroll = true;
-            this.panel2.Controls.Add(this.dataGridView1);
+            this.panel2.Controls.Add(this.dgvMigrants);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 100);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1019, 328);
             this.panel2.TabIndex = 1;
             // 
-            // dataGridView1
+            // dgvMigrants
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1019, 328);
-            this.dataGridView1.TabIndex = 0;
+            this.dgvMigrants.AllowUserToAddRows = false;
+            this.dgvMigrants.AllowUserToDeleteRows = false;
+            this.dgvMigrants.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvMigrants.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.clnmFio,
+            this.clmnPassportSeria,
+            this.clmnPassportNumber});
+            this.dgvMigrants.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvMigrants.Location = new System.Drawing.Point(0, 0);
+            this.dgvMigrants.MultiSelect = false;
+            this.dgvMigrants.Name = "dgvMigrants";
+            this.dgvMigrants.ReadOnly = true;
+            this.dgvMigrants.RowHeadersWidth = 51;
+            this.dgvMigrants.RowTemplate.Height = 24;
+            this.dgvMigrants.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvMigrants.Size = new System.Drawing.Size(1019, 328);
+            this.dgvMigrants.TabIndex = 0;
             // 
             // panel3
             // 
@@ -170,6 +179,30 @@
             this.btnAdd.UseVisualStyleBackColor = true;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
+            // clnmFio
+            // 
+            this.clnmFio.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.clnmFio.HeaderText = "FIO";
+            this.clnmFio.MinimumWidth = 6;
+            this.clnmFio.Name = "clnmFio";
+            this.clnmFio.ReadOnly = true;
+            // 
+            // clmnPassportSeria
+            // 
+            this.clmnPassportSeria.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.clmnPassportSeria.HeaderText = "Seria";
+            this.clmnPassportSeria.MinimumWidth = 6;
+            this.clmnPassportSeria.Name = "clmnPassportSeria";
+            this.clmnPassportSeria.ReadOnly = true;
+            // 
+            // clmnPassportNumber
+            // 
+            this.clmnPassportNumber.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.clmnPassportNumber.HeaderText = "Nomer";
+            this.clmnPassportNumber.MinimumWidth = 6;
+            this.clmnPassportNumber.Name = "clmnPassportNumber";
+            this.clmnPassportNumber.ReadOnly = true;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -183,7 +216,7 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvMigrants)).EndInit();
             this.panel3.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -195,13 +228,16 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button btn_Search;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvMigrants;
         private System.Windows.Forms.TextBox txbSearch;
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Button btnModify;
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Button btnExcel;
         private System.Windows.Forms.Button btnClose;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clnmFio;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clmnPassportSeria;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clmnPassportNumber;
     }
 }
 

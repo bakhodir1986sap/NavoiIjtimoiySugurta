@@ -25,55 +25,112 @@ namespace DesktopApplication
                 return;
             }
 
-            CurrentModel = new MigrantImportModel
+            if (!IsInEditMode)
             {
-                XududNomi = txbTumanNomi.Text,
-                KiritayotganMFY = txbMahallaNomi.Text,
-                SorIshtirFio = txbSorFio.Text,
-                SorIshtirQarindoshligi = txbQarindoshligi.Text,
-                SorIshtirPassportSeria = txbSorPassSeria.Text,
-                SorIshtirPassportRaqam = txbSorPassNumber.Text,
-                SorIshtirTelefonRaqam = txbSorTelNumber.Text,
-                Jinsi = Jinsi,
-                Fio = txbFio.Text,
-                SeriaPassport = txbPassSeria.Text,
-                RaqamPassport = txbPassNum.Text,
-                TugilganKun = dtpBirthDate.Value.Day.ToString(),
-                TugilganOy = dtpBirthDate.Value.Month.ToString(),
-                TugilganYil = dtpBirthDate.Value.Year.ToString(),
-                Yiloyat = txbAddressViloyat.Text,
-                Tuman = txbAddressTuman.Text,
-                Mahalla = txbAddressMFY.Text,
-                Kocha = txbAddressKucha.Text,
-                Uy = txbAddressUy.Text,
-                Xonadon = txbAddressXonadon.Text,
-                FuqorolikXolati = FuqorolikXolati,
-                Malumoti = Malumoti,
-                Mutaxasisligi = txbSpeciality.Text,
-                XozirgiXolati = XozirgiXolati,
-                UzbgaQaytganSanasi = IsPersonOut ? string.Empty : dtpReturnDate.Checked ? 
-                dtpReturnDate.Value.ToString("dd.MM.yyyy")
-                : DateTime.Now.ToString("dd.MM.yyyy"),
-                Sogligi = IsPersonOut ?  Sogligi : string.Empty,
-                OilaviyXolati = IsPersonOut ?  OilaviyXolati : string.Empty,
-                OilaviyMuxiti = IsPersonOut ? OilaviyMuxiti : string.Empty,
-                JamiFarzandlarSoni = IsPersonOut ? txbChildrenCount.Text : "0",
-                VoyagaEtmaganFarzandlarSoni = IsPersonOut ? txbChildrenUnder18.Text : "0",
-                IjtimoiyXolati = IsPersonOut ? IjtimoiyXolati : string.Empty,
-                XorijgaKetganSanasi = IsPersonOut ? dtpLeaveDate.Checked ?
-                        dtpLeaveDate.Value.ToString("dd.MM.yyyy") : string.Empty : string.Empty,
-                DavlatVaXudud = IsPersonOut ? DavlatVaXudud : string.Empty,
-                IshlashRuxsatnomasiMavjudligi = IsPersonOut ? IshlashRuxsatnomasiMavjudligi : string.Empty,
-                XorijdagiBirOylikDaromadi = IsPersonOut ? txbIncomeValue.Text : string.Empty,
-                XorijdaBirgalikdagiOilaAzolari = IsPersonOut ? XorijdaBirgalikdagiOilaAzolari : string.Empty,
-                XorijgaKetishMaqsadi = IsPersonOut ? XorijgaKetishMaqsadi : string.Empty,
-                ChetEldagiIshTuri = IsPersonOut ? ChetEldagiIshTuri : string.Empty,
-                ChetEldanQaytishIstagiBorligi = IsPersonOut ? ChetEldanQaytishIstagiBorligi : string.Empty,
-                OiladagiMuammolarSoni = IsPersonOut ? OiladagiMuammolarSoni : "0",
-                XorijdagiMuammolarSoni = IsPersonOut ? XorijdagiMuammolarSoni : "0",
-                NimaYordamBerilsaQaytadi = IsPersonOut ? NimaYordamBerilsaQaytadi : string.Empty,
-                XorijdagiFuqaroTelefonRaqami = IsPersonOut ? txbForeignPersonPhone.Text : string.Empty,
-            };
+                CurrentModel = new MigrantImportModel
+                {
+                    XududNomi = txbTumanNomi.Text,
+                    KiritayotganMFY = txbMahallaNomi.Text,
+                    SorIshtirFio = txbSorFio.Text,
+                    SorIshtirQarindoshligi = txbQarindoshligi.Text,
+                    SorIshtirPassportSeria = txbSorPassSeria.Text,
+                    SorIshtirPassportRaqam = txbSorPassNumber.Text,
+                    SorIshtirTelefonRaqam = txbSorTelNumber.Text,
+                    Jinsi = Jinsi,
+                    Fio = txbFio.Text,
+                    SeriaPassport = txbPassSeria.Text,
+                    RaqamPassport = txbPassNum.Text,
+                    TugilganKun = dtpBirthDate.Value.Day.ToString(),
+                    TugilganOy = dtpBirthDate.Value.Month.ToString(),
+                    TugilganYil = dtpBirthDate.Value.Year.ToString(),
+                    Yiloyat = txbAddressViloyat.Text,
+                    Tuman = txbAddressTuman.Text,
+                    Mahalla = txbAddressMFY.Text,
+                    Kocha = txbAddressKucha.Text,
+                    Uy = txbAddressUy.Text,
+                    Xonadon = txbAddressXonadon.Text,
+                    FuqorolikXolati = FuqorolikXolati,
+                    Malumoti = Malumoti,
+                    Mutaxasisligi = txbSpeciality.Text,
+                    XozirgiXolati = XozirgiXolati,
+                    UzbgaQaytganSanasi = IsPersonOut ? string.Empty : dtpReturnDate.Checked ?
+                    dtpReturnDate.Value.ToString("dd.MM.yyyy")
+                    : DateTime.Now.ToString("dd.MM.yyyy"),
+                    Sogligi = IsPersonOut ? Sogligi : string.Empty,
+                    OilaviyXolati = IsPersonOut ? OilaviyXolati : string.Empty,
+                    OilaviyMuxiti = IsPersonOut ? OilaviyMuxiti : string.Empty,
+                    JamiFarzandlarSoni = IsPersonOut ? txbChildrenCount.Text : "0",
+                    VoyagaEtmaganFarzandlarSoni = IsPersonOut ? txbChildrenUnder18.Text : "0",
+                    IjtimoiyXolati = IsPersonOut ? IjtimoiyXolati : string.Empty,
+                    XorijgaKetganSanasi = IsPersonOut ? dtpLeaveDate.Checked ?
+                            dtpLeaveDate.Value.ToString("dd.MM.yyyy") : string.Empty : string.Empty,
+                    DavlatVaXudud = IsPersonOut ? DavlatVaXudud : string.Empty,
+                    IshlashRuxsatnomasiMavjudligi = IsPersonOut ? IshlashRuxsatnomasiMavjudligi : string.Empty,
+                    XorijdagiBirOylikDaromadi = IsPersonOut ? txbIncomeValue.Text : string.Empty,
+                    XorijdaBirgalikdagiOilaAzolari = IsPersonOut ? XorijdaBirgalikdagiOilaAzolari : string.Empty,
+                    XorijgaKetishMaqsadi = IsPersonOut ? XorijgaKetishMaqsadi : string.Empty,
+                    ChetEldagiIshTuri = IsPersonOut ? ChetEldagiIshTuri : string.Empty,
+                    ChetEldanQaytishIstagiBorligi = IsPersonOut ? ChetEldanQaytishIstagiBorligi : string.Empty,
+                    OiladagiMuammolarSoni = IsPersonOut ? OiladagiMuammolarSoni : "0",
+                    XorijdagiMuammolarSoni = IsPersonOut ? XorijdagiMuammolarSoni : "0",
+                    NimaYordamBerilsaQaytadi = IsPersonOut ? NimaYordamBerilsaQaytadi : string.Empty,
+                    XorijdagiFuqaroTelefonRaqami = IsPersonOut ? txbForeignPersonPhone.Text : string.Empty,
+                    Age18BelowOrUpper = Age18BelowOrUpper,
+                    OiladagiMuammolari = IsPersonOut ? OiladagiMuammolari : string.Empty,
+                    XorijdagiMuammolari = IsPersonOut ? XorijdagiMuammolari : string.Empty
+                };
+            }
+            else
+            {
+                    CurrentModel.XududNomi = txbTumanNomi.Text;
+                    CurrentModel.KiritayotganMFY = txbMahallaNomi.Text;
+                    CurrentModel.SorIshtirFio = txbSorFio.Text;
+                    CurrentModel.SorIshtirQarindoshligi = txbQarindoshligi.Text;
+                    CurrentModel.SorIshtirPassportSeria = txbSorPassSeria.Text;
+                    CurrentModel.SorIshtirPassportRaqam = txbSorPassNumber.Text;
+                    CurrentModel.SorIshtirTelefonRaqam = txbSorTelNumber.Text;
+                    CurrentModel.Jinsi = Jinsi;
+                    CurrentModel.Fio = txbFio.Text;
+                    CurrentModel.SeriaPassport = txbPassSeria.Text;
+                    CurrentModel.RaqamPassport = txbPassNum.Text;
+                    CurrentModel.TugilganKun = dtpBirthDate.Value.Day.ToString();
+                    CurrentModel.TugilganOy = dtpBirthDate.Value.Month.ToString();
+                    CurrentModel.TugilganYil = dtpBirthDate.Value.Year.ToString();
+                    CurrentModel.Yiloyat = txbAddressViloyat.Text;
+                    CurrentModel.Tuman = txbAddressTuman.Text;
+                    CurrentModel.Mahalla = txbAddressMFY.Text;
+                    CurrentModel.Kocha = txbAddressKucha.Text;
+                    CurrentModel.Uy = txbAddressUy.Text;
+                    CurrentModel.Xonadon = txbAddressXonadon.Text;
+                    CurrentModel.FuqorolikXolati = FuqorolikXolati;
+                    CurrentModel.Malumoti = Malumoti;
+                    CurrentModel.Mutaxasisligi = txbSpeciality.Text;
+                    CurrentModel.XozirgiXolati = XozirgiXolati;
+                    CurrentModel.UzbgaQaytganSanasi = IsPersonOut ? string.Empty : dtpReturnDate.Checked ?
+                    dtpReturnDate.Value.ToString("dd.MM.yyyy")
+                    : DateTime.Now.ToString("dd.MM.yyyy");
+                    CurrentModel.Sogligi = IsPersonOut ? Sogligi : string.Empty;
+                    CurrentModel.OilaviyXolati = IsPersonOut ? OilaviyXolati : string.Empty;
+                    CurrentModel.OilaviyMuxiti = IsPersonOut ? OilaviyMuxiti : string.Empty;
+                    CurrentModel.JamiFarzandlarSoni = IsPersonOut ? txbChildrenCount.Text : "0";
+                    CurrentModel.VoyagaEtmaganFarzandlarSoni = IsPersonOut ? txbChildrenUnder18.Text : "0";
+                    CurrentModel.IjtimoiyXolati = IsPersonOut ? IjtimoiyXolati : string.Empty;
+                    CurrentModel.XorijgaKetganSanasi = IsPersonOut ? dtpLeaveDate.Checked ?
+                            dtpLeaveDate.Value.ToString("dd.MM.yyyy") : string.Empty : string.Empty;
+                    CurrentModel.DavlatVaXudud = IsPersonOut ? DavlatVaXudud : string.Empty;
+                    CurrentModel.IshlashRuxsatnomasiMavjudligi = IsPersonOut ? IshlashRuxsatnomasiMavjudligi : string.Empty;
+                    CurrentModel.XorijdagiBirOylikDaromadi = IsPersonOut ? txbIncomeValue.Text : string.Empty;
+                    CurrentModel.XorijdaBirgalikdagiOilaAzolari = IsPersonOut ? XorijdaBirgalikdagiOilaAzolari : string.Empty;
+                    CurrentModel.XorijgaKetishMaqsadi = IsPersonOut ? XorijgaKetishMaqsadi : string.Empty;
+                    CurrentModel.ChetEldagiIshTuri = IsPersonOut ? ChetEldagiIshTuri : string.Empty;
+                    CurrentModel.ChetEldanQaytishIstagiBorligi = IsPersonOut ? ChetEldanQaytishIstagiBorligi : string.Empty;
+                    CurrentModel.OiladagiMuammolarSoni = IsPersonOut ? OiladagiMuammolarSoni : "0";
+                    CurrentModel.XorijdagiMuammolarSoni = IsPersonOut ? XorijdagiMuammolarSoni : "0";
+                    CurrentModel.NimaYordamBerilsaQaytadi = IsPersonOut ? NimaYordamBerilsaQaytadi : string.Empty;
+                    CurrentModel.XorijdagiFuqaroTelefonRaqami = IsPersonOut ? txbForeignPersonPhone.Text : string.Empty;
+                    CurrentModel.Age18BelowOrUpper = Age18BelowOrUpper;
+            }
+
 
             DialogResult = DialogResult.OK;
         }
@@ -89,7 +146,7 @@ namespace DesktopApplication
 
                 if (rdbAyol.Checked)
                 {
-                    return rdbErkak.Text;
+                    return rdbAyol.Text;
                 }
 
                 return string.Empty;
@@ -386,6 +443,96 @@ namespace DesktopApplication
             }
         }
 
+        private string OiladagiMuammolari
+        {
+            get
+            {
+                string result = string.Empty;
+
+                if (chbFamilyProblemsWorkless.Checked)
+                {
+                    result += chbFamilyProblemsWorkless.Text + ",";
+                }
+
+                if (chbFamilyProblemsEducation.Checked)
+                {
+                    result += chbFamilyProblemsEducation.Text + ",";
+                }
+
+                if (chbFamilyProblemsTreatment.Checked)
+                {
+                    result += chbFamilyProblemsTreatment.Text + ",";
+                }
+
+                if (chbFamilyProblemsFamily.Checked)
+                {
+                    result += chbFamilyProblemsFamily.Text + ",";
+                }
+
+                if (chbFamilyProblemsPlaceToLive.Checked)
+                {
+                    result += chbFamilyProblemsPlaceToLive.Text + ",";
+                }
+
+                if (chbFamilyProblemsRepairment.Checked)
+                {
+                    result += chbFamilyProblemsRepairment.Text + ",";
+                }
+
+                if (chbFamilyProblemsOthers.Checked)
+                {
+                    result += chbFamilyProblemsOthers.Text + ",";
+                }
+
+                return result;
+            }
+        }
+
+        private string XorijdagiMuammolari
+        {
+            get
+            {
+                string result = string.Empty;
+
+                if (chbOutPersonProblemsLostPassport.Checked)
+                {
+                    result += chbOutPersonProblemsLostPassport.Text + ",";
+                }
+
+                if (chbOutPersonProblemsWorkless.Checked)
+                {
+                    result += chbOutPersonProblemsWorkless.Text + ",";
+                }
+
+                if (chbOutPersonProblemsNoPayment.Checked)
+                {
+                    result += chbOutPersonProblemsNoPayment.Text + ",";
+                }
+
+                if (chbOutPersonProblemsPersonSold.Checked)
+                {
+                    result += chbOutPersonProblemsPersonSold.Text + ",";
+                }
+
+                if (chbOutPersonProblemsLivePermitless.Checked)
+                {
+                    result += chbOutPersonProblemsLivePermitless.Text + ",";
+                }
+
+                if (chbOutPersonProblemsWorkPermitless.Checked)
+                {
+                    result += chbOutPersonProblemsWorkPermitless.Text + ",";
+                }
+
+                if (chbOutPersonProblemsOthers.Checked)
+                {
+                    result += chbOutPersonProblemsOthers.Text + ",";
+                }
+
+                return result;
+            }
+        }
+
         private string XorijgaKetishMaqsadi
         {
             get
@@ -641,6 +788,32 @@ namespace DesktopApplication
             }
         }
 
+        private string Age18BelowOrUpper
+        {
+            get
+            {
+                if (dtpBirthDate.Value.Year < 2007)
+                {
+                    return "18 ва ундан юкори";
+                }
+                else if (dtpBirthDate.Value.Year == 2007)
+                {
+                    if (dtpBirthDate.Value.Month <= 4)
+                    {
+                        return "18 ва ундан юкори";
+                    }
+                    else
+                    {
+                        return "18 ёшгача";
+                    }
+                }
+                else
+                {
+                    return "18 ёшгача";
+                }
+            }
+        }
+
         private bool ValidateForm()
         {
             if (string.IsNullOrEmpty(txbTumanNomi.Text))
@@ -730,6 +903,250 @@ namespace DesktopApplication
             {
                 dtpReturnDate.Checked = false;
             }
+        }
+
+        public bool IsInEditMode { get; set; }
+
+        private void AnketaForm_Load(object sender, EventArgs e)
+        {
+            if (IsInEditMode)
+            {
+                txbTumanNomi.Text = CurrentModel.XududNomi;
+                txbMahallaNomi.Text = CurrentModel.KiritayotganMFY;
+                txbSorFio.Text = CurrentModel.SorIshtirFio;
+                txbQarindoshligi.Text = CurrentModel.SorIshtirQarindoshligi;
+                txbSorPassSeria.Text = CurrentModel.SorIshtirPassportSeria;
+                txbSorPassNumber.Text = CurrentModel.SorIshtirPassportRaqam;
+                txbSorTelNumber.Text = CurrentModel.SorIshtirTelefonRaqam;
+                txbFio.Text = CurrentModel.Fio;
+                txbPassSeria.Text = CurrentModel.SeriaPassport;
+                txbPassNum.Text = CurrentModel.RaqamPassport;
+                dtpBirthDate.Value = new DateTime(int.Parse(CurrentModel.TugilganYil), int.Parse(CurrentModel.TugilganOy), int.Parse(CurrentModel.TugilganKun));
+                txbAddressViloyat.Text = CurrentModel.Yiloyat;
+                txbAddressTuman.Text = CurrentModel.Tuman;
+                txbAddressMFY.Text = CurrentModel.Mahalla;
+                txbAddressKucha.Text = CurrentModel.Kocha;
+                txbAddressUy.Text = CurrentModel.Uy;
+                txbAddressXonadon.Text = CurrentModel.Xonadon;
+                txbSpeciality.Text = CurrentModel.Mutaxasisligi;
+                txbChildrenCount.Text = CurrentModel.JamiFarzandlarSoni;
+                txbChildrenUnder18.Text = CurrentModel.VoyagaEtmaganFarzandlarSoni;
+                txbIncomeValue.Text = CurrentModel.XorijdagiBirOylikDaromadi;
+                txbForeignPersonPhone.Text = CurrentModel.XorijdagiFuqaroTelefonRaqami;
+                SetJinsiValue(CurrentModel.Jinsi);
+                SetFuqorolikXolati(CurrentModel.FuqorolikXolati);
+                SetMalumoti(CurrentModel.Malumoti);
+                SetXozirgiXolati(CurrentModel.XozirgiXolati);
+                SetSogligi(CurrentModel.Sogligi);
+                SetOilaviyXolati(CurrentModel.OilaviyXolati);
+                SetOilaviyMuxiti(CurrentModel.OilaviyMuxiti);
+                SetIjtimoiyXolati(CurrentModel.IjtimoiyXolati);
+                SetDavlatVaXudud(CurrentModel.DavlatVaXudud);
+                SetIshlashRuxsatnomasiMavjudligi(CurrentModel.IshlashRuxsatnomasiMavjudligi);
+                SetXorijgaKetishMaqsadi(CurrentModel.XorijgaKetishMaqsadi);
+                SetChetEldagiIshTuri(CurrentModel.ChetEldagiIshTuri);
+                SetChetEldanQaytishIstagiBorligi(CurrentModel.ChetEldanQaytishIstagiBorligi);
+                SetNimaYordamBerilsaQaytadi(CurrentModel.NimaYordamBerilsaQaytadi);
+                SetXorijdaBirgalikdagiOilaAzolari(CurrentModel.XorijdaBirgalikdagiOilaAzolari);
+                SetOiladagiMuammolari(CurrentModel.OiladagiMuammolari);
+                SetXorijdagiMuammolari(CurrentModel.XorijdagiMuammolari);
+            }
+        }
+
+        private void SetJinsiValue(string value)
+        {
+            SetRDButtonValue(rdbErkak, value);
+            SetRDButtonValue(rdbAyol, value);
+        }
+
+        private void SetFuqorolikXolati(string value)
+        {
+            SetRDButtonValue(rdbUzbCitizen, value);
+            SetRDButtonValue(rdbForeign, value);
+            SetRDButtonValue(rdbNoCitizen, value);
+        }
+
+        private void SetMalumoti(string value)
+        {
+            SetRDButtonValue(rdbEducationHigh, value);
+            SetRDButtonValue(rdbEducationAverageSpec, value);
+            SetRDButtonValue(rdbEducationAverage, value);
+            SetRDButtonValue(rdbEducationNo, value);
+        }
+
+        private void SetXozirgiXolati(string value)
+        {
+            SetRDButtonValue(rdbCurStateOut, value);
+            SetRDButtonValue(rdbCurStateOutJIEM, value);
+            SetRDButtonValue(rdbCurStateLost, value);
+            SetRDButtonValue(rdbCurStateReturn, value);
+            SetRDButtonValue(rdbCurStateDied, value);
+            SetRDButtonValue(rdbCurStateWanted, value);
+        }
+
+        private void SetSogligi(string value)
+        {
+            SetRDButtonValue(rdbHealthGood, value);
+            SetRDButtonValue(rdbHealthIllPerm, value);
+            SetRDButtonValue(rdbHealthInvalid, value);
+        }
+
+        private void SetOilaviyXolati(string value)
+        {
+            SetRDButtonValue(rdbFamilyStateFamily, value);
+            SetRDButtonValue(rdbFamilyStateNoFamily, value);
+            SetRDButtonValue(rdbFamilyStateDevorsed, value);
+            SetRDButtonValue(rdbFamilyStateLoanlyMother, value);
+            SetRDButtonValue(rdbFamilyStateSpouseDied, value);
+        }
+
+        private void SetOilaviyMuxiti(string value)
+        {
+            SetRDButtonValue(rdbFamilyEnvironmentQuite, value);
+            SetRDButtonValue(rdbFamilyEnvironmentNonQuite, value);
+        }
+
+        private void SetIjtimoiyXolati(string value)
+        {
+            SetRDButtonValue(rdbSocialStatePoor, value);
+            SetRDButtonValue(rdbSocialStateAvarage, value);
+            SetRDButtonValue(rdbSocialStateGood, value);
+        }
+
+        private void SetDavlatVaXudud(string value)
+        {
+            SetRDButtonValue(rdbLeaveCountryRussia, value);
+            SetRDButtonValue(rdbLeaveCountryKazakstan, value);
+            SetRDButtonValue(rdbLeaveCountryTurkey, value);
+            SetRDButtonValue(rdbLeaveCountryKorea, value);
+            SetRDButtonValue(rdbLeaveCountryOthers, value);
+        }
+
+        private void SetIshlashRuxsatnomasiMavjudligi(string value)
+        {
+            SetRDButtonValue(rdbWorkPermitExists, value);
+            SetRDButtonValue(rdbWorkPermitNotExists, value);
+        }
+
+        private void SetXorijgaKetishMaqsadi(string value)
+        {
+            SetRDButtonValue(rdbLeaveReasonWork, value);
+            SetRDButtonValue(rdbLeaveReasonTreatment, value);
+            SetRDButtonValue(rdbLeaveReasonEducation, value);
+            SetRDButtonValue(rdbLeaveReasonTempLive, value);
+            SetRDButtonValue(rdbLeaveReasonTravel, value);
+            SetRDButtonValue(rdbLeaveReasonMerriage, value);
+            SetRDButtonValue(rdbLeaveReasonOthers, value);
+            SetRDButtonValue(rdbLeaveReasonPermanentLive, value);
+        }
+
+        private void SetChetEldagiIshTuri(string value)
+        {
+            SetRDButtonValue(rdbWorkOutsiteTypeBuilder, value);
+            SetRDButtonValue(rdbWorkOutsiteTypeSeller, value);
+            SetRDButtonValue(rdbWorkOutsiteTypeTruck, value);
+            SetRDButtonValue(rdbWorkOutsiteTypeCare, value);
+            SetRDButtonValue(rdbWorkOutsiteTypeCleaning, value);
+            SetRDButtonValue(rdbWorkOutsiteTypeBeautySalon, value);
+            SetRDButtonValue(rdbWorkOutsiteTypeGoverment, value);
+            SetRDButtonValue(rdbWorkOutsiteTypeEnterprieneur, value);
+            SetRDButtonValue(rdbWorkOutsiteTypeOthers, value);
+        }
+
+        private void SetChetEldanQaytishIstagiBorligi(string value)
+        {
+            SetRDButtonValue(rdbHaveAWillToReturnBackYes, value);
+            SetRDButtonValue(rdbHaveAWillToReturnBackNo, value);
+        }
+
+        private void SetNimaYordamBerilsaQaytadi(string value)
+        {
+            SetRDButtonValue(rdbHowHelpWork, value);
+            SetRDButtonValue(rdbHowHelpEducation, value);
+            SetRDButtonValue(rdbHowHelpMedicalTreatment, value);
+            SetRDButtonValue(rdbHowHelpMedicalHouse, value);
+            SetRDButtonValue(rdbHowHelpMedicalRepairment, value);
+            SetRDButtonValue(rdbHowHelpMedicalFamily, value);
+            SetRDButtonValue(rdbHowHelpMedicalWeddings, value);
+            SetRDButtonValue(rdbHowHelpMedicalOther, value);
+        }
+
+        private void SetRDButtonValue(RadioButton radioButton, string value)
+        {
+            if (radioButton.Text == value)
+            {
+                radioButton.Checked = true;
+            }
+        }
+
+        private void SetCheckBoxValue(CheckBox checkBox, string value)
+        {
+            if (checkBox.Text == value)
+            {
+                checkBox.Checked = true;
+            }
+        }
+
+        private void SetCheckBoxValue(CheckBox checkBox, string[] values)
+        {
+            foreach (var value in values)
+            {
+                if (checkBox.Text == value)
+                {
+                    checkBox.Checked = true;
+                }
+            }
+        }
+
+        private void SetXorijdaBirgalikdagiOilaAzolari(string value)
+        {
+            if (string.IsNullOrEmpty(value))
+            {
+                return;
+            }
+
+            string[] values = value.Split(',');
+            SetCheckBoxValue(chbOutTogatherSpouse, values);
+            SetCheckBoxValue(chbOutTogatherChild, values);
+            SetCheckBoxValue(chbOutTogatherFather, values);
+            SetCheckBoxValue(chbOutTogatherMother, values);
+            SetCheckBoxValue(chbOutTogatherBrother, values);
+            SetCheckBoxValue(chbOutTogatherSister, values);
+            SetCheckBoxValue(chbOutTogatherOthers, values);
+        }
+
+        private void SetOiladagiMuammolari(string value)
+        {
+            if (string.IsNullOrEmpty(value))
+            {
+                return;
+            }
+
+            string[] values = value.Split(',');
+            SetCheckBoxValue(chbFamilyProblemsWorkless, values);
+            SetCheckBoxValue(chbFamilyProblemsEducation, values);
+            SetCheckBoxValue(chbFamilyProblemsTreatment, values);
+            SetCheckBoxValue(chbFamilyProblemsFamily, values);
+            SetCheckBoxValue(chbFamilyProblemsPlaceToLive, values);
+            SetCheckBoxValue(chbFamilyProblemsRepairment, values);
+            SetCheckBoxValue(chbFamilyProblemsOthers, values);
+        }
+
+        private void SetXorijdagiMuammolari(string value)
+        {
+            if (string.IsNullOrEmpty(value))
+            {
+                return;
+            }
+
+            string[] values = value.Split(',');
+            SetCheckBoxValue(chbOutPersonProblemsLostPassport, values);
+            SetCheckBoxValue(chbOutPersonProblemsWorkless, values);
+            SetCheckBoxValue(chbOutPersonProblemsNoPayment, values);
+            SetCheckBoxValue(chbOutPersonProblemsPersonSold, values);
+            SetCheckBoxValue(chbOutPersonProblemsLivePermitless, values);
+            SetCheckBoxValue(chbOutPersonProblemsWorkPermitless, values);
+            SetCheckBoxValue(chbOutPersonProblemsOthers, values);
         }
     }
 }

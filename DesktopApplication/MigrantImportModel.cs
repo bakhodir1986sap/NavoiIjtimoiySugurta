@@ -86,7 +86,11 @@
 
         public string OiladagiMuammolarSoni { get; set; }
 
+        public string OiladagiMuammolari { get; set; }
+
         public string XorijdagiMuammolarSoni { get; set; }
+
+        public string XorijdagiMuammolari { get; set; }
 
         public string NimaYordamBerilsaQaytadi { get; set; }
 
