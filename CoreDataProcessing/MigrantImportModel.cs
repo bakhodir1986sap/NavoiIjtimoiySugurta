@@ -14,16 +14,16 @@ namespace NavoiKasabaUyushmasi.Model
 
         public string XududNomi { get; set; }
 
-        [Field(2, true, substitutionFieldNumber: 8)]
+        [Field(2, false, substitutionFieldNumber: 8)]
         public string SorIshtirFio { get; set; }
 
-        [Field(3, true)]
+        [Field(3, false)]
         public string SorIshtirQarindoshligi { get; set; }
 
-        [Field(4, true, substitutionFieldNumber: 9, maxLength: 2)]
+        [Field(4, false, substitutionFieldNumber: 9, maxLength: 2)]
         public string SorIshtirPassportSeria { get; set; }
 
-        [Field(5, true, substitutionFieldNumber: 10, maxLength: 7)]
+        [Field(5, false, substitutionFieldNumber: 10, maxLength: 7)]
         public string SorIshtirPassportRaqam { get; set; }
 
         [Field(6, false)]
@@ -42,13 +42,13 @@ namespace NavoiKasabaUyushmasi.Model
         public string RaqamPassport { get; set; }
 
         //Ёши	
-        [Field(11, true)]
+        [Field(11, false)]
         public string TugilganKun { get; set; }
 
-        [Field(12, true)]
+        [Field(12, false)]
         public string TugilganOy { get; set; }
 
-        [Field(13, true)]
+        [Field(13, false)]
         public string TugilganYil { get; set; }
 
         [Field(14, false)]
@@ -75,14 +75,14 @@ namespace NavoiKasabaUyushmasi.Model
         public string FuqorolikXolati { get; set; }
 
         //Маълумоти 							
-        [Field(21, false, defaultValue: "маълумотсиз", options: ["олий", "ўрта махсус", "ўрта", "маълумотсиз"])]
+        [Field(21, false, defaultValue: "маълумотсиз", options: ["олий", "ўрта махсус", "ўрта", "маълумотсиз", ",бакалавр", "магистр"])]
         public string Malumoti { get; set; }
 
         [Field(22, false)]
         public string Mutaxasisligi { get; set; }
 
         //Хорижда юрган фуқароларнинг ҳозирги ҳолати 
-        [Field(23, true, options: ["чет элда", "чет элда ЖИЭМда сақланмоқда", "бедарак йўқолган", "Ўзбекистонга қайтган", "вафот этган", "қидирувда"])]
+        [Field(23, true, defaultValue: "чет элда", options: ["чет элда", "чет элда ЖИЭМда сақланмоқда", "бедарак йўқолган", "Ўзбекистонга қайтган", "вафот этган", "қидирувда"])]
         public string XozirgiXolati { get; set; }
 
         //Ҳозирги кунда хорижда юрган фуқаролар сони - Сана куйилмаганлардан олинади
@@ -110,14 +110,14 @@ namespace NavoiKasabaUyushmasi.Model
         [Field(30, false, substitutionFieldNumber: 24)]
         public string VoyagaEtganFarzandlarSoni { get; set; }
 
-        [Field(31, false, options: ["кам таъминланган", "ўрта ҳол", "яхши"], substitutionFieldNumber: 24)]
+        [Field(31, false, defaultValue: "ўрта ҳол", options: ["кам таъминланган", "ўрта ҳол", "яхши"], substitutionFieldNumber: 24)]
         public string IjtimoiyXolati { get; set; }
 
         [Field(32, false, substitutionFieldNumber: 24)]
         public string XorijgaKetganSanasi { get; set; }
 
         //Хорижга кетган давлат номи
-        [Field(33, true, substitutionFieldNumber: 24)]
+        [Field(33, true, substitutionFieldNumber: 24, defaultValue: "Бошқа давлатлар", options: ["Россия", "Туркия", "Қозоғистон", "Корея Республикаси", "Бошқа давлатлар", "Казан", "Москва", "Питер"])]
         public string DavlatVaXudud { get; set; }
 
         //Ишлаш рухсат- номаси (патент) мавжуд бўлмаганлари сони
@@ -164,6 +164,8 @@ namespace NavoiKasabaUyushmasi.Model
         public RowStatus RowStatus { get; set; } = RowStatus.New;
 
         public string ErrorText { get; set; }
+
+        public string Age18BelowOrUpper { get; set; }
     }
 
     public enum RowStatus

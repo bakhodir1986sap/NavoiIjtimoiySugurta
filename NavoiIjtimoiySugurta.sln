@@ -3,9 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34525.116
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreDataProcessing", "CoreDataProcessing\CoreDataProcessing.csproj", "{0B63D56F-2320-41C2-A22C-69F9A683ABAF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoreDataProcessing", "CoreDataProcessing\CoreDataProcessing.csproj", "{0B63D56F-2320-41C2-A22C-69F9A683ABAF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataProcessingTests", "DataProcessingTests\DataProcessingTests.csproj", "{F82B470F-87E2-4EAB-88F3-EB902E211BAD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataProcessingTests", "DataProcessingTests\DataProcessingTests.csproj", "{F82B470F-87E2-4EAB-88F3-EB902E211BAD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExcelAnketaProcessorConsole", "ExcelAnketaProcessorConsole\ExcelAnketaProcessorConsole.csproj", "{9F6CD71A-D49D-4927-9FDD-9E39F1637CC1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesktopApplication", "DesktopApplication\DesktopApplication.csproj", "{76165C86-403C-46D7-BC68-AFC07C92F04C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{F82B470F-87E2-4EAB-88F3-EB902E211BAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F82B470F-87E2-4EAB-88F3-EB902E211BAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F82B470F-87E2-4EAB-88F3-EB902E211BAD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F6CD71A-D49D-4927-9FDD-9E39F1637CC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F6CD71A-D49D-4927-9FDD-9E39F1637CC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F6CD71A-D49D-4927-9FDD-9E39F1637CC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F6CD71A-D49D-4927-9FDD-9E39F1637CC1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76165C86-403C-46D7-BC68-AFC07C92F04C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76165C86-403C-46D7-BC68-AFC07C92F04C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76165C86-403C-46D7-BC68-AFC07C92F04C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76165C86-403C-46D7-BC68-AFC07C92F04C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

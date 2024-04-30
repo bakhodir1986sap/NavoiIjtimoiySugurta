@@ -21,6 +21,7 @@ namespace CoreDataProcessing
             }
 
             var resultList = new List<MigrantImportModel>();
+            var errorList = new List<MigrantImportModel>();
 
             foreach (var model in migrantImportModels)
             {
@@ -30,7 +31,13 @@ namespace CoreDataProcessing
                 {
                     resultList.Add(resultModel);
                 }
+                else
+                {
+                    errorList.Add(resultModel);
+                }
             }
+
+            resultList.AddRange(errorList);
 
             return resultList;
         }
@@ -54,7 +61,7 @@ namespace CoreDataProcessing
 
             foreach (PropertyInfo property in properties)
             {
-                //Console.WriteLine($"Property name: {property.Name}");
+                Console.WriteLine($"Property name: {property.Name}");
 
                 var value = property.GetValue(model, null);
                 if (value != null && value.GetType() == typeof(string))
@@ -62,19 +69,18 @@ namespace CoreDataProcessing
                     property.SetValue(model, HelperFunctions.RemovePunctuations(value.ToString()), null);
                     value = property.GetValue(model, null);
                 }
-                //ToDo Delete Punktuations and for PassportNumber padding leading zeros
-
-                //Console.Write($" Property value: {value}");
+                
+                Console.Write($" Property value: {value}");
 
                 var attr = (FieldAttribute)Attribute.GetCustomAttribute(property, typeof(FieldAttribute));
                 if (attr != null)
                 {
-                    //Console.WriteLine($"Attribute FieldNumber: {attr.FieldNumber}");
-                    //Console.WriteLine($"Attribute IsMandatory: {attr.IsMandatory}");
-                    //Console.WriteLine($"Attribute ValidationRegEx: {attr.ValidationRegEx}");
-                    //Console.WriteLine($"Attribute DefaultValue: {attr.DefaultValue}");
-                    //Console.WriteLine($"Attribute Options: {attr.Options}");
-                    //Console.WriteLine($"Attribute SubstitutionFieldNumber: {attr.SubstitutionFieldNumber}");
+                    Console.WriteLine($"Attribute FieldNumber: {attr.FieldNumber}");
+                    Console.WriteLine($"Attribute IsMandatory: {attr.IsMandatory}");
+                    Console.WriteLine($"Attribute ValidationRegEx: {attr.ValidationRegEx}");
+                    Console.WriteLine($"Attribute DefaultValue: {attr.DefaultValue}");
+                    Console.WriteLine($"Attribute Options: {attr.Options}");
+                    Console.WriteLine($"Attribute SubstitutionFieldNumber: {attr.SubstitutionFieldNumber}");
 
                     //Data preparetion
                     if (string.IsNullOrEmpty(value?.ToString()) && !string.IsNullOrEmpty(attr.DefaultValue))
@@ -96,12 +102,19 @@ namespace CoreDataProcessing
                             property.SetValue(model, substitutionValue);
                             value = property.GetValue(model, null);
                         }
+
+                        if (string.IsNullOrEmpty(value?.ToString()) && string.IsNullOrEmpty(substitutionValue?.ToString()))
+                        {
+                            model.RowStatus = RowStatus.Error;
+                            model.ErrorText += $", Field {attr.FieldNumber} is mandatory";
+                        }
                     }
                     else if (attr.SubstitutionFieldNumber == 24)
                     {
                         //Qaytib kegan Sana qo'yilgan bo'sa keyingi polyalar to'dirilmaydi
                         var substitutionValue = GetPropertyByFieldNumber(model, attr.SubstitutionFieldNumber).GetValue(model, null);
-                        if (!string.IsNullOrEmpty(substitutionValue?.ToString().Replace("0","").Trim()))
+                        if (!string.IsNullOrEmpty(substitutionValue?.ToString().Replace("0","").Trim()) &&
+                            (substitutionValue?.ToString().Any(char.IsDigit) ?? true))
                         {
                             property.SetValue(model, null);
                             continue;
@@ -156,6 +169,28 @@ namespace CoreDataProcessing
                         {
                             property.SetValue(model, optionExistValue);
                         }
+
+                        value = property.GetValue(model, null);
+                    }
+
+                    if (attr.FieldNumber == 40 || attr.FieldNumber == 41)
+                    {
+                        var currentValue = value?.ToString() ?? string.Empty;
+
+                        currentValue = HelperFunctions.LatinToCyrillicUzbek(currentValue.Trim());
+
+                        var temp = HelperFunctions.CalculateSimilarity(currentValue.ToLower(), "йўқ".ToLower());
+
+                        if (temp >= 0.5)
+                        {
+                            property.SetValue(model, "0");
+                        }
+                        else
+                        {
+                            property.SetValue(model, "1");
+                        }
+
+                        value = property.GetValue(model, null);
                     }
 
                     //Check Data Existing In Database
@@ -172,6 +207,55 @@ namespace CoreDataProcessing
                         model.BazadaBorligi = "0";
                     }
 
+                }
+
+                int birthYear = 0;
+                if (model.TugilganYil != null && model.TugilganYil.Length == 4)
+                {
+                    try
+                    {
+                        birthYear = Convert.ToInt32(HelperFunctions.RemovePunctuations(model.TugilganYil));
+                    }
+                    catch (Exception)
+                    {
+                        birthYear = 2000;
+                    }
+                }
+                else
+                {
+                    birthYear = 2000;
+                }
+
+                int birthMonth = 0;
+                if (model.TugilganOy != null && model.TugilganOy.Length > 0)
+                {
+                    try
+                    { birthMonth = Convert.ToInt32(HelperFunctions.RemovePunctuations(model.TugilganOy)); }
+                    catch (Exception) { birthMonth = 1; }
+                }
+                else
+                {
+                    birthMonth = 1;
+                }
+
+                if (birthYear < 2007)
+                {
+                    model.Age18BelowOrUpper = "18 ва ундан юкори";
+                }
+                else if (birthYear == 2007)
+                {
+                    if (birthMonth <= 4)
+                    {
+                        model.Age18BelowOrUpper = "18 ва ундан юкори";
+                    }
+                    else
+                    {
+                        model.Age18BelowOrUpper = "18 ёшгача";
+                    }
+                }
+                else
+                {
+                    model.Age18BelowOrUpper = "18 ёшгача";
                 }
             }
 
