@@ -47,6 +47,7 @@
             this.txbSorFio = new System.Windows.Forms.TextBox();
             this.lblSorFio = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.btnCheckDb = new System.Windows.Forms.Button();
             this.txbAddressXonadon = new System.Windows.Forms.TextBox();
             this.label22 = new System.Windows.Forms.Label();
             this.txbAddressMFY = new System.Windows.Forms.TextBox();
@@ -191,7 +192,7 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnClose = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
-            this.btnCheckDb = new System.Windows.Forms.Button();
+            this.label23 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -319,6 +320,7 @@
             // 
             this.txbSorTelNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txbSorTelNumber.Location = new System.Drawing.Point(197, 304);
+            this.txbSorTelNumber.MaxLength = 12;
             this.txbSorTelNumber.Name = "txbSorTelNumber";
             this.txbSorTelNumber.Size = new System.Drawing.Size(561, 26);
             this.txbSorTelNumber.TabIndex = 9;
@@ -337,6 +339,7 @@
             // 
             this.txbSorPassNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txbSorPassNumber.Location = new System.Drawing.Point(197, 246);
+            this.txbSorPassNumber.MaxLength = 10;
             this.txbSorPassNumber.Name = "txbSorPassNumber";
             this.txbSorPassNumber.Size = new System.Drawing.Size(561, 26);
             this.txbSorPassNumber.TabIndex = 7;
@@ -355,6 +358,7 @@
             // 
             this.txbSorPassSeria.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txbSorPassSeria.Location = new System.Drawing.Point(197, 200);
+            this.txbSorPassSeria.MaxLength = 4;
             this.txbSorPassSeria.Name = "txbSorPassSeria";
             this.txbSorPassSeria.Size = new System.Drawing.Size(561, 26);
             this.txbSorPassSeria.TabIndex = 5;
@@ -447,6 +451,16 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Хорижга кетган фукаро";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // btnCheckDb
+            // 
+            this.btnCheckDb.Location = new System.Drawing.Point(795, 133);
+            this.btnCheckDb.Name = "btnCheckDb";
+            this.btnCheckDb.Size = new System.Drawing.Size(208, 44);
+            this.btnCheckDb.TabIndex = 34;
+            this.btnCheckDb.Text = "IIBdan tekshirish";
+            this.btnCheckDb.UseVisualStyleBackColor = true;
+            this.btnCheckDb.Click += new System.EventHandler(this.btnCheckDb_Click);
             // 
             // txbAddressXonadon
             // 
@@ -558,6 +572,7 @@
             this.dtpReturnDate.ShowCheckBox = true;
             this.dtpReturnDate.Size = new System.Drawing.Size(179, 27);
             this.dtpReturnDate.TabIndex = 21;
+            this.dtpReturnDate.ValueChanged += new System.EventHandler(this.dtpReturnDate_ValueChanged);
             // 
             // groupBox4
             // 
@@ -724,13 +739,14 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.label23);
             this.groupBox2.Controls.Add(this.rdbForeign);
             this.groupBox2.Controls.Add(this.rdbNoCitizen);
             this.groupBox2.Controls.Add(this.rdbUzbCitizen);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(40, 354);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(729, 100);
+            this.groupBox2.Size = new System.Drawing.Size(864, 100);
             this.groupBox2.TabIndex = 17;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Фуқаролик ҳолати";
@@ -739,7 +755,7 @@
             // 
             this.rdbForeign.AutoSize = true;
             this.rdbForeign.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdbForeign.Location = new System.Drawing.Point(398, 30);
+            this.rdbForeign.Location = new System.Drawing.Point(398, 24);
             this.rdbForeign.Name = "rdbForeign";
             this.rdbForeign.Size = new System.Drawing.Size(172, 24);
             this.rdbForeign.TabIndex = 4;
@@ -750,7 +766,7 @@
             // 
             this.rdbNoCitizen.AutoSize = true;
             this.rdbNoCitizen.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdbNoCitizen.Location = new System.Drawing.Point(33, 60);
+            this.rdbNoCitizen.Location = new System.Drawing.Point(588, 24);
             this.rdbNoCitizen.Name = "rdbNoCitizen";
             this.rdbNoCitizen.Size = new System.Drawing.Size(260, 24);
             this.rdbNoCitizen.TabIndex = 3;
@@ -762,7 +778,7 @@
             this.rdbUzbCitizen.AutoSize = true;
             this.rdbUzbCitizen.Checked = true;
             this.rdbUzbCitizen.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdbUzbCitizen.Location = new System.Drawing.Point(33, 30);
+            this.rdbUzbCitizen.Location = new System.Drawing.Point(33, 24);
             this.rdbUzbCitizen.Name = "rdbUzbCitizen";
             this.rdbUzbCitizen.Size = new System.Drawing.Size(336, 24);
             this.rdbUzbCitizen.TabIndex = 2;
@@ -812,6 +828,7 @@
             // 
             this.txbPassNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txbPassNum.Location = new System.Drawing.Point(208, 142);
+            this.txbPassNum.MaxLength = 10;
             this.txbPassNum.Name = "txbPassNum";
             this.txbPassNum.Size = new System.Drawing.Size(561, 27);
             this.txbPassNum.TabIndex = 11;
@@ -830,6 +847,7 @@
             // 
             this.txbPassSeria.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txbPassSeria.Location = new System.Drawing.Point(208, 100);
+            this.txbPassSeria.MaxLength = 4;
             this.txbPassSeria.Name = "txbPassSeria";
             this.txbPassSeria.Size = new System.Drawing.Size(561, 27);
             this.txbPassSeria.TabIndex = 9;
@@ -2065,15 +2083,17 @@
             this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
-            // btnCheckDb
+            // label23
             // 
-            this.btnCheckDb.Location = new System.Drawing.Point(795, 133);
-            this.btnCheckDb.Name = "btnCheckDb";
-            this.btnCheckDb.Size = new System.Drawing.Size(208, 44);
-            this.btnCheckDb.TabIndex = 34;
-            this.btnCheckDb.Text = "IIBdan tekshirish";
-            this.btnCheckDb.UseVisualStyleBackColor = true;
-            this.btnCheckDb.Click += new System.EventHandler(this.btnCheckDb_Click);
+            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.ForeColor = System.Drawing.Color.Red;
+            this.label23.Location = new System.Drawing.Point(28, 57);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(809, 32);
+            this.label23.TabIndex = 5;
+            this.label23.Text = "Агар Ўзбекистон Республикаси фуқароси фуқароликдан чиқмаган ҳолда бошқа давлат фу" +
+    "қаролигини олган бўлса, ушбу фуқаро Ўзбекистон Республикаси фуқароси сифатида бе" +
+    "лгиланади.";
             // 
             // AnketaForm
             // 
@@ -2304,5 +2324,6 @@
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.GroupBox groupBox18;
         private System.Windows.Forms.Button btnCheckDb;
+        private System.Windows.Forms.Label label23;
     }
 }

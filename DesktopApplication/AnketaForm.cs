@@ -1153,18 +1153,44 @@ namespace DesktopApplication
 
         private void btnCheckDb_Click(object sender, EventArgs e)
         {
-            string pspEntered = $"{txbPassSeria.Text}{txbPassNum.Text}";
-
-            var ichkiMigrantlar = databaseContext.IchkiIshlarBazaDannixes.Where(x => x.psp == pspEntered).ToList();
-
-            if (ichkiMigrantlar.Count > 0)
+            try
             {
-                var ichkiMigrant = ichkiMigrantlar.First();
-                MessageBox.Show("Mijoz bazada mavjud! " + $"{ichkiMigrant.name_latin} - {ichkiMigrant.pinpp} - {ichkiMigrant.address} - {ichkiMigrant.country_out}", "Xabar", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                string pspEntered = $"{txbPassSeria.Text}{txbPassNum.Text}";
+
+                var ichkiMigrantlar = databaseContext.IchkiIshlarBazaDannixes.Where(x => x.psp == pspEntered).ToList();
+
+                if (ichkiMigrantlar.Count > 0)
+                {
+                    var ichkiMigrant = ichkiMigrantlar.First();
+                    MessageBox.Show("Mijoz bazada mavjud! " + $"Ismi: {ichkiMigrant.name_latin} - Pinfl: {ichkiMigrant.pinpp} - Address: {ichkiMigrant.address} -Qaysi davlatda: {ichkiMigrant.country_out}", "Xabar", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show("Mijoz bazada mavjud emas!", "Xabar", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+            catch (Exception ex)
+            {
+                 MessageBox.Show("Mijoz bazada mavjud emas! " + ex.Message, "Xabar", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+
+        }
+
+        private void dtpReturnDate_ValueChanged(object sender, EventArgs e)
+        {
+            if (dtpReturnDate.Checked)
+            {
+                MessageBox.Show("Ўзбекистонга қайтган фуқаро тўғрисидаги маълумотлар фақат анкетанинг 10 банддан сўнг тўлдирилмайди.");
+
+                tabPage3.Enabled = false;
+                tabPage4.Enabled = false;
+                tabPage5.Enabled = false;
             }
             else
             {
-                MessageBox.Show("Mijoz bazada mavjud emas!", "Xabar", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                tabPage3.Enabled = true;
+                tabPage4.Enabled = true;
+                tabPage5.Enabled = true;
             }
         }
     }

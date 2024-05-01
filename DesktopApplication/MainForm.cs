@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.Entity;
 using System.Drawing;
 using System.IO;
 using System.Linq;
@@ -21,7 +22,7 @@ namespace DesktopApplication
             InitializeComponent();
         }
 
-        private void btn_Search_Click(object sender, EventArgs e)
+        private async void btn_Search_Click(object sender, EventArgs e)
         {
             var Fio = txbSearch.Text;
 
@@ -29,7 +30,7 @@ namespace DesktopApplication
             {
                 dgvMigrants.Rows.Clear();
 
-                MigrantImportModels = db.MigrantImportModels.ToList();
+                MigrantImportModels = await db.MigrantImportModels.ToListAsync();
 
                 foreach (var item in MigrantImportModels)
                 {
@@ -41,7 +42,7 @@ namespace DesktopApplication
 
             var migrants = db.MigrantImportModels.Where(x => x.Fio.Contains(Fio));
 
-            if (migrants.Any())
+            if (await migrants.AnyAsync())
             {
                 dgvMigrants.Rows.Clear();
 
@@ -56,7 +57,7 @@ namespace DesktopApplication
             }
         }
 
-        private void btnAdd_Click(object sender, EventArgs e)
+        private async void btnAdd_Click(object sender, EventArgs e)
         {
             AnketaForm anketaForm = new AnketaForm();
             anketaForm.IsInEditMode = false;
@@ -69,7 +70,7 @@ namespace DesktopApplication
 
                 string pspEntered = $"{SelectedModel.SeriaPassport}{SelectedModel.RaqamPassport}";
 
-                var isExist = db.IchkiIshlarBazaDannixes.FirstOrDefault(x => x.psp == pspEntered);
+                var isExist = await db.IchkiIshlarBazaDannixes.FirstOrDefaultAsync(x => x.psp == pspEntered);
 
                 SelectedModel.BazadaBorligi = isExist != null ? "1" : "0";
 
@@ -77,7 +78,7 @@ namespace DesktopApplication
 
                 db.MigrantImportModels.Add(SelectedModel);
 
-                db.SaveChanges();
+                await db.SaveChangesAsync();
 
                 dgvMigrants.Rows.Clear();
 
@@ -88,13 +89,19 @@ namespace DesktopApplication
             }
         }
 
-        private void btnModify_Click(object sender, EventArgs e)
+        private async void btnModify_Click(object sender, EventArgs e)
         {
+            if (dgvMigrants.SelectedRows.Count == 0)
+            {
+                MessageBox.Show("Iltimos qatorni tanlang");
+                return;
+            }
+
             var Fio =  dgvMigrants.SelectedRows[0].Cells[1].Value.ToString();
             var passSeria = dgvMigrants.SelectedRows[0].Cells[2].Value.ToString();
             var passNumber = dgvMigrants.SelectedRows[0].Cells[3].Value.ToString();
 
-            SelectedModel = db.MigrantImportModels.FirstOrDefault(x => x.Fio == Fio && x.SeriaPassport == passSeria && x.RaqamPassport == passNumber);
+            SelectedModel =await  db.MigrantImportModels.FirstOrDefaultAsync(x => x.Fio == Fio && x.SeriaPassport == passSeria && x.RaqamPassport == passNumber);
 
             if (SelectedModel == null)
             {
@@ -102,10 +109,12 @@ namespace DesktopApplication
                 return;
             }
 
-            AnketaForm anketaForm = new AnketaForm();
-            anketaForm.IsInEditMode = true;
-            anketaForm.CurrentModel = SelectedModel;
-            anketaForm.databaseContext = db;
+            AnketaForm anketaForm = new AnketaForm
+            {
+                IsInEditMode = true,
+                CurrentModel = SelectedModel,
+                databaseContext = db
+            };
             anketaForm.ShowDialog(this);
 
             if (anketaForm.DialogResult == DialogResult.OK)
@@ -114,11 +123,11 @@ namespace DesktopApplication
 
                 string pspEntered = $"{SelectedModel.SeriaPassport}{SelectedModel.RaqamPassport}";
 
-                var isExist = db.IchkiIshlarBazaDannixes.FirstOrDefault(x => x.psp == pspEntered);
+                var isExist = await db.IchkiIshlarBazaDannixes.FirstOrDefaultAsync(x => x.psp == pspEntered);
 
                 SelectedModel.BazadaBorligi = isExist != null ? "1" : "0";
 
-                db.SaveChanges();
+                await db.SaveChangesAsync();
 
                 dgvMigrants.Rows.Clear();
 
@@ -129,13 +138,19 @@ namespace DesktopApplication
             }
         }
 
-        private void btnDelete_Click(object sender, EventArgs e)
+        private async void btnDelete_Click(object sender, EventArgs e)
         {
+            if (dgvMigrants.SelectedRows.Count == 0)
+            {
+                MessageBox.Show("Iltimos qatorni tanlang");
+                return;
+            }
+
             var Fio = dgvMigrants.SelectedRows[0].Cells[1].Value.ToString();
             var passSeria = dgvMigrants.SelectedRows[0].Cells[2].Value.ToString();
             var passNumber = dgvMigrants.SelectedRows[0].Cells[3].Value.ToString();
 
-            SelectedModel = db.MigrantImportModels.FirstOrDefault(x => x.Fio == Fio && x.SeriaPassport == passSeria && x.RaqamPassport == passNumber);
+            SelectedModel = await db.MigrantImportModels.FirstOrDefaultAsync(x => x.Fio == Fio && x.SeriaPassport == passSeria && x.RaqamPassport == passNumber);
 
             if (SelectedModel == null)
             {
@@ -145,11 +160,11 @@ namespace DesktopApplication
 
             db.MigrantImportModels.Remove(SelectedModel);
 
-            db.SaveChanges();
+            await db.SaveChangesAsync();
 
             dgvMigrants.Rows.Clear();
 
-            MigrantImportModels = db.MigrantImportModels.ToList();
+            MigrantImportModels = await db.MigrantImportModels.ToListAsync();
 
             foreach (var item in MigrantImportModels)
             {
@@ -305,15 +320,20 @@ namespace DesktopApplication
 
         private void btnClose_Click(object sender, EventArgs e)
         {
+            if (db != null)
+            {
+                db.Dispose();
+            }
+
             this.Close();
         }
 
         public MigrantImportModel SelectedModel { get; set; }
         public List<MigrantImportModel> MigrantImportModels { get; set; } = new List<MigrantImportModel>();
 
-        private void MainForm_Load(object sender, EventArgs e)
+        private async void MainForm_Load(object sender, EventArgs e)
         {
-            MigrantImportModels = db.MigrantImportModels.ToList();
+            MigrantImportModels = await db.MigrantImportModels.ToListAsync();
 
             foreach (var item in MigrantImportModels)
             {
