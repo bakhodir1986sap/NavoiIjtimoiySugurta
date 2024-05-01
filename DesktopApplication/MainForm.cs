@@ -8,6 +8,7 @@ using System.Data.Entity;
 using System.Drawing;
 using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -59,9 +60,13 @@ namespace DesktopApplication
 
         private async void btnAdd_Click(object sender, EventArgs e)
         {
+            var lastMigrant = await db.MigrantImportModels.OrderByDescending(i => i.Id).FirstOrDefaultAsync();
+
             AnketaForm anketaForm = new AnketaForm();
             anketaForm.IsInEditMode = false;
             anketaForm.databaseContext = db;
+            anketaForm.DefaultTuman = lastMigrant?.XududNomi;
+            anketaForm.DefaultMahalla = lastMigrant?.KiritayotganMFY;
             anketaForm.ShowDialog(this);
 
             if (anketaForm.DialogResult == DialogResult.OK)
@@ -97,11 +102,12 @@ namespace DesktopApplication
                 return;
             }
 
+            var Id = int.Parse(dgvMigrants.SelectedRows[0].Cells[0].Value.ToString());
             var Fio =  dgvMigrants.SelectedRows[0].Cells[1].Value.ToString();
             var passSeria = dgvMigrants.SelectedRows[0].Cells[2].Value.ToString();
             var passNumber = dgvMigrants.SelectedRows[0].Cells[3].Value.ToString();
 
-            SelectedModel =await  db.MigrantImportModels.FirstOrDefaultAsync(x => x.Fio == Fio && x.SeriaPassport == passSeria && x.RaqamPassport == passNumber);
+            SelectedModel = await  db.MigrantImportModels.FirstOrDefaultAsync(x => x.Id == Id);
 
             if (SelectedModel == null)
             {
@@ -230,19 +236,27 @@ namespace DesktopApplication
                 xlWorkSheet.Cells[1, 31] = "Voyaga etgan farzandlar soni";
                 xlWorkSheet.Cells[1, 32] = "Ijtimoiy xolati";
                 xlWorkSheet.Cells[1, 33] = "Xorijga ketgan sanasi";
-                xlWorkSheet.Cells[1, 34] = "Davlat va xudud";
-                xlWorkSheet.Cells[1, 35] = "Ishlash ruxsatnomasi mavjudligi";
-                xlWorkSheet.Cells[1, 36] = "Xorijda bir oylik daromadi";
-                xlWorkSheet.Cells[1, 37] = "Xorijda birgalikdagi oila azolari";
-                xlWorkSheet.Cells[1, 38] = "Xorijga ketish maqsadi";
-                xlWorkSheet.Cells[1, 39] = "Chet eldagi ish turi";
-                xlWorkSheet.Cells[1, 40] = "Chet eldan qaytish istagi borligi";
-                xlWorkSheet.Cells[1, 41] = "Xorijdagi muammolar soni";
-                xlWorkSheet.Cells[1, 42] = "Oiladagi muammolar soni";
-                xlWorkSheet.Cells[1, 43] = "Nima yordam berilsa qaytadi";
-                xlWorkSheet.Cells[1, 44] = "Xorijdagi fuqaro telefon raqami";
-                xlWorkSheet.Cells[1, 45] = "Bazada Borligi (0 - Yo'q 1 - Bor)";
-                xlWorkSheet.Cells[1, 46] = "18 yoshdan katta kichik";
+                xlWorkSheet.Cells[1, 34] = "Davlat va xudud"; 
+                xlWorkSheet.Cells[1, 35] = "Davlat Boshqalar";
+                xlWorkSheet.Cells[1, 36] = "Ishlash ruxsatnomasi mavjudligi";
+                xlWorkSheet.Cells[1, 37] = "Xorijda bir oylik daromadi";
+                xlWorkSheet.Cells[1, 38] = "Xorijda birgalikdagi oila azolari";
+                xlWorkSheet.Cells[1, 39] = "Xorijga ketish maqsadi";
+                xlWorkSheet.Cells[1, 40] = "Xorijga ketish maqsadi Boshqalar";
+                xlWorkSheet.Cells[1, 41] = "Chet eldagi ish turi";
+                xlWorkSheet.Cells[1, 42] = "Chet eldagi ish turi Boshqalar";
+                xlWorkSheet.Cells[1, 43] = "Chet eldan qaytish istagi borligi";
+                xlWorkSheet.Cells[1, 44] = "Xorijdagi muammolar soni"; 
+                xlWorkSheet.Cells[1, 45] = "Xorijdagi muammolar ruyxati";
+                xlWorkSheet.Cells[1, 46] = "Xorijdagi muammolar soni Boshqalar";
+                xlWorkSheet.Cells[1, 47] = "Oiladagi muammolar soni";
+                xlWorkSheet.Cells[1, 48] = "Oiladagi muammolar ruyxati";
+                xlWorkSheet.Cells[1, 49] = "Oiladagi muammolar soni Boshqalar";
+                xlWorkSheet.Cells[1, 50] = "Nima yordam berilsa qaytadi";
+                xlWorkSheet.Cells[1, 51] = "Nima yordam berilsa qaytadi Boshqalar";
+                xlWorkSheet.Cells[1, 52] = "Xorijdagi fuqaro telefon raqami";
+                xlWorkSheet.Cells[1, 53] = "Bazada Borligi (0 - Yo'q 1 - Bor)";
+                xlWorkSheet.Cells[1, 54] = "18 yoshdan katta kichik";
                 #endregion
 
                 Console.WriteLine("Excelga yozish boshlandi ...");
@@ -250,7 +264,7 @@ namespace DesktopApplication
                 int row = 2;
                 foreach (var model in migrantImportModels)
                 {
-                    xlWorkSheet.Cells[row, 1] = model.Id;
+                    xlWorkSheet.Cells[row, 1] = row - 1;
                     xlWorkSheet.Cells[row, 2] = model.XududNomi;
                     xlWorkSheet.Cells[row, 3] = model.SorIshtirFio;
                     xlWorkSheet.Cells[row, 4] = model.SorIshtirQarindoshligi;
@@ -283,26 +297,34 @@ namespace DesktopApplication
                     xlWorkSheet.Cells[row, 31] = model.VoyagaEtganFarzandlarSoni;
                     xlWorkSheet.Cells[row, 32] = model.IjtimoiyXolati;
                     xlWorkSheet.Cells[row, 33] = model.XorijgaKetganSanasi;
-                    xlWorkSheet.Cells[row, 34] = model.DavlatVaXudud;
-                    xlWorkSheet.Cells[row, 35] = model.IshlashRuxsatnomasiMavjudligi;
-                    xlWorkSheet.Cells[row, 36] = model.XorijdagiBirOylikDaromadi;
-                    xlWorkSheet.Cells[row, 37] = model.XorijdaBirgalikdagiOilaAzolari;
-                    xlWorkSheet.Cells[row, 38] = model.XorijgaKetishMaqsadi;
-                    xlWorkSheet.Cells[row, 39] = model.ChetEldagiIshTuri;
-                    xlWorkSheet.Cells[row, 40] = model.ChetEldanQaytishIstagiBorligi;
-                    xlWorkSheet.Cells[row, 41] = model.XorijdagiMuammolarSoni;
-                    xlWorkSheet.Cells[row, 42] = model.OiladagiMuammolarSoni;
-                    xlWorkSheet.Cells[row, 43] = model.NimaYordamBerilsaQaytadi;
-                    xlWorkSheet.Cells[row, 44] = model.XorijdagiFuqaroTelefonRaqami;
-                    xlWorkSheet.Cells[row, 45] = model.BazadaBorligi;
-                    xlWorkSheet.Cells[row, 46] = model.Age18BelowOrUpper;
+                    xlWorkSheet.Cells[row, 34] = model.DavlatVaXudud;//
+                    xlWorkSheet.Cells[row, 35] = model.DavlatVaXududBoshqalari;
+                    xlWorkSheet.Cells[row, 36] = model.IshlashRuxsatnomasiMavjudligi;
+                    xlWorkSheet.Cells[row, 37] = model.XorijdagiBirOylikDaromadi;
+                    xlWorkSheet.Cells[row, 38] = model.XorijdaBirgalikdagiOilaAzolari;
+                    xlWorkSheet.Cells[row, 39] = model.XorijgaKetishMaqsadi;
+                    xlWorkSheet.Cells[row, 40] = model.XorijgaKetishMaqsadiBoshqalari;
+                    xlWorkSheet.Cells[row, 41] = model.ChetEldagiIshTuri;
+                    xlWorkSheet.Cells[row, 42] = model.ChetEldagiIshTuriBoshqalari;
+                    xlWorkSheet.Cells[row, 43] = model.ChetEldanQaytishIstagiBorligi;
+                    xlWorkSheet.Cells[row, 44] = model.XorijdagiMuammolarSoni;
+                    xlWorkSheet.Cells[row, 45] = model.XorijdagiMuammolari;
+                    xlWorkSheet.Cells[row, 46] = model.XorijdagiMuammolariBoshqalari;
+                    xlWorkSheet.Cells[row, 47] = model.OiladagiMuammolarSoni;
+                    xlWorkSheet.Cells[row, 48] = model.OiladagiMuammolari;
+                    xlWorkSheet.Cells[row, 49] = model.OiladagiMuammolariBoshqalari;
+                    xlWorkSheet.Cells[row, 50] = model.NimaYordamBerilsaQaytadi;
+                    xlWorkSheet.Cells[row, 51] = model.NimaYordamBerilsaQaytadiBoshqalari;
+                    xlWorkSheet.Cells[row, 52] = model.XorijdagiFuqaroTelefonRaqami;
+                    xlWorkSheet.Cells[row, 53] = model.BazadaBorligi;
+                    xlWorkSheet.Cells[row, 54] = model.Age18BelowOrUpper;
 
                     Console.WriteLine(model.Fio);
                     Console.WriteLine(row);
                     row++;
                 }
 
-                var path = Path.Combine(Directory.GetCurrentDirectory(), "OUT", string.Format("{0}-{1}", fileName ?? "Migrantlar", DateTime.Now.ToString("yyyyMMddhhmmss")));
+                var path = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "OUT", string.Format("{0}-{1}", fileName ?? "Migrantlar", DateTime.Now.ToString("yyyyMMddhhmmss")));
                 xlWorkBook.SaveAs(path);
                 xlApp.Quit();
             }

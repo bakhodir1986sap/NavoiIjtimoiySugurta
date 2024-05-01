@@ -76,6 +76,8 @@ namespace NavoiKasabaUyushmasi.Model
 
         public string DavlatVaXudud { get; set; }
 
+        public string DavlatVaXududBoshqalari { get; set; }
+
         public string IshlashRuxsatnomasiMavjudligi { get; set; }
 
         public string XorijdagiBirOylikDaromadi { get; set; }
@@ -84,7 +86,11 @@ namespace NavoiKasabaUyushmasi.Model
 
         public string XorijgaKetishMaqsadi { get; set; }
 
+        public string XorijgaKetishMaqsadiBoshqalari { get; set; }
+
         public string ChetEldagiIshTuri { get; set; }
+
+        public string ChetEldagiIshTuriBoshqalari { get; set; }
 
         public string ChetEldanQaytishIstagiBorligi { get; set; }
 
@@ -92,11 +98,17 @@ namespace NavoiKasabaUyushmasi.Model
 
         public string OiladagiMuammolari { get; set; }
 
+        public string OiladagiMuammolariBoshqalari { get; set; }
+
         public string XorijdagiMuammolarSoni { get; set; }
 
         public string XorijdagiMuammolari { get; set; }
 
+        public string XorijdagiMuammolariBoshqalari { get; set; }
+
         public string NimaYordamBerilsaQaytadi { get; set; }
+
+        public string NimaYordamBerilsaQaytadiBoshqalari { get; set; }
 
         public string XorijdagiFuqaroTelefonRaqami { get; set; }
 

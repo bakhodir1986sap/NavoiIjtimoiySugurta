@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using NavoiKasabaUyushmasi.Model;
 using CoreDataProcessing;
+using System.IO;
+using System.Reflection;
 
 namespace DesktopApplication
 {
@@ -16,7 +18,7 @@ namespace DesktopApplication
         public DatabaseContext() :
             base(new SQLiteConnection()
             {
-                ConnectionString = new SQLiteConnectionStringBuilder() { DataSource = "./Migrant.db" }.ConnectionString
+                ConnectionString = new SQLiteConnectionStringBuilder() { DataSource = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location) +  "/Migrant.db" }.ConnectionString
             }, true)
         {
         }

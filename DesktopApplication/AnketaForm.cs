@@ -29,7 +29,7 @@ namespace DesktopApplication
             {
                 CurrentModel = new MigrantImportModel
                 {
-                    XududNomi = txbTumanNomi.Text,
+                    XududNomi = cbxTumanNomi.SelectedItem.ToString(),
                     KiritayotganMFY = txbMahallaNomi.Text,
                     SorIshtirFio = txbSorFio.Text,
                     SorIshtirQarindoshligi = txbQarindoshligi.Text,
@@ -77,12 +77,18 @@ namespace DesktopApplication
                     XorijdagiFuqaroTelefonRaqami = IsPersonOut ? txbForeignPersonPhone.Text : string.Empty,
                     Age18BelowOrUpper = Age18BelowOrUpper,
                     OiladagiMuammolari = IsPersonOut ? OiladagiMuammolari : string.Empty,
-                    XorijdagiMuammolari = IsPersonOut ? XorijdagiMuammolari : string.Empty
+                    XorijdagiMuammolari = IsPersonOut ? XorijdagiMuammolari : string.Empty,
+                    ChetEldagiIshTuriBoshqalari = IsPersonOut ? txbWorkOutsiteTypeOthers.Text : string.Empty,
+                    OiladagiMuammolariBoshqalari = IsPersonOut ? txbFamilyProblemsOthers.Text : string.Empty,
+                    XorijdagiMuammolariBoshqalari = IsPersonOut ? txbchbOutPersonProblemsOthers.Text : string.Empty,
+                    NimaYordamBerilsaQaytadiBoshqalari = IsPersonOut ? txbHowHelpMedicalOther.Text : string.Empty,
+                    XorijgaKetishMaqsadiBoshqalari = IsPersonOut ? txbLeaveReasonOthers.Text : string.Empty,
+                    DavlatVaXududBoshqalari = IsPersonOut ? txbLeaveCountryOthers.Text : string.Empty,
                 };
             }
             else
             {
-                    CurrentModel.XududNomi = txbTumanNomi.Text;
+                    CurrentModel.XududNomi = cbxTumanNomi.SelectedItem.ToString();
                     CurrentModel.KiritayotganMFY = txbMahallaNomi.Text;
                     CurrentModel.SorIshtirFio = txbSorFio.Text;
                     CurrentModel.SorIshtirQarindoshligi = txbQarindoshligi.Text;
@@ -129,6 +135,12 @@ namespace DesktopApplication
                     CurrentModel.NimaYordamBerilsaQaytadi = IsPersonOut ? NimaYordamBerilsaQaytadi : string.Empty;
                     CurrentModel.XorijdagiFuqaroTelefonRaqami = IsPersonOut ? txbForeignPersonPhone.Text : string.Empty;
                     CurrentModel.Age18BelowOrUpper = Age18BelowOrUpper;
+                    CurrentModel.ChetEldagiIshTuriBoshqalari = IsPersonOut ? txbWorkOutsiteTypeOthers.Text : string.Empty;
+                    CurrentModel.OiladagiMuammolariBoshqalari = IsPersonOut ? txbFamilyProblemsOthers.Text : string.Empty;
+                    CurrentModel.XorijdagiMuammolariBoshqalari = IsPersonOut ? txbchbOutPersonProblemsOthers.Text : string.Empty;
+                    CurrentModel.NimaYordamBerilsaQaytadiBoshqalari = IsPersonOut ? txbHowHelpMedicalOther.Text : string.Empty;
+                    CurrentModel.XorijgaKetishMaqsadiBoshqalari = IsPersonOut ? txbLeaveReasonOthers.Text : string.Empty;
+                    CurrentModel.DavlatVaXududBoshqalari = IsPersonOut ? txbLeaveCountryOthers.Text : string.Empty;
             }
 
 
@@ -744,47 +756,49 @@ namespace DesktopApplication
         {
             get
             {
-                if (rdbHowHelpWork.Checked)
+               string result = string.Empty;
+
+                if (chbrHowHelpWork.Checked)
                 {
-                    return rdbHowHelpWork.Text;
+                    result += chbrHowHelpWork.Text + ",";
                 }
 
-                if (rdbHowHelpEducation.Checked)
+                if (chbHowHelpEducation.Checked)
                 {
-                    return rdbHowHelpEducation.Text;
+                    result += chbHowHelpEducation.Text + ",";
                 }
 
-                if (rdbHowHelpMedicalTreatment.Checked)
+                if (chbHowHelpMedicalTreatment.Checked)
                 {
-                    return rdbHowHelpMedicalTreatment.Text;
+                    result += chbHowHelpMedicalTreatment.Text + ",";
                 }
 
-                if (rdbHowHelpMedicalHouse.Checked)
+                if (chbHowHelpMedicalFamily.Checked)
                 {
-                    return rdbHowHelpMedicalHouse.Text;
+                    result += chbHowHelpMedicalFamily.Text + ",";
                 }
 
-                if (rdbHowHelpMedicalRepairment.Checked)
+                if (chbHowHelpMedicalHouse.Checked)
                 {
-                    return rdbHowHelpMedicalRepairment.Text;
+                    result += chbHowHelpMedicalHouse.Text + ",";
                 }
 
-                if (rdbHowHelpMedicalFamily.Checked)
+                if (chbHowHelpMedicalRepairment.Checked)
                 {
-                    return rdbHowHelpMedicalFamily.Text;
+                    result += chbHowHelpMedicalRepairment.Text + ",";
                 }
 
-                if (rdbHowHelpMedicalWeddings.Checked)
+                if (chbHowHelpMedicalWeddings.Checked)
                 {
-                    return rdbHowHelpMedicalWeddings.Text;
+                    result += chbHowHelpMedicalWeddings.Text + ",";
                 }
 
-                if (rdbHowHelpMedicalOther.Checked)
+                if (chbHowHelpMedicalOther.Checked)
                 {
-                    return rdbHowHelpMedicalOther.Text;
+                    result += chbHowHelpMedicalOther.Text + ",";
                 }
 
-                return string.Empty;
+                return result;
             }
         }
 
@@ -816,11 +830,11 @@ namespace DesktopApplication
 
         private bool ValidateForm()
         {
-            if (string.IsNullOrEmpty(txbTumanNomi.Text))
+            if (string.IsNullOrEmpty(cbxTumanNomi.SelectedItem.ToString()))
             {
                 MessageBox.Show("Tuman nomini kiriting!", "Xatolik", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 tabControl1.SelectedTab = tabPage1;
-                txbTumanNomi.Focus();
+                cbxTumanNomi.Focus();
                 return false;
             }
 
@@ -840,37 +854,37 @@ namespace DesktopApplication
                 return false;
             }
 
-            if (string.IsNullOrEmpty(txbSorFio.Text))
-            {
-                MessageBox.Show("So'rovnoma ishtirokchisini kiriting!", "Xatolik", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                tabControl1.SelectedTab = tabPage1;
-                txbSorFio.Focus();
-                return false;
-            }
+            //if (string.IsNullOrEmpty(txbSorFio.Text))
+            //{
+            //    MessageBox.Show("So'rovnoma ishtirokchisini kiriting!", "Xatolik", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            //    tabControl1.SelectedTab = tabPage1;
+            //    txbSorFio.Focus();
+            //    return false;
+            //}
 
-            if (string.IsNullOrEmpty(txbSorPassSeria.Text))
-            {
-                MessageBox.Show("So'rovnoma ishtirokchisi Passport Seria kiriting!", "Xatolik", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                tabControl1.SelectedTab = tabPage1;
-                txbSorPassSeria.Focus();
-                return false;
-            }
+            //if (string.IsNullOrEmpty(txbSorPassSeria.Text))
+            //{
+            //    MessageBox.Show("So'rovnoma ishtirokchisi Passport Seria kiriting!", "Xatolik", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            //    tabControl1.SelectedTab = tabPage1;
+            //    txbSorPassSeria.Focus();
+            //    return false;
+            //}
 
-            if (string.IsNullOrEmpty(txbSorPassNumber.Text))
-            {
-                MessageBox.Show("So'rovnoma ishtirokchisi Passport Nomer kiriting!", "Xatolik", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                tabControl1.SelectedTab = tabPage1;
-                txbSorPassNumber.Focus();
-                return false;
-            }
+            //if (string.IsNullOrEmpty(txbSorPassNumber.Text))
+            //{
+            //    MessageBox.Show("So'rovnoma ishtirokchisi Passport Nomer kiriting!", "Xatolik", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            //    tabControl1.SelectedTab = tabPage1;
+            //    txbSorPassNumber.Focus();
+            //    return false;
+            //}
 
-            if (string.IsNullOrEmpty(txbSorTelNumber.Text))
-            {
-                MessageBox.Show("So'rovnoma ishtirokchisi telefon raqamini kiriting!", "Xatolik", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                tabControl1.SelectedTab = tabPage1;
-                txbSorTelNumber.Focus();
-                return false;
-            }
+            //if (string.IsNullOrEmpty(txbSorTelNumber.Text))
+            //{
+            //    MessageBox.Show("So'rovnoma ishtirokchisi telefon raqamini kiriting!", "Xatolik", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            //    tabControl1.SelectedTab = tabPage1;
+            //    txbSorTelNumber.Focus();
+            //    return false;
+            //}
 
             if (string.IsNullOrEmpty(txbPassSeria.Text))
             {
@@ -888,6 +902,124 @@ namespace DesktopApplication
                 return false;
             }
 
+            if (rdbCurStateOut.Checked)
+            {
+                if (string.IsNullOrEmpty(Sogligi))
+                {
+                    MessageBox.Show("Sogligini kiriting!", "Xatolik", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    tabControl1.SelectedTab = tabPage3;
+                    return false;
+                }
+
+                if (string.IsNullOrEmpty(OilaviyXolati))
+                {
+                    MessageBox.Show("Oilaviy Xolatini kiriting!", "Xatolik", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    tabControl1.SelectedTab = tabPage3;
+                    return false;
+                }
+
+                if (string.IsNullOrEmpty(OilaviyMuxiti))
+                {
+                    MessageBox.Show("Oilaviy Muxitini kiriting!", "Xatolik", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    tabControl1.SelectedTab = tabPage3;
+                    return false;
+                }
+
+                if (string.IsNullOrEmpty(IjtimoiyXolati))
+                {
+                    MessageBox.Show("Ijtimoiy Xolatini kiriting!", "Xatolik", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    tabControl1.SelectedTab = tabPage3;
+                    return false;
+                }
+
+                if (string.IsNullOrEmpty(DavlatVaXudud))
+                {
+                    MessageBox.Show("Davlat Xudud kiriting!", "Xatolik", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    tabControl1.SelectedTab = tabPage3;
+                    return false;
+                }
+
+                if (string.IsNullOrEmpty(IshlashRuxsatnomasiMavjudligi))
+                {
+                    MessageBox.Show("Ishlashga Ruxsatnomasi Mavjudligi kiriting!", "Xatolik", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    tabControl1.SelectedTab = tabPage3;
+                    return false;
+                }
+
+                if (string.IsNullOrEmpty(txbIncomeValue.Text))
+                {
+                    MessageBox.Show("Oylik Daromadini kiriting!", "Xatolik", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    tabControl1.SelectedTab = tabPage3;
+                    return false;
+                }
+
+                if (rdbLeaveReasonOthers.Checked)
+                {
+                    if (string.IsNullOrEmpty(txbLeaveReasonOthers.Text))
+                    {
+                        MessageBox.Show("Boshqalarni kiriting!", "Xatolik", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        tabControl1.SelectedTab = tabPage4;
+                        txbLeaveReasonOthers.Focus();
+                        return false;
+                    }
+                }
+
+                if (rdbWorkOutsiteTypeOthers.Checked)
+                {
+                    if (string.IsNullOrEmpty(txbWorkOutsiteTypeOthers.Text))
+                    {
+                        MessageBox.Show("Boshqalarni kiriting!", "Xatolik", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        tabControl1.SelectedTab = tabPage4;
+                        txbWorkOutsiteTypeOthers.Focus();
+                        return false;
+                    }
+                }
+
+                if (chbFamilyProblemsOthers.Checked)
+                {
+                    if (string.IsNullOrEmpty(txbFamilyProblemsOthers.Text))
+                    {
+                        MessageBox.Show("Boshqalarni kiriting!", "Xatolik", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        tabControl1.SelectedTab = tabPage4;
+                        txbFamilyProblemsOthers.Focus();
+                        return false;
+                    }
+                }
+
+                if (chbOutPersonProblemsOthers.Checked)
+                {
+                    if (string.IsNullOrEmpty(txbchbOutPersonProblemsOthers.Text))
+                    {
+                        MessageBox.Show("Boshqalarni kiriting!", "Xatolik", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        tabControl1.SelectedTab = tabPage4;
+                        txbchbOutPersonProblemsOthers.Focus();
+                        return false;
+                    }
+                }
+
+                if (chbHowHelpMedicalOther.Checked)
+                {
+                    if (string.IsNullOrEmpty(txbHowHelpMedicalOther.Text))
+                    {
+                        MessageBox.Show("Boshqalarni kiriting!", "Xatolik", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        tabControl1.SelectedTab = tabPage4;
+                        txbHowHelpMedicalOther.Focus();
+                        return false;
+                    }
+                }
+
+                if (rdbLeaveCountryOthers.Checked)
+                {
+                    if (string.IsNullOrEmpty(txbLeaveCountryOthers.Text))
+                    {
+                        MessageBox.Show("Boshqalarni kiriting!", "Xatolik", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        tabControl1.SelectedTab = tabPage3;
+                        txbLeaveCountryOthers.Focus();
+                        return false;
+                    }
+                }
+            }
+
             return true;
         }
 
@@ -898,10 +1030,10 @@ namespace DesktopApplication
             if (rdbCurStateReturn.Checked)
             {
                 dtpReturnDate.Checked = true;
-            }
-            else
-            {
-                dtpReturnDate.Checked = false;
+                dtpReturnDate.Enabled = true;
+                tabPage3.Enabled = false;
+                tabPage4.Enabled = false;
+                tabPage5.Enabled = false;
             }
         }
 
@@ -911,7 +1043,7 @@ namespace DesktopApplication
         {
             if (IsInEditMode)
             {
-                txbTumanNomi.Text = CurrentModel.XududNomi;
+                cbxTumanNomi.SelectedItem = CurrentModel.XududNomi;
                 txbMahallaNomi.Text = CurrentModel.KiritayotganMFY;
                 txbSorFio.Text = CurrentModel.SorIshtirFio;
                 txbQarindoshligi.Text = CurrentModel.SorIshtirQarindoshligi;
@@ -950,6 +1082,30 @@ namespace DesktopApplication
                 SetXorijdaBirgalikdagiOilaAzolari(CurrentModel.XorijdaBirgalikdagiOilaAzolari);
                 SetOiladagiMuammolari(CurrentModel.OiladagiMuammolari);
                 SetXorijdagiMuammolari(CurrentModel.XorijdagiMuammolari);
+                txbLeaveCountryOthers.Text = CurrentModel.DavlatVaXududBoshqalari;
+                txbchbOutPersonProblemsOthers.Text = CurrentModel.XorijdagiMuammolariBoshqalari;
+                txbFamilyProblemsOthers.Text = CurrentModel.OiladagiMuammolariBoshqalari;
+                txbHowHelpMedicalOther.Text = CurrentModel.NimaYordamBerilsaQaytadiBoshqalari;
+                txbWorkOutsiteTypeOthers.Text = CurrentModel.ChetEldagiIshTuriBoshqalari;
+                txbLeaveReasonOthers.Text = CurrentModel.XorijgaKetishMaqsadiBoshqalari;
+            }
+            else
+            {
+                if (!string.IsNullOrEmpty(DefaultTuman))
+                {
+                    cbxTumanNomi.SelectedItem = DefaultTuman;
+                }
+
+                if (!string.IsNullOrEmpty(DefaultMahalla))
+                {
+                    txbMahallaNomi.Text = DefaultMahalla;
+                }
+
+                dtpReturnDate.Enabled = false;
+                dtpReturnDate.Checked = false;
+                tabPage3.Enabled = true;
+                tabPage4.Enabled = true;
+                tabPage5.Enabled = true;
             }
         }
 
@@ -1061,14 +1217,20 @@ namespace DesktopApplication
 
         private void SetNimaYordamBerilsaQaytadi(string value)
         {
-            SetRDButtonValue(rdbHowHelpWork, value);
-            SetRDButtonValue(rdbHowHelpEducation, value);
-            SetRDButtonValue(rdbHowHelpMedicalTreatment, value);
-            SetRDButtonValue(rdbHowHelpMedicalHouse, value);
-            SetRDButtonValue(rdbHowHelpMedicalRepairment, value);
-            SetRDButtonValue(rdbHowHelpMedicalFamily, value);
-            SetRDButtonValue(rdbHowHelpMedicalWeddings, value);
-            SetRDButtonValue(rdbHowHelpMedicalOther, value);
+            if (string.IsNullOrEmpty(value))
+            {
+                return;
+            }
+
+            string[] values = value.Split(',');
+            SetCheckBoxValue(chbrHowHelpWork, values);
+            SetCheckBoxValue(chbHowHelpEducation, values);
+            SetCheckBoxValue(chbHowHelpMedicalTreatment, values);
+            SetCheckBoxValue(chbHowHelpMedicalHouse, values);
+            SetCheckBoxValue(chbHowHelpMedicalRepairment, values);
+            SetCheckBoxValue(chbHowHelpMedicalFamily, values);
+            SetCheckBoxValue(chbHowHelpMedicalWeddings, values);
+            SetCheckBoxValue(chbHowHelpMedicalOther, values);
         }
 
         private void SetRDButtonValue(RadioButton radioButton, string value)
@@ -1180,7 +1342,7 @@ namespace DesktopApplication
         {
             if (dtpReturnDate.Checked)
             {
-                MessageBox.Show("Ўзбекистонга қайтган фуқаро тўғрисидаги маълумотлар фақат анкетанинг 10 банддан сўнг тўлдирилмайди.");
+                //MessageBox.Show("Ўзбекистонга қайтган фуқаро тўғрисидаги маълумотлар фақат анкетанинг 10 банддан сўнг тўлдирилмайди.");
 
                 tabPage3.Enabled = false;
                 tabPage4.Enabled = false;
@@ -1191,6 +1353,145 @@ namespace DesktopApplication
                 tabPage3.Enabled = true;
                 tabPage4.Enabled = true;
                 tabPage5.Enabled = true;
+            }
+        }
+
+        public string DefaultTuman {  get; set; }
+
+        public string DefaultMahalla { get; set; }
+
+        private void txbSorPassSeria_TextChanged(object sender, EventArgs e)
+        {
+            txbSorPassSeria.Text = txbSorPassSeria.Text.ToUpper();
+            txbSorPassSeria.SelectionStart = txbSorPassSeria.Text.Length;
+        }
+
+        private void txbPassSeria_TextChanged(object sender, EventArgs e)
+        {
+            txbPassSeria.Text = txbPassSeria.Text.ToUpper();
+            txbPassSeria.SelectionStart = txbPassSeria.Text.Length;
+        }
+
+        private void rdbCurStateOut_CheckedChanged(object sender, EventArgs e)
+        {
+            dtpReturnDate.Checked = false;
+            dtpReturnDate.Enabled = false;
+            tabPage3.Enabled = true;
+            tabPage4.Enabled = true;
+            tabPage5.Enabled = true;
+            dtpLeaveDate.Checked = true;
+        }
+
+        private void rdbCurStateOutJIEM_CheckedChanged(object sender, EventArgs e)
+        {
+            dtpReturnDate.Checked = false;
+            dtpReturnDate.Enabled = false;
+            tabPage3.Enabled = false;
+            tabPage4.Enabled = false;
+            tabPage5.Enabled = false;
+        }
+
+        private void rdbCurStateLost_CheckedChanged(object sender, EventArgs e)
+        {
+            dtpReturnDate.Checked = false;
+            dtpReturnDate.Enabled = false;
+            tabPage3.Enabled = false;
+            tabPage4.Enabled = false;
+            tabPage5.Enabled = false;
+        }
+
+        private void rdbCurStateDied_CheckedChanged(object sender, EventArgs e)
+        {
+            dtpReturnDate.Checked = false;
+            dtpReturnDate.Enabled = false;
+            tabPage3.Enabled = false;
+            tabPage4.Enabled = false;
+            tabPage5.Enabled = false;
+        }
+
+        private void rdbCurStateWanted_CheckedChanged(object sender, EventArgs e)
+        {
+            dtpReturnDate.Checked = false;
+            dtpReturnDate.Enabled = false;
+            tabPage3.Enabled = false;
+            tabPage4.Enabled = false;
+            tabPage5.Enabled = false;
+        }
+
+        private void rdbLeaveReasonOthers_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rdbLeaveReasonOthers.Checked)
+            {
+                txbLeaveReasonOthers.Visible = true;
+            }
+            else
+            {
+                txbLeaveReasonOthers.Visible = false;
+            }
+        }
+
+        private void rdbWorkOutsiteTypeOthers_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rdbWorkOutsiteTypeOthers.Checked)
+            {
+                txbWorkOutsiteTypeOthers.Visible = true;
+            }
+            else
+            {
+                txbWorkOutsiteTypeOthers.Visible = false;
+            }
+        }
+
+        private void chbFamilyProblemsOthers_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chbFamilyProblemsOthers.Checked)
+            {
+                txbFamilyProblemsOthers.Visible = true;
+            }
+            else
+            {
+                txbFamilyProblemsOthers.Visible = false;
+            }
+        }
+
+        private void chbOutPersonProblemsOthers_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chbOutPersonProblemsOthers.Checked)
+            {
+                txbchbOutPersonProblemsOthers.Visible = true;
+            }
+            else
+            {
+                txbchbOutPersonProblemsOthers.Visible = false;
+            }
+        }
+
+        private void rdbHowHelpMedicalOther_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rdbLeaveCountryOthers_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rdbLeaveCountryOthers.Checked)
+            {
+                txbLeaveCountryOthers.Visible = true;
+            }
+            else
+            {
+                txbLeaveCountryOthers.Visible = false;
+            }   
+        }
+
+        private void chbHowHelpMedicalOther_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chbHowHelpMedicalOther.Checked)
+            {
+                txbHowHelpMedicalOther.Visible = true;
+            }
+            else
+            {
+                txbHowHelpMedicalOther.Visible = false;
             }
         }
     }

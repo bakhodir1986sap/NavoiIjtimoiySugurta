@@ -34,7 +34,6 @@
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.txbMahallaNomi = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
-            this.txbTumanNomi = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.txbSorTelNumber = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -193,6 +192,21 @@
             this.btnClose = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
             this.label23 = new System.Windows.Forms.Label();
+            this.txbLeaveReasonOthers = new System.Windows.Forms.TextBox();
+            this.txbWorkOutsiteTypeOthers = new System.Windows.Forms.TextBox();
+            this.txbFamilyProblemsOthers = new System.Windows.Forms.TextBox();
+            this.txbchbOutPersonProblemsOthers = new System.Windows.Forms.TextBox();
+            this.txbHowHelpMedicalOther = new System.Windows.Forms.TextBox();
+            this.txbLeaveCountryOthers = new System.Windows.Forms.TextBox();
+            this.cbxTumanNomi = new System.Windows.Forms.ComboBox();
+            this.chbrHowHelpWork = new System.Windows.Forms.CheckBox();
+            this.chbHowHelpEducation = new System.Windows.Forms.CheckBox();
+            this.chbHowHelpMedicalTreatment = new System.Windows.Forms.CheckBox();
+            this.chbHowHelpMedicalHouse = new System.Windows.Forms.CheckBox();
+            this.chbHowHelpMedicalRepairment = new System.Windows.Forms.CheckBox();
+            this.chbHowHelpMedicalFamily = new System.Windows.Forms.CheckBox();
+            this.chbHowHelpMedicalWeddings = new System.Windows.Forms.CheckBox();
+            this.chbHowHelpMedicalOther = new System.Windows.Forms.CheckBox();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -257,9 +271,9 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.cbxTumanNomi);
             this.tabPage1.Controls.Add(this.txbMahallaNomi);
             this.tabPage1.Controls.Add(this.label15);
-            this.tabPage1.Controls.Add(this.txbTumanNomi);
             this.tabPage1.Controls.Add(this.label14);
             this.tabPage1.Controls.Add(this.txbSorTelNumber);
             this.tabPage1.Controls.Add(this.label7);
@@ -297,14 +311,6 @@
             this.label15.Size = new System.Drawing.Size(128, 20);
             this.label15.TabIndex = 12;
             this.label15.Text = "Махалла номи";
-            // 
-            // txbTumanNomi
-            // 
-            this.txbTumanNomi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbTumanNomi.Location = new System.Drawing.Point(197, 19);
-            this.txbTumanNomi.Name = "txbTumanNomi";
-            this.txbTumanNomi.Size = new System.Drawing.Size(561, 26);
-            this.txbTumanNomi.TabIndex = 11;
             // 
             // label14
             // 
@@ -362,6 +368,7 @@
             this.txbSorPassSeria.Name = "txbSorPassSeria";
             this.txbSorPassSeria.Size = new System.Drawing.Size(561, 26);
             this.txbSorPassSeria.TabIndex = 5;
+            this.txbSorPassSeria.TextChanged += new System.EventHandler(this.txbSorPassSeria_TextChanged);
             // 
             // lblSorPassSeria
             // 
@@ -600,6 +607,7 @@
             this.rdbCurStateWanted.TabIndex = 7;
             this.rdbCurStateWanted.Text = "қидирувда";
             this.rdbCurStateWanted.UseVisualStyleBackColor = true;
+            this.rdbCurStateWanted.CheckedChanged += new System.EventHandler(this.rdbCurStateWanted_CheckedChanged);
             // 
             // rdbCurStateDied
             // 
@@ -611,6 +619,7 @@
             this.rdbCurStateDied.TabIndex = 6;
             this.rdbCurStateDied.Text = "вафот этган";
             this.rdbCurStateDied.UseVisualStyleBackColor = true;
+            this.rdbCurStateDied.CheckedChanged += new System.EventHandler(this.rdbCurStateDied_CheckedChanged);
             // 
             // rdbCurStateReturn
             // 
@@ -634,6 +643,7 @@
             this.rdbCurStateOutJIEM.TabIndex = 4;
             this.rdbCurStateOutJIEM.Text = "чет элда ЖИЭМда сақланмоқда";
             this.rdbCurStateOutJIEM.UseVisualStyleBackColor = true;
+            this.rdbCurStateOutJIEM.CheckedChanged += new System.EventHandler(this.rdbCurStateOutJIEM_CheckedChanged);
             // 
             // rdbCurStateLost
             // 
@@ -645,6 +655,7 @@
             this.rdbCurStateLost.TabIndex = 3;
             this.rdbCurStateLost.Text = "бедарак йўқолган";
             this.rdbCurStateLost.UseVisualStyleBackColor = true;
+            this.rdbCurStateLost.CheckedChanged += new System.EventHandler(this.rdbCurStateLost_CheckedChanged);
             // 
             // rdbCurStateOut
             // 
@@ -658,6 +669,7 @@
             this.rdbCurStateOut.TabStop = true;
             this.rdbCurStateOut.Text = "чет элда";
             this.rdbCurStateOut.UseVisualStyleBackColor = true;
+            this.rdbCurStateOut.CheckedChanged += new System.EventHandler(this.rdbCurStateOut_CheckedChanged);
             // 
             // txbSpeciality
             // 
@@ -727,13 +739,11 @@
             // rdbEducationHigh
             // 
             this.rdbEducationHigh.AutoSize = true;
-            this.rdbEducationHigh.Checked = true;
             this.rdbEducationHigh.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdbEducationHigh.Location = new System.Drawing.Point(33, 30);
             this.rdbEducationHigh.Name = "rdbEducationHigh";
             this.rdbEducationHigh.Size = new System.Drawing.Size(70, 24);
             this.rdbEducationHigh.TabIndex = 2;
-            this.rdbEducationHigh.TabStop = true;
             this.rdbEducationHigh.Text = "олий";
             this.rdbEducationHigh.UseVisualStyleBackColor = true;
             // 
@@ -776,13 +786,11 @@
             // rdbUzbCitizen
             // 
             this.rdbUzbCitizen.AutoSize = true;
-            this.rdbUzbCitizen.Checked = true;
             this.rdbUzbCitizen.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdbUzbCitizen.Location = new System.Drawing.Point(33, 24);
             this.rdbUzbCitizen.Name = "rdbUzbCitizen";
             this.rdbUzbCitizen.Size = new System.Drawing.Size(336, 24);
             this.rdbUzbCitizen.TabIndex = 2;
-            this.rdbUzbCitizen.TabStop = true;
             this.rdbUzbCitizen.Text = "Ўзбекистон Республикаси фуқароси";
             this.rdbUzbCitizen.UseVisualStyleBackColor = true;
             // 
@@ -851,6 +859,7 @@
             this.txbPassSeria.Name = "txbPassSeria";
             this.txbPassSeria.Size = new System.Drawing.Size(561, 27);
             this.txbPassSeria.TabIndex = 9;
+            this.txbPassSeria.TextChanged += new System.EventHandler(this.txbPassSeria_TextChanged);
             // 
             // label6
             // 
@@ -894,13 +903,11 @@
             // rdbErkak
             // 
             this.rdbErkak.AutoSize = true;
-            this.rdbErkak.Checked = true;
             this.rdbErkak.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdbErkak.Location = new System.Drawing.Point(109, 25);
             this.rdbErkak.Name = "rdbErkak";
             this.rdbErkak.Size = new System.Drawing.Size(78, 24);
             this.rdbErkak.TabIndex = 1;
-            this.rdbErkak.TabStop = true;
             this.rdbErkak.Text = "эркак";
             this.rdbErkak.UseVisualStyleBackColor = true;
             // 
@@ -949,7 +956,7 @@
             // txbIncomeValue
             // 
             this.txbIncomeValue.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbIncomeValue.Location = new System.Drawing.Point(325, 670);
+            this.txbIncomeValue.Location = new System.Drawing.Point(325, 702);
             this.txbIncomeValue.Name = "txbIncomeValue";
             this.txbIncomeValue.Size = new System.Drawing.Size(430, 26);
             this.txbIncomeValue.TabIndex = 30;
@@ -958,7 +965,7 @@
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(21, 673);
+            this.label16.Location = new System.Drawing.Point(21, 705);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(283, 20);
             this.label16.TabIndex = 29;
@@ -969,7 +976,7 @@
             this.groupBox10.Controls.Add(this.rdbWorkPermitNotExists);
             this.groupBox10.Controls.Add(this.rdbWorkPermitExists);
             this.groupBox10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox10.Location = new System.Drawing.Point(25, 578);
+            this.groupBox10.Location = new System.Drawing.Point(25, 610);
             this.groupBox10.Name = "groupBox10";
             this.groupBox10.Size = new System.Drawing.Size(729, 72);
             this.groupBox10.TabIndex = 28;
@@ -990,18 +997,17 @@
             // rdbWorkPermitExists
             // 
             this.rdbWorkPermitExists.AutoSize = true;
-            this.rdbWorkPermitExists.Checked = true;
             this.rdbWorkPermitExists.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdbWorkPermitExists.Location = new System.Drawing.Point(33, 30);
             this.rdbWorkPermitExists.Name = "rdbWorkPermitExists";
             this.rdbWorkPermitExists.Size = new System.Drawing.Size(52, 24);
             this.rdbWorkPermitExists.TabIndex = 2;
-            this.rdbWorkPermitExists.TabStop = true;
             this.rdbWorkPermitExists.Text = "Ха";
             this.rdbWorkPermitExists.UseVisualStyleBackColor = true;
             // 
             // groupBox9
             // 
+            this.groupBox9.Controls.Add(this.txbLeaveCountryOthers);
             this.groupBox9.Controls.Add(this.rdbLeaveCountryTurkey);
             this.groupBox9.Controls.Add(this.rdbLeaveCountryOthers);
             this.groupBox9.Controls.Add(this.rdbLeaveCountryKorea);
@@ -1010,7 +1016,7 @@
             this.groupBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox9.Location = new System.Drawing.Point(25, 490);
             this.groupBox9.Name = "groupBox9";
-            this.groupBox9.Size = new System.Drawing.Size(729, 73);
+            this.groupBox9.Size = new System.Drawing.Size(729, 114);
             this.groupBox9.TabIndex = 21;
             this.groupBox9.TabStop = false;
             this.groupBox9.Text = "Кетган давлати";
@@ -1036,6 +1042,7 @@
             this.rdbLeaveCountryOthers.TabIndex = 6;
             this.rdbLeaveCountryOthers.Text = "Бошкалар";
             this.rdbLeaveCountryOthers.UseVisualStyleBackColor = true;
+            this.rdbLeaveCountryOthers.CheckedChanged += new System.EventHandler(this.rdbLeaveCountryOthers_CheckedChanged);
             // 
             // rdbLeaveCountryKorea
             // 
@@ -1062,13 +1069,11 @@
             // rdbLeaveCountryRussia
             // 
             this.rdbLeaveCountryRussia.AutoSize = true;
-            this.rdbLeaveCountryRussia.Checked = true;
             this.rdbLeaveCountryRussia.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdbLeaveCountryRussia.Location = new System.Drawing.Point(33, 30);
             this.rdbLeaveCountryRussia.Name = "rdbLeaveCountryRussia";
             this.rdbLeaveCountryRussia.Size = new System.Drawing.Size(89, 24);
             this.rdbLeaveCountryRussia.TabIndex = 2;
-            this.rdbLeaveCountryRussia.TabStop = true;
             this.rdbLeaveCountryRussia.Text = "Россия";
             this.rdbLeaveCountryRussia.UseVisualStyleBackColor = true;
             // 
@@ -1131,13 +1136,11 @@
             // rdbSocialStatePoor
             // 
             this.rdbSocialStatePoor.AutoSize = true;
-            this.rdbSocialStatePoor.Checked = true;
             this.rdbSocialStatePoor.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdbSocialStatePoor.Location = new System.Drawing.Point(33, 30);
             this.rdbSocialStatePoor.Name = "rdbSocialStatePoor";
             this.rdbSocialStatePoor.Size = new System.Drawing.Size(187, 24);
             this.rdbSocialStatePoor.TabIndex = 2;
-            this.rdbSocialStatePoor.TabStop = true;
             this.rdbSocialStatePoor.Text = "кам таъминланган";
             this.rdbSocialStatePoor.UseVisualStyleBackColor = true;
             // 
@@ -1203,13 +1206,11 @@
             // rdbFamilyEnvironmentQuite
             // 
             this.rdbFamilyEnvironmentQuite.AutoSize = true;
-            this.rdbFamilyEnvironmentQuite.Checked = true;
             this.rdbFamilyEnvironmentQuite.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdbFamilyEnvironmentQuite.Location = new System.Drawing.Point(34, 30);
             this.rdbFamilyEnvironmentQuite.Name = "rdbFamilyEnvironmentQuite";
             this.rdbFamilyEnvironmentQuite.Size = new System.Drawing.Size(70, 24);
             this.rdbFamilyEnvironmentQuite.TabIndex = 5;
-            this.rdbFamilyEnvironmentQuite.TabStop = true;
             this.rdbFamilyEnvironmentQuite.Text = "тинч";
             this.rdbFamilyEnvironmentQuite.UseVisualStyleBackColor = true;
             // 
@@ -1275,13 +1276,11 @@
             // rdbFamilyStateFamily
             // 
             this.rdbFamilyStateFamily.AutoSize = true;
-            this.rdbFamilyStateFamily.Checked = true;
             this.rdbFamilyStateFamily.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdbFamilyStateFamily.Location = new System.Drawing.Point(33, 30);
             this.rdbFamilyStateFamily.Name = "rdbFamilyStateFamily";
             this.rdbFamilyStateFamily.Size = new System.Drawing.Size(90, 24);
             this.rdbFamilyStateFamily.TabIndex = 2;
-            this.rdbFamilyStateFamily.TabStop = true;
             this.rdbFamilyStateFamily.Text = "оилали";
             this.rdbFamilyStateFamily.UseVisualStyleBackColor = true;
             // 
@@ -1323,13 +1322,11 @@
             // rdbHealthGood
             // 
             this.rdbHealthGood.AutoSize = true;
-            this.rdbHealthGood.Checked = true;
             this.rdbHealthGood.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdbHealthGood.Location = new System.Drawing.Point(33, 30);
             this.rdbHealthGood.Name = "rdbHealthGood";
             this.rdbHealthGood.Size = new System.Drawing.Size(89, 24);
             this.rdbHealthGood.TabIndex = 2;
-            this.rdbHealthGood.TabStop = true;
             this.rdbHealthGood.Text = "соғлом";
             this.rdbHealthGood.UseVisualStyleBackColor = true;
             // 
@@ -1372,18 +1369,17 @@
             // rdbHaveAWillToReturnBackYes
             // 
             this.rdbHaveAWillToReturnBackYes.AutoSize = true;
-            this.rdbHaveAWillToReturnBackYes.Checked = true;
             this.rdbHaveAWillToReturnBackYes.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdbHaveAWillToReturnBackYes.Location = new System.Drawing.Point(33, 30);
             this.rdbHaveAWillToReturnBackYes.Name = "rdbHaveAWillToReturnBackYes";
             this.rdbHaveAWillToReturnBackYes.Size = new System.Drawing.Size(52, 24);
             this.rdbHaveAWillToReturnBackYes.TabIndex = 2;
-            this.rdbHaveAWillToReturnBackYes.TabStop = true;
             this.rdbHaveAWillToReturnBackYes.Text = "Ха";
             this.rdbHaveAWillToReturnBackYes.UseVisualStyleBackColor = true;
             // 
             // groupBox13
             // 
+            this.groupBox13.Controls.Add(this.txbWorkOutsiteTypeOthers);
             this.groupBox13.Controls.Add(this.rdbWorkOutsiteTypeOthers);
             this.groupBox13.Controls.Add(this.rdbWorkOutsiteTypeEnterprieneur);
             this.groupBox13.Controls.Add(this.rdbWorkOutsiteTypeGoverment);
@@ -1412,6 +1408,7 @@
             this.rdbWorkOutsiteTypeOthers.Tag = "";
             this.rdbWorkOutsiteTypeOthers.Text = "Бошқа соҳа";
             this.rdbWorkOutsiteTypeOthers.UseVisualStyleBackColor = true;
+            this.rdbWorkOutsiteTypeOthers.CheckedChanged += new System.EventHandler(this.rdbWorkOutsiteTypeOthers_CheckedChanged);
             // 
             // rdbWorkOutsiteTypeEnterprieneur
             // 
@@ -1495,18 +1492,17 @@
             // rdbWorkOutsiteTypeBuilder
             // 
             this.rdbWorkOutsiteTypeBuilder.AutoSize = true;
-            this.rdbWorkOutsiteTypeBuilder.Checked = true;
             this.rdbWorkOutsiteTypeBuilder.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdbWorkOutsiteTypeBuilder.Location = new System.Drawing.Point(33, 30);
             this.rdbWorkOutsiteTypeBuilder.Name = "rdbWorkOutsiteTypeBuilder";
             this.rdbWorkOutsiteTypeBuilder.Size = new System.Drawing.Size(104, 24);
             this.rdbWorkOutsiteTypeBuilder.TabIndex = 2;
-            this.rdbWorkOutsiteTypeBuilder.TabStop = true;
             this.rdbWorkOutsiteTypeBuilder.Text = "Қурилиш";
             this.rdbWorkOutsiteTypeBuilder.UseVisualStyleBackColor = true;
             // 
             // groupBox12
             // 
+            this.groupBox12.Controls.Add(this.txbLeaveReasonOthers);
             this.groupBox12.Controls.Add(this.rdbLeaveReasonOthers);
             this.groupBox12.Controls.Add(this.rdbLeaveReasonPermanentLive);
             this.groupBox12.Controls.Add(this.rdbLeaveReasonMerriage);
@@ -1534,6 +1530,7 @@
             this.rdbLeaveReasonOthers.Tag = "";
             this.rdbLeaveReasonOthers.Text = "бошқа мақсад";
             this.rdbLeaveReasonOthers.UseVisualStyleBackColor = true;
+            this.rdbLeaveReasonOthers.CheckedChanged += new System.EventHandler(this.rdbLeaveReasonOthers_CheckedChanged);
             // 
             // rdbLeaveReasonPermanentLive
             // 
@@ -1605,13 +1602,11 @@
             // rdbLeaveReasonWork
             // 
             this.rdbLeaveReasonWork.AutoSize = true;
-            this.rdbLeaveReasonWork.Checked = true;
             this.rdbLeaveReasonWork.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdbLeaveReasonWork.Location = new System.Drawing.Point(33, 30);
             this.rdbLeaveReasonWork.Name = "rdbLeaveReasonWork";
             this.rdbLeaveReasonWork.Size = new System.Drawing.Size(88, 24);
             this.rdbLeaveReasonWork.TabIndex = 2;
-            this.rdbLeaveReasonWork.TabStop = true;
             this.rdbLeaveReasonWork.Text = "ишлаш";
             this.rdbLeaveReasonWork.UseVisualStyleBackColor = true;
             // 
@@ -1736,6 +1731,15 @@
             // 
             // groupBox17
             // 
+            this.groupBox17.Controls.Add(this.chbHowHelpMedicalOther);
+            this.groupBox17.Controls.Add(this.chbHowHelpMedicalWeddings);
+            this.groupBox17.Controls.Add(this.chbHowHelpMedicalFamily);
+            this.groupBox17.Controls.Add(this.chbHowHelpMedicalRepairment);
+            this.groupBox17.Controls.Add(this.chbHowHelpMedicalHouse);
+            this.groupBox17.Controls.Add(this.chbHowHelpMedicalTreatment);
+            this.groupBox17.Controls.Add(this.chbHowHelpEducation);
+            this.groupBox17.Controls.Add(this.chbrHowHelpWork);
+            this.groupBox17.Controls.Add(this.txbHowHelpMedicalOther);
             this.groupBox17.Controls.Add(this.rdbHowHelpMedicalOther);
             this.groupBox17.Controls.Add(this.rdbHowHelpMedicalTreatment);
             this.groupBox17.Controls.Add(this.rdbHowHelpMedicalFamily);
@@ -1763,6 +1767,8 @@
             this.rdbHowHelpMedicalOther.Tag = "";
             this.rdbHowHelpMedicalOther.Text = "бошқа ёрдам турлари";
             this.rdbHowHelpMedicalOther.UseVisualStyleBackColor = true;
+            this.rdbHowHelpMedicalOther.Visible = false;
+            this.rdbHowHelpMedicalOther.CheckedChanged += new System.EventHandler(this.rdbHowHelpMedicalOther_CheckedChanged);
             // 
             // rdbHowHelpMedicalTreatment
             // 
@@ -1775,6 +1781,7 @@
             this.rdbHowHelpMedicalTreatment.Tag = "";
             this.rdbHowHelpMedicalTreatment.Text = "ўзига ёки оила аъзосига тиббий ёрдам кўрсатиш";
             this.rdbHowHelpMedicalTreatment.UseVisualStyleBackColor = true;
+            this.rdbHowHelpMedicalTreatment.Visible = false;
             // 
             // rdbHowHelpMedicalFamily
             // 
@@ -1787,6 +1794,7 @@
             this.rdbHowHelpMedicalFamily.Tag = "";
             this.rdbHowHelpMedicalFamily.Text = "оилавий нотинчликни бартараф этиш";
             this.rdbHowHelpMedicalFamily.UseVisualStyleBackColor = true;
+            this.rdbHowHelpMedicalFamily.Visible = false;
             // 
             // rdbHowHelpEducation
             // 
@@ -1798,6 +1806,7 @@
             this.rdbHowHelpEducation.TabIndex = 8;
             this.rdbHowHelpEducation.Text = "оила аъзосини таълим олиши";
             this.rdbHowHelpEducation.UseVisualStyleBackColor = true;
+            this.rdbHowHelpEducation.Visible = false;
             // 
             // rdbHowHelpMedicalWeddings
             // 
@@ -1809,6 +1818,7 @@
             this.rdbHowHelpMedicalWeddings.TabIndex = 7;
             this.rdbHowHelpMedicalWeddings.Text = "тўй ва марака ўтказишда моддий ёрдам бериш";
             this.rdbHowHelpMedicalWeddings.UseVisualStyleBackColor = true;
+            this.rdbHowHelpMedicalWeddings.Visible = false;
             // 
             // rdbHowHelpMedicalRepairment
             // 
@@ -1820,6 +1830,7 @@
             this.rdbHowHelpMedicalRepairment.TabIndex = 6;
             this.rdbHowHelpMedicalRepairment.Text = "уй-жойини таъмирлаш";
             this.rdbHowHelpMedicalRepairment.UseVisualStyleBackColor = true;
+            this.rdbHowHelpMedicalRepairment.Visible = false;
             // 
             // rdbHowHelpMedicalHouse
             // 
@@ -1831,22 +1842,23 @@
             this.rdbHowHelpMedicalHouse.TabIndex = 5;
             this.rdbHowHelpMedicalHouse.Text = "уй-жой билан таъминлаш";
             this.rdbHowHelpMedicalHouse.UseVisualStyleBackColor = true;
+            this.rdbHowHelpMedicalHouse.Visible = false;
             // 
             // rdbHowHelpWork
             // 
             this.rdbHowHelpWork.AutoSize = true;
-            this.rdbHowHelpWork.Checked = true;
             this.rdbHowHelpWork.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdbHowHelpWork.Location = new System.Drawing.Point(33, 30);
             this.rdbHowHelpWork.Name = "rdbHowHelpWork";
             this.rdbHowHelpWork.Size = new System.Drawing.Size(212, 24);
             this.rdbHowHelpWork.TabIndex = 2;
-            this.rdbHowHelpWork.TabStop = true;
             this.rdbHowHelpWork.Text = "Иш билан таъминлаш";
             this.rdbHowHelpWork.UseVisualStyleBackColor = true;
+            this.rdbHowHelpWork.Visible = false;
             // 
             // groupBox16
             // 
+            this.groupBox16.Controls.Add(this.txbchbOutPersonProblemsOthers);
             this.groupBox16.Controls.Add(this.chbOutPersonProblemsOthers);
             this.groupBox16.Controls.Add(this.chbOutPersonProblemsWorkPermitless);
             this.groupBox16.Controls.Add(this.chbOutPersonProblemsLivePermitless);
@@ -1871,6 +1883,7 @@
             this.chbOutPersonProblemsOthers.TabIndex = 6;
             this.chbOutPersonProblemsOthers.Text = "бошқа муаммолар";
             this.chbOutPersonProblemsOthers.UseVisualStyleBackColor = true;
+            this.chbOutPersonProblemsOthers.CheckedChanged += new System.EventHandler(this.chbOutPersonProblemsOthers_CheckedChanged);
             // 
             // chbOutPersonProblemsWorkPermitless
             // 
@@ -1932,6 +1945,7 @@
             // 
             // groupBox15
             // 
+            this.groupBox15.Controls.Add(this.txbFamilyProblemsOthers);
             this.groupBox15.Controls.Add(this.chbFamilyProblemsOthers);
             this.groupBox15.Controls.Add(this.chbFamilyProblemsRepairment);
             this.groupBox15.Controls.Add(this.chbFamilyProblemsPlaceToLive);
@@ -1956,6 +1970,7 @@
             this.chbFamilyProblemsOthers.TabIndex = 6;
             this.chbFamilyProblemsOthers.Text = "бошқа муаммолар";
             this.chbFamilyProblemsOthers.UseVisualStyleBackColor = true;
+            this.chbFamilyProblemsOthers.CheckedChanged += new System.EventHandler(this.chbFamilyProblemsOthers_CheckedChanged);
             // 
             // chbFamilyProblemsRepairment
             // 
@@ -2094,6 +2109,155 @@
             this.label23.Text = "Агар Ўзбекистон Республикаси фуқароси фуқароликдан чиқмаган ҳолда бошқа давлат фу" +
     "қаролигини олган бўлса, ушбу фуқаро Ўзбекистон Республикаси фуқароси сифатида бе" +
     "лгиланади.";
+            // 
+            // txbLeaveReasonOthers
+            // 
+            this.txbLeaveReasonOthers.Location = new System.Drawing.Point(384, 86);
+            this.txbLeaveReasonOthers.Name = "txbLeaveReasonOthers";
+            this.txbLeaveReasonOthers.Size = new System.Drawing.Size(408, 26);
+            this.txbLeaveReasonOthers.TabIndex = 11;
+            this.txbLeaveReasonOthers.Visible = false;
+            // 
+            // txbWorkOutsiteTypeOthers
+            // 
+            this.txbWorkOutsiteTypeOthers.Location = new System.Drawing.Point(384, 112);
+            this.txbWorkOutsiteTypeOthers.Name = "txbWorkOutsiteTypeOthers";
+            this.txbWorkOutsiteTypeOthers.Size = new System.Drawing.Size(408, 26);
+            this.txbWorkOutsiteTypeOthers.TabIndex = 12;
+            this.txbWorkOutsiteTypeOthers.Visible = false;
+            // 
+            // txbFamilyProblemsOthers
+            // 
+            this.txbFamilyProblemsOthers.Location = new System.Drawing.Point(207, 278);
+            this.txbFamilyProblemsOthers.Name = "txbFamilyProblemsOthers";
+            this.txbFamilyProblemsOthers.Size = new System.Drawing.Size(237, 26);
+            this.txbFamilyProblemsOthers.TabIndex = 7;
+            this.txbFamilyProblemsOthers.Visible = false;
+            // 
+            // txbchbOutPersonProblemsOthers
+            // 
+            this.txbchbOutPersonProblemsOthers.Location = new System.Drawing.Point(205, 276);
+            this.txbchbOutPersonProblemsOthers.Name = "txbchbOutPersonProblemsOthers";
+            this.txbchbOutPersonProblemsOthers.Size = new System.Drawing.Size(271, 26);
+            this.txbchbOutPersonProblemsOthers.TabIndex = 8;
+            this.txbchbOutPersonProblemsOthers.Visible = false;
+            // 
+            // txbHowHelpMedicalOther
+            // 
+            this.txbHowHelpMedicalOther.Location = new System.Drawing.Point(571, 70);
+            this.txbHowHelpMedicalOther.Name = "txbHowHelpMedicalOther";
+            this.txbHowHelpMedicalOther.Size = new System.Drawing.Size(378, 26);
+            this.txbHowHelpMedicalOther.TabIndex = 12;
+            this.txbHowHelpMedicalOther.Visible = false;
+            // 
+            // txbLeaveCountryOthers
+            // 
+            this.txbLeaveCountryOthers.Location = new System.Drawing.Point(382, 72);
+            this.txbLeaveCountryOthers.Name = "txbLeaveCountryOthers";
+            this.txbLeaveCountryOthers.Size = new System.Drawing.Size(335, 26);
+            this.txbLeaveCountryOthers.TabIndex = 8;
+            this.txbLeaveCountryOthers.Visible = false;
+            // 
+            // cbxTumanNomi
+            // 
+            this.cbxTumanNomi.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbxTumanNomi.Items.AddRange(new object[] {
+            "Навоий шаҳри",
+            "Кармана тумани",
+            "Навбаҳор тумани",
+            "Қизилтепа тумани",
+            "Конимех тумани",
+            "Хатирчи тумани",
+            "Нурота тумани",
+            "Ғазғон шаҳри",
+            "Зарафшон шаҳри",
+            "Учқудуқ тумани",
+            "Томди тумани"});
+            this.cbxTumanNomi.Location = new System.Drawing.Point(197, 19);
+            this.cbxTumanNomi.Name = "cbxTumanNomi";
+            this.cbxTumanNomi.Size = new System.Drawing.Size(561, 28);
+            this.cbxTumanNomi.TabIndex = 14;
+            // 
+            // chbrHowHelpWork
+            // 
+            this.chbrHowHelpWork.AutoSize = true;
+            this.chbrHowHelpWork.Location = new System.Drawing.Point(32, 31);
+            this.chbrHowHelpWork.Name = "chbrHowHelpWork";
+            this.chbrHowHelpWork.Size = new System.Drawing.Size(213, 24);
+            this.chbrHowHelpWork.TabIndex = 13;
+            this.chbrHowHelpWork.Text = "Иш билан таъминлаш";
+            this.chbrHowHelpWork.UseVisualStyleBackColor = true;
+            // 
+            // chbHowHelpEducation
+            // 
+            this.chbHowHelpEducation.AutoSize = true;
+            this.chbHowHelpEducation.Location = new System.Drawing.Point(33, 60);
+            this.chbHowHelpEducation.Name = "chbHowHelpEducation";
+            this.chbHowHelpEducation.Size = new System.Drawing.Size(282, 24);
+            this.chbHowHelpEducation.TabIndex = 14;
+            this.chbHowHelpEducation.Text = "оила аъзосини таълим олиши";
+            this.chbHowHelpEducation.UseVisualStyleBackColor = true;
+            // 
+            // chbHowHelpMedicalTreatment
+            // 
+            this.chbHowHelpMedicalTreatment.AutoSize = true;
+            this.chbHowHelpMedicalTreatment.Location = new System.Drawing.Point(33, 90);
+            this.chbHowHelpMedicalTreatment.Name = "chbHowHelpMedicalTreatment";
+            this.chbHowHelpMedicalTreatment.Size = new System.Drawing.Size(446, 24);
+            this.chbHowHelpMedicalTreatment.TabIndex = 15;
+            this.chbHowHelpMedicalTreatment.Text = "ўзига ёки оила аъзосига тиббий ёрдам кўрсатиш";
+            this.chbHowHelpMedicalTreatment.UseVisualStyleBackColor = true;
+            // 
+            // chbHowHelpMedicalHouse
+            // 
+            this.chbHowHelpMedicalHouse.AutoSize = true;
+            this.chbHowHelpMedicalHouse.Location = new System.Drawing.Point(33, 120);
+            this.chbHowHelpMedicalHouse.Name = "chbHowHelpMedicalHouse";
+            this.chbHowHelpMedicalHouse.Size = new System.Drawing.Size(244, 24);
+            this.chbHowHelpMedicalHouse.TabIndex = 16;
+            this.chbHowHelpMedicalHouse.Text = "уй-жой билан таъминлаш";
+            this.chbHowHelpMedicalHouse.UseVisualStyleBackColor = true;
+            // 
+            // chbHowHelpMedicalRepairment
+            // 
+            this.chbHowHelpMedicalRepairment.AutoSize = true;
+            this.chbHowHelpMedicalRepairment.Location = new System.Drawing.Point(32, 150);
+            this.chbHowHelpMedicalRepairment.Name = "chbHowHelpMedicalRepairment";
+            this.chbHowHelpMedicalRepairment.Size = new System.Drawing.Size(219, 24);
+            this.chbHowHelpMedicalRepairment.TabIndex = 17;
+            this.chbHowHelpMedicalRepairment.Text = "уй-жойини таъмирлаш";
+            this.chbHowHelpMedicalRepairment.UseVisualStyleBackColor = true;
+            // 
+            // chbHowHelpMedicalFamily
+            // 
+            this.chbHowHelpMedicalFamily.AutoSize = true;
+            this.chbHowHelpMedicalFamily.Location = new System.Drawing.Point(32, 180);
+            this.chbHowHelpMedicalFamily.Name = "chbHowHelpMedicalFamily";
+            this.chbHowHelpMedicalFamily.Size = new System.Drawing.Size(355, 24);
+            this.chbHowHelpMedicalFamily.TabIndex = 18;
+            this.chbHowHelpMedicalFamily.Text = "оилавий нотинчликни бартараф этиш";
+            this.chbHowHelpMedicalFamily.UseVisualStyleBackColor = true;
+            // 
+            // chbHowHelpMedicalWeddings
+            // 
+            this.chbHowHelpMedicalWeddings.AutoSize = true;
+            this.chbHowHelpMedicalWeddings.Location = new System.Drawing.Point(33, 210);
+            this.chbHowHelpMedicalWeddings.Name = "chbHowHelpMedicalWeddings";
+            this.chbHowHelpMedicalWeddings.Size = new System.Drawing.Size(436, 24);
+            this.chbHowHelpMedicalWeddings.TabIndex = 19;
+            this.chbHowHelpMedicalWeddings.Text = "тўй ва марака ўтказишда моддий ёрдам бериш";
+            this.chbHowHelpMedicalWeddings.UseVisualStyleBackColor = true;
+            // 
+            // chbHowHelpMedicalOther
+            // 
+            this.chbHowHelpMedicalOther.AutoSize = true;
+            this.chbHowHelpMedicalOther.Location = new System.Drawing.Point(571, 31);
+            this.chbHowHelpMedicalOther.Name = "chbHowHelpMedicalOther";
+            this.chbHowHelpMedicalOther.Size = new System.Drawing.Size(216, 24);
+            this.chbHowHelpMedicalOther.TabIndex = 20;
+            this.chbHowHelpMedicalOther.Text = "бошқа ёрдам турлари";
+            this.chbHowHelpMedicalOther.UseVisualStyleBackColor = true;
+            this.chbHowHelpMedicalOther.CheckedChanged += new System.EventHandler(this.chbHowHelpMedicalOther_CheckedChanged);
             // 
             // AnketaForm
             // 
@@ -2248,7 +2412,6 @@
         private System.Windows.Forms.RadioButton rdbLeaveCountryRussia;
         private System.Windows.Forms.TextBox txbMahallaNomi;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.TextBox txbTumanNomi;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.GroupBox groupBox10;
         private System.Windows.Forms.RadioButton rdbWorkPermitNotExists;
@@ -2325,5 +2488,20 @@
         private System.Windows.Forms.GroupBox groupBox18;
         private System.Windows.Forms.Button btnCheckDb;
         private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.TextBox txbLeaveReasonOthers;
+        private System.Windows.Forms.TextBox txbWorkOutsiteTypeOthers;
+        private System.Windows.Forms.TextBox txbchbOutPersonProblemsOthers;
+        private System.Windows.Forms.TextBox txbFamilyProblemsOthers;
+        private System.Windows.Forms.TextBox txbHowHelpMedicalOther;
+        private System.Windows.Forms.TextBox txbLeaveCountryOthers;
+        private System.Windows.Forms.ComboBox cbxTumanNomi;
+        private System.Windows.Forms.CheckBox chbHowHelpMedicalOther;
+        private System.Windows.Forms.CheckBox chbHowHelpMedicalWeddings;
+        private System.Windows.Forms.CheckBox chbHowHelpMedicalFamily;
+        private System.Windows.Forms.CheckBox chbHowHelpMedicalRepairment;
+        private System.Windows.Forms.CheckBox chbHowHelpMedicalHouse;
+        private System.Windows.Forms.CheckBox chbHowHelpMedicalTreatment;
+        private System.Windows.Forms.CheckBox chbHowHelpEducation;
+        private System.Windows.Forms.CheckBox chbrHowHelpWork;
     }
 }
