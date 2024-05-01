@@ -1,9 +1,13 @@
-﻿namespace NavoiKasabaUyushmasi.Model
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
+namespace NavoiKasabaUyushmasi.Model
 {
+    [Table(name: "SorovnomaMigrant")]
     public class MigrantImportModel
     {
-        public string TartibRaqami { get; set; }
-
+        [Key]
+        public int Id { get; set; }
         public string XududNomi { get; set; }
 
         public string KiritayotganMFY { get; set; }
@@ -98,17 +102,7 @@
 
         public string BazadaBorligi { get; set; }
 
-        public RowStatus RowStatus { get; set; } = RowStatus.New;
-
-        public string ErrorText { get; set; }
-
         public string Age18BelowOrUpper { get; set; }
     }
 
-    public enum RowStatus
-    {
-        New,
-        Processed,
-        Error
-    }
 }

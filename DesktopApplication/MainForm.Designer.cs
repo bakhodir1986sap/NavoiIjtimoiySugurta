@@ -39,6 +39,7 @@
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnModify = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
+            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clnmFio = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clmnPassportSeria = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clmnPassportNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -93,6 +94,7 @@
             this.dgvMigrants.AllowUserToDeleteRows = false;
             this.dgvMigrants.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvMigrants.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Id,
             this.clnmFio,
             this.clmnPassportSeria,
             this.clmnPassportNumber});
@@ -179,6 +181,14 @@
             this.btnAdd.UseVisualStyleBackColor = true;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
+            // Id
+            // 
+            this.Id.HeaderText = "№";
+            this.Id.MinimumWidth = 6;
+            this.Id.Name = "Id";
+            this.Id.ReadOnly = true;
+            this.Id.Width = 125;
+            // 
             // clnmFio
             // 
             this.clnmFio.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
@@ -213,6 +223,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "MainForm";
             this.Text = "Migrant Dasturi";
+            this.Load += new System.EventHandler(this.MainForm_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -235,6 +246,7 @@
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Button btnExcel;
         private System.Windows.Forms.Button btnClose;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Id;
         private System.Windows.Forms.DataGridViewTextBoxColumn clnmFio;
         private System.Windows.Forms.DataGridViewTextBoxColumn clmnPassportSeria;
         private System.Windows.Forms.DataGridViewTextBoxColumn clmnPassportNumber;

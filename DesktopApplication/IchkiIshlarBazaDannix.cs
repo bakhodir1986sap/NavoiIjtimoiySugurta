@@ -1,17 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Net.NetworkInformation;
 using System.Text;
 using System.Threading.Tasks;
-using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace CoreDataProcessing
 {
-
+    [Table(name: "MIGRANTIIB")]
     public class IchkiIshlarBazaDannix
     {
+        [Key]
         public string pinpp           { get; set;}  
         public string surname_latin   { get; set;}
         public string name_latin      { get; set;}

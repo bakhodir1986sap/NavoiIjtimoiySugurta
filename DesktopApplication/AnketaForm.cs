@@ -1148,5 +1148,24 @@ namespace DesktopApplication
             SetCheckBoxValue(chbOutPersonProblemsWorkPermitless, values);
             SetCheckBoxValue(chbOutPersonProblemsOthers, values);
         }
+
+        public DatabaseContext databaseContext { get; set; }
+
+        private void btnCheckDb_Click(object sender, EventArgs e)
+        {
+            string pspEntered = $"{txbPassSeria.Text}{txbPassNum.Text}";
+
+            var ichkiMigrantlar = databaseContext.IchkiIshlarBazaDannixes.Where(x => x.psp == pspEntered).ToList();
+
+            if (ichkiMigrantlar.Count > 0)
+            {
+                var ichkiMigrant = ichkiMigrantlar.First();
+                MessageBox.Show("Mijoz bazada mavjud! " + $"{ichkiMigrant.name_latin} - {ichkiMigrant.pinpp} - {ichkiMigrant.address} - {ichkiMigrant.country_out}", "Xabar", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("Mijoz bazada mavjud emas!", "Xabar", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
     }
 }
