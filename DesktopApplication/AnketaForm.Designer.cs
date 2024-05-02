@@ -207,6 +207,15 @@
             this.chbHowHelpMedicalFamily = new System.Windows.Forms.CheckBox();
             this.chbHowHelpMedicalWeddings = new System.Windows.Forms.CheckBox();
             this.chbHowHelpMedicalOther = new System.Windows.Forms.CheckBox();
+            this.btnWorkType = new System.Windows.Forms.Button();
+            this.btnLeavePurpose = new System.Windows.Forms.Button();
+            this.btnReturn2Country = new System.Windows.Forms.Button();
+            this.btnFamilyState = new System.Windows.Forms.Button();
+            this.btnHealth = new System.Windows.Forms.Button();
+            this.btnSocialState = new System.Windows.Forms.Button();
+            this.btnWorkPermit = new System.Windows.Forms.Button();
+            this.btnMalumoti = new System.Windows.Forms.Button();
+            this.btnFamilyEnv = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -418,6 +427,7 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.AutoScroll = true;
             this.tabPage2.Controls.Add(this.btnCheckDb);
             this.tabPage2.Controls.Add(this.txbAddressXonadon);
             this.tabPage2.Controls.Add(this.label22);
@@ -691,6 +701,7 @@
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.btnMalumoti);
             this.groupBox3.Controls.Add(this.rdbEducationNo);
             this.groupBox3.Controls.Add(this.rdbEducationAverage);
             this.groupBox3.Controls.Add(this.rdbEducationAverageSpec);
@@ -932,6 +943,7 @@
             // 
             // tabPage3
             // 
+            this.tabPage3.AutoScroll = true;
             this.tabPage3.Controls.Add(this.txbIncomeValue);
             this.tabPage3.Controls.Add(this.label16);
             this.tabPage3.Controls.Add(this.groupBox10);
@@ -973,6 +985,7 @@
             // 
             // groupBox10
             // 
+            this.groupBox10.Controls.Add(this.btnWorkPermit);
             this.groupBox10.Controls.Add(this.rdbWorkPermitNotExists);
             this.groupBox10.Controls.Add(this.rdbWorkPermitExists);
             this.groupBox10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1100,6 +1113,7 @@
             // 
             // groupBox8
             // 
+            this.groupBox8.Controls.Add(this.btnSocialState);
             this.groupBox8.Controls.Add(this.rdbSocialStateGood);
             this.groupBox8.Controls.Add(this.rdbSocialStateAvarage);
             this.groupBox8.Controls.Add(this.rdbSocialStatePoor);
@@ -1182,6 +1196,7 @@
             // 
             // groupBox7
             // 
+            this.groupBox7.Controls.Add(this.btnFamilyEnv);
             this.groupBox7.Controls.Add(this.rdbFamilyEnvironmentNonQuite);
             this.groupBox7.Controls.Add(this.rdbFamilyEnvironmentQuite);
             this.groupBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1216,6 +1231,7 @@
             // 
             // groupBox6
             // 
+            this.groupBox6.Controls.Add(this.btnFamilyState);
             this.groupBox6.Controls.Add(this.rdbFamilyStateSpouseDied);
             this.groupBox6.Controls.Add(this.rdbFamilyStateLoanlyMother);
             this.groupBox6.Controls.Add(this.rdbFamilyStateDevorsed);
@@ -1286,6 +1302,7 @@
             // 
             // groupBox5
             // 
+            this.groupBox5.Controls.Add(this.btnHealth);
             this.groupBox5.Controls.Add(this.rdbHealthInvalid);
             this.groupBox5.Controls.Add(this.rdbHealthIllPerm);
             this.groupBox5.Controls.Add(this.rdbHealthGood);
@@ -1332,6 +1349,7 @@
             // 
             // tabPage4
             // 
+            this.tabPage4.AutoScroll = true;
             this.tabPage4.Controls.Add(this.groupBox14);
             this.tabPage4.Controls.Add(this.groupBox13);
             this.tabPage4.Controls.Add(this.groupBox12);
@@ -1345,6 +1363,7 @@
             // 
             // groupBox14
             // 
+            this.groupBox14.Controls.Add(this.btnReturn2Country);
             this.groupBox14.Controls.Add(this.rdbHaveAWillToReturnBackNo);
             this.groupBox14.Controls.Add(this.rdbHaveAWillToReturnBackYes);
             this.groupBox14.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1379,6 +1398,7 @@
             // 
             // groupBox13
             // 
+            this.groupBox13.Controls.Add(this.btnWorkType);
             this.groupBox13.Controls.Add(this.txbWorkOutsiteTypeOthers);
             this.groupBox13.Controls.Add(this.rdbWorkOutsiteTypeOthers);
             this.groupBox13.Controls.Add(this.rdbWorkOutsiteTypeEnterprieneur);
@@ -1409,6 +1429,7 @@
             this.rdbWorkOutsiteTypeOthers.Text = "Бошқа соҳа";
             this.rdbWorkOutsiteTypeOthers.UseVisualStyleBackColor = true;
             this.rdbWorkOutsiteTypeOthers.CheckedChanged += new System.EventHandler(this.rdbWorkOutsiteTypeOthers_CheckedChanged);
+            this.rdbWorkOutsiteTypeOthers.Click += new System.EventHandler(this.rdbWorkOutsiteTypeOthers_Click);
             // 
             // rdbWorkOutsiteTypeEnterprieneur
             // 
@@ -1421,6 +1442,7 @@
             this.rdbWorkOutsiteTypeEnterprieneur.Tag = "";
             this.rdbWorkOutsiteTypeEnterprieneur.Text = "Тадбиркорлик";
             this.rdbWorkOutsiteTypeEnterprieneur.UseVisualStyleBackColor = true;
+            this.rdbWorkOutsiteTypeEnterprieneur.Click += new System.EventHandler(this.rdbWorkOutsiteTypeEnterprieneur_Click);
             // 
             // rdbWorkOutsiteTypeGoverment
             // 
@@ -1433,6 +1455,7 @@
             this.rdbWorkOutsiteTypeGoverment.Tag = "";
             this.rdbWorkOutsiteTypeGoverment.Text = "Давлат ташкилотлари, банк ва бошқа ташкилотларда ишловчи";
             this.rdbWorkOutsiteTypeGoverment.UseVisualStyleBackColor = true;
+            this.rdbWorkOutsiteTypeGoverment.Click += new System.EventHandler(this.rdbWorkOutsiteTypeGoverment_Click);
             // 
             // rdbWorkOutsiteTypeCleaning
             // 
@@ -1444,6 +1467,7 @@
             this.rdbWorkOutsiteTypeCleaning.TabIndex = 8;
             this.rdbWorkOutsiteTypeCleaning.Text = "Ободонлаштириш";
             this.rdbWorkOutsiteTypeCleaning.UseVisualStyleBackColor = true;
+            this.rdbWorkOutsiteTypeCleaning.Click += new System.EventHandler(this.rdbWorkOutsiteTypeCleaning_Click);
             // 
             // rdbWorkOutsiteTypeBeautySalon
             // 
@@ -1455,6 +1479,7 @@
             this.rdbWorkOutsiteTypeBeautySalon.TabIndex = 7;
             this.rdbWorkOutsiteTypeBeautySalon.Text = "Маиший хизмат кўрсатиш (сартарош, гўзаллик салони, этикдўз, курьер ва ҳ.к.)";
             this.rdbWorkOutsiteTypeBeautySalon.UseVisualStyleBackColor = true;
+            this.rdbWorkOutsiteTypeBeautySalon.Click += new System.EventHandler(this.rdbWorkOutsiteTypeBeautySalon_Click);
             // 
             // rdbWorkOutsiteTypeCare
             // 
@@ -1466,6 +1491,7 @@
             this.rdbWorkOutsiteTypeCare.TabIndex = 6;
             this.rdbWorkOutsiteTypeCare.Text = "Энага";
             this.rdbWorkOutsiteTypeCare.UseVisualStyleBackColor = true;
+            this.rdbWorkOutsiteTypeCare.Click += new System.EventHandler(this.rdbWorkOutsiteTypeCare_Click);
             // 
             // rdbWorkOutsiteTypeTruck
             // 
@@ -1477,6 +1503,7 @@
             this.rdbWorkOutsiteTypeTruck.TabIndex = 5;
             this.rdbWorkOutsiteTypeTruck.Text = "Юк ташувчи";
             this.rdbWorkOutsiteTypeTruck.UseVisualStyleBackColor = true;
+            this.rdbWorkOutsiteTypeTruck.Click += new System.EventHandler(this.rdbWorkOutsiteTypeTruck_Click);
             // 
             // rdbWorkOutsiteTypeSeller
             // 
@@ -1488,6 +1515,7 @@
             this.rdbWorkOutsiteTypeSeller.TabIndex = 4;
             this.rdbWorkOutsiteTypeSeller.Text = "Сотувчи";
             this.rdbWorkOutsiteTypeSeller.UseVisualStyleBackColor = true;
+            this.rdbWorkOutsiteTypeSeller.Click += new System.EventHandler(this.rdbWorkOutsiteTypeSeller_Click);
             // 
             // rdbWorkOutsiteTypeBuilder
             // 
@@ -1499,9 +1527,12 @@
             this.rdbWorkOutsiteTypeBuilder.TabIndex = 2;
             this.rdbWorkOutsiteTypeBuilder.Text = "Қурилиш";
             this.rdbWorkOutsiteTypeBuilder.UseVisualStyleBackColor = true;
+            this.rdbWorkOutsiteTypeBuilder.CheckedChanged += new System.EventHandler(this.rdbWorkOutsiteTypeBuilder_CheckedChanged);
+            this.rdbWorkOutsiteTypeBuilder.Click += new System.EventHandler(this.rdbWorkOutsiteTypeBuilder_Click);
             // 
             // groupBox12
             // 
+            this.groupBox12.Controls.Add(this.btnLeavePurpose);
             this.groupBox12.Controls.Add(this.txbLeaveReasonOthers);
             this.groupBox12.Controls.Add(this.rdbLeaveReasonOthers);
             this.groupBox12.Controls.Add(this.rdbLeaveReasonPermanentLive);
@@ -1609,6 +1640,7 @@
             this.rdbLeaveReasonWork.TabIndex = 2;
             this.rdbLeaveReasonWork.Text = "ишлаш";
             this.rdbLeaveReasonWork.UseVisualStyleBackColor = true;
+            this.rdbLeaveReasonWork.CheckedChanged += new System.EventHandler(this.rdbLeaveReasonWork_CheckedChanged);
             // 
             // groupBox11
             // 
@@ -1699,6 +1731,7 @@
             // 
             // tabPage5
             // 
+            this.tabPage5.AutoScroll = true;
             this.tabPage5.Controls.Add(this.txbForeignPersonPhone);
             this.tabPage5.Controls.Add(this.label17);
             this.tabPage5.Controls.Add(this.groupBox17);
@@ -2259,6 +2292,96 @@
             this.chbHowHelpMedicalOther.UseVisualStyleBackColor = true;
             this.chbHowHelpMedicalOther.CheckedChanged += new System.EventHandler(this.chbHowHelpMedicalOther_CheckedChanged);
             // 
+            // btnWorkType
+            // 
+            this.btnWorkType.Location = new System.Drawing.Point(785, 15);
+            this.btnWorkType.Name = "btnWorkType";
+            this.btnWorkType.Size = new System.Drawing.Size(41, 27);
+            this.btnWorkType.TabIndex = 13;
+            this.btnWorkType.Text = "X";
+            this.btnWorkType.UseVisualStyleBackColor = true;
+            this.btnWorkType.Click += new System.EventHandler(this.btnWorkType_Click);
+            // 
+            // btnLeavePurpose
+            // 
+            this.btnLeavePurpose.Location = new System.Drawing.Point(785, 12);
+            this.btnLeavePurpose.Name = "btnLeavePurpose";
+            this.btnLeavePurpose.Size = new System.Drawing.Size(41, 27);
+            this.btnLeavePurpose.TabIndex = 14;
+            this.btnLeavePurpose.Text = "X";
+            this.btnLeavePurpose.UseVisualStyleBackColor = true;
+            this.btnLeavePurpose.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // btnReturn2Country
+            // 
+            this.btnReturn2Country.Location = new System.Drawing.Point(785, 11);
+            this.btnReturn2Country.Name = "btnReturn2Country";
+            this.btnReturn2Country.Size = new System.Drawing.Size(41, 27);
+            this.btnReturn2Country.TabIndex = 15;
+            this.btnReturn2Country.Text = "X";
+            this.btnReturn2Country.UseVisualStyleBackColor = true;
+            this.btnReturn2Country.Click += new System.EventHandler(this.btnReturn2Country_Click);
+            // 
+            // btnFamilyState
+            // 
+            this.btnFamilyState.Location = new System.Drawing.Point(682, 14);
+            this.btnFamilyState.Name = "btnFamilyState";
+            this.btnFamilyState.Size = new System.Drawing.Size(41, 27);
+            this.btnFamilyState.TabIndex = 15;
+            this.btnFamilyState.Text = "X";
+            this.btnFamilyState.UseVisualStyleBackColor = true;
+            this.btnFamilyState.Click += new System.EventHandler(this.btnFamilyState_Click);
+            // 
+            // btnHealth
+            // 
+            this.btnHealth.Location = new System.Drawing.Point(682, 14);
+            this.btnHealth.Name = "btnHealth";
+            this.btnHealth.Size = new System.Drawing.Size(41, 27);
+            this.btnHealth.TabIndex = 15;
+            this.btnHealth.Text = "X";
+            this.btnHealth.UseVisualStyleBackColor = true;
+            this.btnHealth.Click += new System.EventHandler(this.btnHealth_Click);
+            // 
+            // btnSocialState
+            // 
+            this.btnSocialState.Location = new System.Drawing.Point(681, 15);
+            this.btnSocialState.Name = "btnSocialState";
+            this.btnSocialState.Size = new System.Drawing.Size(41, 27);
+            this.btnSocialState.TabIndex = 15;
+            this.btnSocialState.Text = "X";
+            this.btnSocialState.UseVisualStyleBackColor = true;
+            this.btnSocialState.Click += new System.EventHandler(this.btnSocialState_Click);
+            // 
+            // btnWorkPermit
+            // 
+            this.btnWorkPermit.Location = new System.Drawing.Point(681, 15);
+            this.btnWorkPermit.Name = "btnWorkPermit";
+            this.btnWorkPermit.Size = new System.Drawing.Size(41, 27);
+            this.btnWorkPermit.TabIndex = 15;
+            this.btnWorkPermit.Text = "X";
+            this.btnWorkPermit.UseVisualStyleBackColor = true;
+            this.btnWorkPermit.Click += new System.EventHandler(this.btnWorkPermit_Click);
+            // 
+            // btnMalumoti
+            // 
+            this.btnMalumoti.Location = new System.Drawing.Point(682, 16);
+            this.btnMalumoti.Name = "btnMalumoti";
+            this.btnMalumoti.Size = new System.Drawing.Size(41, 27);
+            this.btnMalumoti.TabIndex = 15;
+            this.btnMalumoti.Text = "X";
+            this.btnMalumoti.UseVisualStyleBackColor = true;
+            this.btnMalumoti.Click += new System.EventHandler(this.btnMalumoti_Click);
+            // 
+            // btnFamilyEnv
+            // 
+            this.btnFamilyEnv.Location = new System.Drawing.Point(683, 14);
+            this.btnFamilyEnv.Name = "btnFamilyEnv";
+            this.btnFamilyEnv.Size = new System.Drawing.Size(41, 27);
+            this.btnFamilyEnv.TabIndex = 16;
+            this.btnFamilyEnv.Text = "X";
+            this.btnFamilyEnv.UseVisualStyleBackColor = true;
+            this.btnFamilyEnv.Click += new System.EventHandler(this.btnFamilyEnv_Click);
+            // 
             // AnketaForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -2503,5 +2626,14 @@
         private System.Windows.Forms.CheckBox chbHowHelpMedicalTreatment;
         private System.Windows.Forms.CheckBox chbHowHelpEducation;
         private System.Windows.Forms.CheckBox chbrHowHelpWork;
+        private System.Windows.Forms.Button btnWorkType;
+        private System.Windows.Forms.Button btnLeavePurpose;
+        private System.Windows.Forms.Button btnReturn2Country;
+        private System.Windows.Forms.Button btnFamilyState;
+        private System.Windows.Forms.Button btnHealth;
+        private System.Windows.Forms.Button btnSocialState;
+        private System.Windows.Forms.Button btnWorkPermit;
+        private System.Windows.Forms.Button btnMalumoti;
+        private System.Windows.Forms.Button btnFamilyEnv;
     }
 }

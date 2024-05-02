@@ -16,6 +16,17 @@ namespace DesktopApplication
         public AnketaForm()
         {
             InitializeComponent();
+
+            //SetRDButtonValue(rdbWorkOutsiteTypeBuilder, value);
+            //SetRDButtonValue(rdbWorkOutsiteTypeSeller, value);
+            //SetRDButtonValue(rdbWorkOutsiteTypeTruck, value);
+            //SetRDButtonValue(rdbWorkOutsiteTypeCare, value);
+            //SetRDButtonValue(rdbWorkOutsiteTypeCleaning, value);
+            //SetRDButtonValue(rdbWorkOutsiteTypeBeautySalon, value);
+            //SetRDButtonValue(rdbWorkOutsiteTypeGoverment, value);
+            //SetRDButtonValue(rdbWorkOutsiteTypeEnterprieneur, value);
+            //SetRDButtonValue(rdbWorkOutsiteTypeOthers, value);
+
         }
 
         private void btnSave_Click(object sender, EventArgs e)
@@ -939,19 +950,35 @@ namespace DesktopApplication
                     return false;
                 }
 
-                if (string.IsNullOrEmpty(IshlashRuxsatnomasiMavjudligi))
+                if (rdbLeaveReasonWork.Checked)
                 {
-                    MessageBox.Show("Ishlashga Ruxsatnomasi Mavjudligi kiriting!", "Xatolik", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    tabControl1.SelectedTab = tabPage3;
-                    return false;
-                }
+                    if (string.IsNullOrEmpty(IshlashRuxsatnomasiMavjudligi))
+                    {
+                        MessageBox.Show("Ishlashga Ruxsatnomasi Mavjudligi kiriting!", "Xatolik", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        tabControl1.SelectedTab = tabPage3;
+                        return false;
+                    }
 
-                if (string.IsNullOrEmpty(txbIncomeValue.Text))
-                {
-                    MessageBox.Show("Oylik Daromadini kiriting!", "Xatolik", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    tabControl1.SelectedTab = tabPage3;
-                    return false;
+                    if (string.IsNullOrEmpty(txbIncomeValue.Text))
+                    {
+                        MessageBox.Show("Oylik Daromadini kiriting!", "Xatolik", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        tabControl1.SelectedTab = tabPage3;
+                        return false;
+                    }
                 }
+                //if (string.IsNullOrEmpty(IshlashRuxsatnomasiMavjudligi))
+                //{
+                //    MessageBox.Show("Ishlashga Ruxsatnomasi Mavjudligi kiriting!", "Xatolik", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                //    tabControl1.SelectedTab = tabPage3;
+                //    return false;
+                //}
+
+                //if (string.IsNullOrEmpty(txbIncomeValue.Text))
+                //{
+                //    MessageBox.Show("Oylik Daromadini kiriting!", "Xatolik", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                //    tabControl1.SelectedTab = tabPage3;
+                //    return false;
+                //}
 
                 if (rdbLeaveReasonOthers.Checked)
                 {
@@ -1493,6 +1520,125 @@ namespace DesktopApplication
             {
                 txbHowHelpMedicalOther.Visible = false;
             }
+        }
+
+        private void rdbLeaveReasonWork_CheckedChanged(object sender, EventArgs e)
+        {
+        }
+
+        private void rdbWorkOutsiteTypeBuilder_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void rdbWorkOutsiteTypeSeller_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void rdbWorkOutsiteTypeTruck_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void rdbWorkOutsiteTypeCare_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void rdbWorkOutsiteTypeCleaning_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void rdbWorkOutsiteTypeBeautySalon_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void rdbWorkOutsiteTypeGoverment_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void rdbWorkOutsiteTypeEnterprieneur_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void rdbWorkOutsiteTypeOthers_Click(object sender, EventArgs e)
+        {
+        }
+
+
+        private void rdbWorkOutsiteTypeBuilder_CheckedChanged(object sender, EventArgs e)
+        {
+        }
+
+        private void btnMalumoti_Click(object sender, EventArgs e)
+        {
+            rdbEducationAverageSpec.Checked = false;
+            rdbEducationHigh.Checked = false;
+            rdbEducationNo.Checked = false;
+            rdbEducationAverage.Checked = false;
+        }
+
+        private void btnHealth_Click(object sender, EventArgs e)
+        {
+            rdbHealthGood.Checked = false;
+            rdbHealthIllPerm.Checked = false;
+            rdbHealthInvalid.Checked = false;
+        }
+
+        private void btnFamilyState_Click(object sender, EventArgs e)
+        {
+            rdbFamilyStateFamily.Checked = false;
+            rdbFamilyStateNoFamily.Checked = false;
+            rdbFamilyStateDevorsed.Checked = false;
+            rdbFamilyStateLoanlyMother.Checked = false;
+            rdbFamilyStateSpouseDied.Checked = false;
+        }
+
+        private void btnFamilyEnv_Click(object sender, EventArgs e)
+        {
+            rdbFamilyEnvironmentNonQuite.Checked = false;
+            rdbFamilyEnvironmentQuite.Checked = false;
+        }
+
+        private void btnSocialState_Click(object sender, EventArgs e)
+        {
+            rdbSocialStateAvarage.Checked = false;
+            rdbSocialStateGood.Checked = false;
+            rdbSocialStatePoor.Checked = false;
+        }
+
+        private void btnWorkPermit_Click(object sender, EventArgs e)
+        {
+            rdbWorkPermitExists.Checked = false;
+            rdbWorkPermitNotExists.Checked = false;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            rdbLeaveReasonEducation.Checked = false;
+            rdbLeaveReasonMerriage.Checked = false;
+            rdbLeaveReasonOthers.Checked = false;
+            rdbLeaveReasonPermanentLive.Checked = false;
+            rdbLeaveReasonTempLive.Checked = false;
+            rdbLeaveReasonTravel.Checked = false;
+            rdbLeaveReasonWork.Checked = false;
+            rdbLeaveReasonTreatment.Checked = false;
+        }
+
+        private void btnWorkType_Click(object sender, EventArgs e)
+        {
+            rdbWorkOutsiteTypeBuilder.Checked = false;
+            rdbWorkOutsiteTypeSeller.Checked = false;
+            rdbWorkOutsiteTypeTruck.Checked = false;
+            rdbWorkOutsiteTypeCare.Checked = false;
+            rdbWorkOutsiteTypeCleaning.Checked = false;
+            rdbWorkOutsiteTypeBeautySalon.Checked = false;
+            rdbWorkOutsiteTypeGoverment.Checked = false;
+            rdbWorkOutsiteTypeEnterprieneur.Checked = false;
+            rdbWorkOutsiteTypeOthers.Checked = false;
+        }
+
+        private void btnReturn2Country_Click(object sender, EventArgs e)
+        {
+            rdbHaveAWillToReturnBackNo.Checked = false;
+            rdbHaveAWillToReturnBackYes.Checked = false;
         }
     }
 }
