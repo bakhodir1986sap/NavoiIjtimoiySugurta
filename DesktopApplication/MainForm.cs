@@ -152,6 +152,13 @@ namespace DesktopApplication
                 return;
             }
 
+            //Check really want to delete
+            var result = MessageBox.Show("O'chirishni tasdiqlaysizmi?", "O'chirish", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.No)
+            {
+                return;
+            }
+
             var Fio = dgvMigrants.SelectedRows[0].Cells[1].Value.ToString();
             var passSeria = dgvMigrants.SelectedRows[0].Cells[2].Value.ToString();
             var passNumber = dgvMigrants.SelectedRows[0].Cells[3].Value.ToString();

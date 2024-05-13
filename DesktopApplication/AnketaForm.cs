@@ -152,6 +152,8 @@ namespace DesktopApplication
                     CurrentModel.NimaYordamBerilsaQaytadiBoshqalari = IsPersonOut ? txbHowHelpMedicalOther.Text : string.Empty;
                     CurrentModel.XorijgaKetishMaqsadiBoshqalari = IsPersonOut ? txbLeaveReasonOthers.Text : string.Empty;
                     CurrentModel.DavlatVaXududBoshqalari = IsPersonOut ? txbLeaveCountryOthers.Text : string.Empty;
+                    CurrentModel.OiladagiMuammolari = IsPersonOut ? OiladagiMuammolari : string.Empty;
+                    CurrentModel.XorijdagiMuammolari = IsPersonOut ? XorijdagiMuammolari : string.Empty;
             }
 
 
@@ -429,37 +431,37 @@ namespace DesktopApplication
 
                 if (chbOutTogatherSpouse.Checked)
                 {
-                    result += chbOutTogatherSpouse.Text + ",";
+                    result += chbOutTogatherSpouse.Text + ";";
                 }
 
                 if (chbOutTogatherChild.Checked)
                 {
-                    result += chbOutTogatherChild.Text + ",";
+                    result += chbOutTogatherChild.Text + ";";
                 }
 
                 if (chbOutTogatherFather.Checked)
                 {
-                    result += chbOutTogatherFather.Text + ",";
+                    result += chbOutTogatherFather.Text + ";";
                 }
 
                 if (chbOutTogatherMother.Checked)
                 {
-                    result += chbOutTogatherMother.Text + ",";
+                    result += chbOutTogatherMother.Text + ";";
                 }
 
                 if (chbOutTogatherBrother.Checked)
                 {
-                    result += chbOutTogatherBrother.Text + ",";
+                    result += chbOutTogatherBrother.Text + ";";
                 }
 
                 if (chbOutTogatherSister.Checked)
                 {
-                    result += chbOutTogatherSister.Text + ",";
+                    result += chbOutTogatherSister.Text + ";";
                 }
 
                 if (chbOutTogatherOthers.Checked)
                 {
-                    result += chbOutTogatherOthers.Text + ",";
+                    result += chbOutTogatherOthers.Text + ";";
                 }
 
                 return result;
@@ -474,37 +476,37 @@ namespace DesktopApplication
 
                 if (chbFamilyProblemsWorkless.Checked)
                 {
-                    result += chbFamilyProblemsWorkless.Text + ",";
+                    result += chbFamilyProblemsWorkless.Text + ";";
                 }
 
                 if (chbFamilyProblemsEducation.Checked)
                 {
-                    result += chbFamilyProblemsEducation.Text + ",";
+                    result += chbFamilyProblemsEducation.Text + ";";
                 }
 
                 if (chbFamilyProblemsTreatment.Checked)
                 {
-                    result += chbFamilyProblemsTreatment.Text + ",";
+                    result += chbFamilyProblemsTreatment.Text + ";";
                 }
 
                 if (chbFamilyProblemsFamily.Checked)
                 {
-                    result += chbFamilyProblemsFamily.Text + ",";
+                    result += chbFamilyProblemsFamily.Text + ";";
                 }
 
                 if (chbFamilyProblemsPlaceToLive.Checked)
                 {
-                    result += chbFamilyProblemsPlaceToLive.Text + ",";
+                    result += chbFamilyProblemsPlaceToLive.Text + ";";
                 }
 
                 if (chbFamilyProblemsRepairment.Checked)
                 {
-                    result += chbFamilyProblemsRepairment.Text + ",";
+                    result += chbFamilyProblemsRepairment.Text + ";";
                 }
 
                 if (chbFamilyProblemsOthers.Checked)
                 {
-                    result += chbFamilyProblemsOthers.Text + ",";
+                    result += chbFamilyProblemsOthers.Text + ";";
                 }
 
                 return result;
@@ -519,37 +521,37 @@ namespace DesktopApplication
 
                 if (chbOutPersonProblemsLostPassport.Checked)
                 {
-                    result += chbOutPersonProblemsLostPassport.Text + ",";
+                    result += chbOutPersonProblemsLostPassport.Text + ";";
                 }
 
                 if (chbOutPersonProblemsWorkless.Checked)
                 {
-                    result += chbOutPersonProblemsWorkless.Text + ",";
+                    result += chbOutPersonProblemsWorkless.Text + ";";
                 }
 
                 if (chbOutPersonProblemsNoPayment.Checked)
                 {
-                    result += chbOutPersonProblemsNoPayment.Text + ",";
+                    result += chbOutPersonProblemsNoPayment.Text + ";";
                 }
 
                 if (chbOutPersonProblemsPersonSold.Checked)
                 {
-                    result += chbOutPersonProblemsPersonSold.Text + ",";
+                    result += chbOutPersonProblemsPersonSold.Text + ";";
                 }
 
                 if (chbOutPersonProblemsLivePermitless.Checked)
                 {
-                    result += chbOutPersonProblemsLivePermitless.Text + ",";
+                    result += chbOutPersonProblemsLivePermitless.Text + ";";
                 }
 
                 if (chbOutPersonProblemsWorkPermitless.Checked)
                 {
-                    result += chbOutPersonProblemsWorkPermitless.Text + ",";
+                    result += chbOutPersonProblemsWorkPermitless.Text + ";";
                 }
 
                 if (chbOutPersonProblemsOthers.Checked)
                 {
-                    result += chbOutPersonProblemsOthers.Text + ",";
+                    result += chbOutPersonProblemsOthers.Text + ";";
                 }
 
                 return result;
@@ -771,42 +773,42 @@ namespace DesktopApplication
 
                 if (chbrHowHelpWork.Checked)
                 {
-                    result += chbrHowHelpWork.Text + ",";
+                    result += chbrHowHelpWork.Text + ";";
                 }
 
                 if (chbHowHelpEducation.Checked)
                 {
-                    result += chbHowHelpEducation.Text + ",";
+                    result += chbHowHelpEducation.Text + ";";
                 }
 
                 if (chbHowHelpMedicalTreatment.Checked)
                 {
-                    result += chbHowHelpMedicalTreatment.Text + ",";
+                    result += chbHowHelpMedicalTreatment.Text + ";";
                 }
 
                 if (chbHowHelpMedicalFamily.Checked)
                 {
-                    result += chbHowHelpMedicalFamily.Text + ",";
+                    result += chbHowHelpMedicalFamily.Text + ";";
                 }
 
                 if (chbHowHelpMedicalHouse.Checked)
                 {
-                    result += chbHowHelpMedicalHouse.Text + ",";
+                    result += chbHowHelpMedicalHouse.Text + ";";
                 }
 
                 if (chbHowHelpMedicalRepairment.Checked)
                 {
-                    result += chbHowHelpMedicalRepairment.Text + ",";
+                    result += chbHowHelpMedicalRepairment.Text + ";";
                 }
 
                 if (chbHowHelpMedicalWeddings.Checked)
                 {
-                    result += chbHowHelpMedicalWeddings.Text + ",";
+                    result += chbHowHelpMedicalWeddings.Text + ";";
                 }
 
                 if (chbHowHelpMedicalOther.Checked)
                 {
-                    result += chbHowHelpMedicalOther.Text + ",";
+                    result += chbHowHelpMedicalOther.Text + ";";
                 }
 
                 return result;
@@ -913,6 +915,27 @@ namespace DesktopApplication
                 return false;
             }
 
+            if (rdbErkak.Checked == false && rdbAyol.Checked == false)
+            {
+                MessageBox.Show("Jinsini tanlang!", "Xatolik", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                tabControl1.SelectedTab = tabPage2;
+                return false;
+            }
+
+            if (rdbUzbCitizen.Checked == false && rdbForeign.Checked == false && rdbNoCitizen.Checked == false)
+            {
+                MessageBox.Show("Fuqorolik xolatini tanlang!", "Xatolik", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                tabControl1.SelectedTab = tabPage2;
+                return false;
+            }
+
+            if (rdbEducationHigh.Checked == false && rdbEducationAverageSpec.Checked == false && rdbEducationAverage.Checked == false && rdbEducationNo.Checked == false)
+            {
+                MessageBox.Show("Malumotini tanlang!", "Xatolik", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                tabControl1.SelectedTab = tabPage2;
+                return false;
+            }
+
             if (rdbCurStateOut.Checked)
             {
                 if (string.IsNullOrEmpty(Sogligi))
@@ -946,6 +969,24 @@ namespace DesktopApplication
                 if (string.IsNullOrEmpty(DavlatVaXudud))
                 {
                     MessageBox.Show("Davlat Xudud kiriting!", "Xatolik", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    tabControl1.SelectedTab = tabPage3;
+                    return false;
+                }
+
+                if (rdbLeaveCountryOthers.Checked)
+                {
+                    if (string.IsNullOrEmpty(txbLeaveCountryOthers.Text))
+                    {
+                        MessageBox.Show("Boshqalarni kiriting!", "Xatolik", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        tabControl1.SelectedTab = tabPage3;
+                        txbLeaveCountryOthers.Focus();
+                        return false;
+                    }
+                }
+
+                if (string.IsNullOrEmpty(XorijgaKetishMaqsadi))
+                {
+                    MessageBox.Show("Xorijga Ketish Maqsadini kiriting!", "Xatolik", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     tabControl1.SelectedTab = tabPage3;
                     return false;
                 }
@@ -1249,7 +1290,7 @@ namespace DesktopApplication
                 return;
             }
 
-            string[] values = value.Split(',');
+            string[] values = value.Split(';');
             SetCheckBoxValue(chbrHowHelpWork, values);
             SetCheckBoxValue(chbHowHelpEducation, values);
             SetCheckBoxValue(chbHowHelpMedicalTreatment, values);
@@ -1294,7 +1335,7 @@ namespace DesktopApplication
                 return;
             }
 
-            string[] values = value.Split(',');
+            string[] values = value.Split(';');
             SetCheckBoxValue(chbOutTogatherSpouse, values);
             SetCheckBoxValue(chbOutTogatherChild, values);
             SetCheckBoxValue(chbOutTogatherFather, values);
@@ -1311,7 +1352,7 @@ namespace DesktopApplication
                 return;
             }
 
-            string[] values = value.Split(',');
+            string[] values = value.Split(';');
             SetCheckBoxValue(chbFamilyProblemsWorkless, values);
             SetCheckBoxValue(chbFamilyProblemsEducation, values);
             SetCheckBoxValue(chbFamilyProblemsTreatment, values);
@@ -1328,7 +1369,7 @@ namespace DesktopApplication
                 return;
             }
 
-            string[] values = value.Split(',');
+            string[] values = value.Split(';');
             SetCheckBoxValue(chbOutPersonProblemsLostPassport, values);
             SetCheckBoxValue(chbOutPersonProblemsWorkless, values);
             SetCheckBoxValue(chbOutPersonProblemsNoPayment, values);

@@ -18,7 +18,7 @@ namespace DesktopApplication
         public DatabaseContext() :
             base(new SQLiteConnection()
             {
-                ConnectionString = new SQLiteConnectionStringBuilder() { DataSource = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location) +  "/Migrant.db" }.ConnectionString
+                ConnectionString = new SQLiteConnectionStringBuilder() { DataSource = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location) +  "\\Migrant.db" }.ConnectionString
             }, true)
         {
         }

@@ -33,16 +33,16 @@
             this.btn_Search = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.dgvMigrants = new System.Windows.Forms.DataGridView();
+            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clnmFio = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clmnPassportSeria = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clmnPassportNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel3 = new System.Windows.Forms.Panel();
             this.btnClose = new System.Windows.Forms.Button();
             this.btnExcel = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnModify = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
-            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clnmFio = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clmnPassportSeria = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clmnPassportNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMigrants)).BeginInit();
@@ -108,6 +108,38 @@
             this.dgvMigrants.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvMigrants.Size = new System.Drawing.Size(1019, 328);
             this.dgvMigrants.TabIndex = 0;
+            // 
+            // Id
+            // 
+            this.Id.HeaderText = "№";
+            this.Id.MinimumWidth = 6;
+            this.Id.Name = "Id";
+            this.Id.ReadOnly = true;
+            this.Id.Width = 125;
+            // 
+            // clnmFio
+            // 
+            this.clnmFio.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.clnmFio.HeaderText = "FIO";
+            this.clnmFio.MinimumWidth = 6;
+            this.clnmFio.Name = "clnmFio";
+            this.clnmFio.ReadOnly = true;
+            // 
+            // clmnPassportSeria
+            // 
+            this.clmnPassportSeria.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.clmnPassportSeria.HeaderText = "Seria";
+            this.clmnPassportSeria.MinimumWidth = 6;
+            this.clmnPassportSeria.Name = "clmnPassportSeria";
+            this.clmnPassportSeria.ReadOnly = true;
+            // 
+            // clmnPassportNumber
+            // 
+            this.clmnPassportNumber.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.clmnPassportNumber.HeaderText = "Nomer";
+            this.clmnPassportNumber.MinimumWidth = 6;
+            this.clmnPassportNumber.Name = "clmnPassportNumber";
+            this.clmnPassportNumber.ReadOnly = true;
             // 
             // panel3
             // 
@@ -180,38 +212,6 @@
             this.btnAdd.Text = "Qo\'shish";
             this.btnAdd.UseVisualStyleBackColor = true;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
-            // 
-            // Id
-            // 
-            this.Id.HeaderText = "№";
-            this.Id.MinimumWidth = 6;
-            this.Id.Name = "Id";
-            this.Id.ReadOnly = true;
-            this.Id.Width = 125;
-            // 
-            // clnmFio
-            // 
-            this.clnmFio.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.clnmFio.HeaderText = "FIO";
-            this.clnmFio.MinimumWidth = 6;
-            this.clnmFio.Name = "clnmFio";
-            this.clnmFio.ReadOnly = true;
-            // 
-            // clmnPassportSeria
-            // 
-            this.clmnPassportSeria.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.clmnPassportSeria.HeaderText = "Seria";
-            this.clmnPassportSeria.MinimumWidth = 6;
-            this.clmnPassportSeria.Name = "clmnPassportSeria";
-            this.clmnPassportSeria.ReadOnly = true;
-            // 
-            // clmnPassportNumber
-            // 
-            this.clmnPassportNumber.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.clmnPassportNumber.HeaderText = "Nomer";
-            this.clmnPassportNumber.MinimumWidth = 6;
-            this.clmnPassportNumber.Name = "clmnPassportNumber";
-            this.clmnPassportNumber.ReadOnly = true;
             // 
             // MainForm
             // 
